@@ -1,7 +1,7 @@
 import React from 'react';
-import pictcher1 from '../pic/IMG_4108.jpg';
-import pictcher2 from '../pic/IMG_52508.jpg';
-import pictcher3 from '../pic/IMG_3245.jpg';
+import pictcher1 from '../../pic/IMG_4108.jpg';
+import pictcher2 from '../../pic/IMG_52508.jpg';
+import pictcher3 from '../../pic/IMG_3245.jpg';
 
 
 export default function Home(props) {
@@ -78,18 +78,6 @@ export default function Home(props) {
                             <span className="glyphicon glyphicon-chevron-right"></span>
                             <span className="sr-only">Next</span>
                         </a>
-                    </div>
-                </div>
-                <br /><br />
-                <div className="HomeLast" style={{ backgroundColor: 'rgb(255, 166, 0)', width: '100%' }}>
-                    <div style={{ width: '40%', fontSize: 'large', marginTop: '1%', marginLeft: '2%' }}><p>Lviv<br />..........<br />........<br />+380 98 600 71 36</p></div>
-                    <div className='logo2'></div>
-                    <div style={{
-                        width: '42%', paddingLeft: '30%',
-                        paddingTop: '5% '
-                    }}>
-                        <a style={{ color: 'black' }} href="https://www.facebook.com/lys.furniture.ua"><i class="fab fa-facebook-f fa-2x"></i></a>
-                        <a style={{ color: 'black', marginLeft: '10%' }} href="https://www.instagram.com/lys.furniture.ua/"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
                 <br />

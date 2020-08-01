@@ -1,14 +1,14 @@
 body {
-    background-image: url('../pic/old-wood-background-texture-image.jpg');
+    /* background-image: url('../pic/old-wood-background-texture-image.jpg'); */
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .App {
-    width: 70%;
-    margin-left: 15%;
-    background-color: white;
+    /* width: 70%;
+     margin-left: 15%;
+    -webkit-box-shadow: 0px 0px 26px 2px #00000083;
+    box-shadow: 0px 0px 26px 2px #00000083; */
     z-index: 1;
-    -webkit-box-shadow: 0px 0px 26px 2px #000000;
-    box-shadow: 0px 0px 26px 2px #000000;
 }
 
 .openingVid {
@@ -52,8 +52,27 @@ body {
     font-size: x-large;
 }
 
+.nav-links {
+    text-align: right;
+}
+
+.nav-links:hover {
+    background-color: rgb(255, 166, 0);
+    color: white;
+}
+
+.nav-text {
+    color: black;
+    padding-right: 10px
+}
+
+.nav-text:hover {
+    color: white;
+}
+
 .HomeFirst {
     /* border: black solid 1px; */
+    width: 70%;
     height: 900px;
     margin-top: 80px;
     display: flex;
@@ -170,6 +189,5 @@ body {
 .logo2 {
     background-image: url('../pic/fox-logo1.png');
     background-size: 100% 100%;
-    width: 16%;
     height: 150px;
 }
