@@ -1,20 +1,10 @@
 import React from 'react';
-import pictcher1 from '../pic/IMG_4108.jpg';
-import pictcher2 from '../pic/IMG_52508.jpg';
-import pictcher3 from '../pic/IMG_3245.jpg';
-
 
 export default function Footer(props) {
 
     return (
 
-        <div className="HomeLast" style={{
-            backgroundColor: 'rgb(255, 166, 0)',
-            width: '100%',
-            padding: '1%',
-            paddingLeft: '5%',
-            paddingRight: '5%'
-        }}>
+        <div className="footer">
             <div
                 style={{
                     width: '42.5%',

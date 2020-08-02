@@ -1,48 +1,25 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
 import AppLinks from './appRouter/AppLinks';
-import logo from '../pic/fox-logo2.png'
-// import NavBar from './NavBar';
+import logo from '../pic/fox-logo2.png';
 import Footer from './Footer';
-// import openingVid from '../videos/fox_welcome_vid2.mp4';
+import Form from './Form';
 
-class App extends Component {
-    constructor() {
-        super()
-        this.state = {
-            language: 'ukr'
-        }
-    }
+import { MyProvider, LOCALES } from '../translation';
+import translate from '../translation/do-translate';
 
-    changeLanguage(lang) {
-        console.log(lang);
-    }
+function App() {
 
-    render() {
-        return (
+    const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
+    const [contactForm, setContactForm] = useState(false);
 
+
+    return (
+        <MyProvider locale={locale}>
             <BrowserRouter>
                 <div className="App" style={{ display: 'flex' }}>
-
-                    {/* <video autoPlay loop muted className="openingVid" >
-                        <source src={openingVid} type="video/mp4" />
-                    </video>
-
-                    <div className='box' >
-                    </div>
-                    <div className="loz-one">
-                        <h2 style={{ fontFamily: 'Futara' }}>Family workshop of author's furniture and interior items.</h2>
-                    </div>
-
-                    <NavBar></NavBar>
-
-                    <Switch>
-                        <AppRoutes />
-                    </Switch>
-
-                    <Footer></Footer> */}
 
                     <div className="left-side-top"
                         style={{
@@ -65,12 +42,16 @@ class App extends Component {
                         }}
                     >
                         <ul>
-                            <AppLinks />
                             <li className="nav-item">
+                                <AppLinks />
                                 <p className="nav-links">
-                                    <a key='17' onClick={this.changeLanguage('ukr')} href="" className="nav-text">Укр.</a>/
-                                    <a key='18' onClick={this.changeLanguage('rus')} href="" className="nav-text">Рус.</a>/
-                                    <a key='19' onClick={this.changeLanguage('eng')} href="" className="nav-text">Eng.</a>
+                                    <button onClick={() => { setLocale(LOCALES.UKRAINIAN) }} className="lang-button">
+                                        <p className="lang">Укр.</p></button>/
+                                        <button onClick={() => { setLocale(LOCALES.RUSSIAN) }} className="lang-button">
+                                        <p className="lang">Рус.</p></button>/
+                                        <button onClick={() => { setLocale(LOCALES.ENGLISH) }} className="lang-button">
+                                        <p className="lang">Eng.</p></button>
+                                    <i className="fas fa-angle-double-right"></i>
                                 </p>
                             </li>
                         </ul>
@@ -83,44 +64,47 @@ class App extends Component {
                             height: '100%'
                         }}
                     >
-                        <h1>{this.state.language}</h1>
                         <Switch>
                             <AppRoutes />
                         </Switch>
                         <Footer></Footer>
+                        <br />
                     </div>
 
                     <div className="right-side-top"
                         style={{
                             width: '20%',
                             position: 'fixed',
-                            right: '0'
+                            right: '0',
                         }}
                     >
-                        <h3 style={{ fontFamily: 'Futara', padding: '5%' }}>Family workshop of author's furniture and interior items.</h3>
+                        <h3 style={{
+                            padding: '1%',
+                            marginLeft: '11%',
+                            fontFamily: 'Century Gothic'
+
+                        }}>
+                            {translate('loz')}</h3>
                     </div>
+
                     <div className="right-side-bottom"
                         style={{
                             width: '10%',
                             position: 'fixed',
-                            right: '0',
+                            right: '2.5%',
                             bottom: '40px'
                         }}
                     >
-                        <button
-                            style={{
-                                height: '100px',
-                                width: '100px',
-                                borderRadius: '50%',
-                                border: 'none',
-                                backgroundColor: 'rgb(255, 166, 0)'
-                            }}>Contuct Us</button>
+                        <button id='contuct-button' onClick={() => { setContactForm(!contactForm); console.log(contactForm) }}>
+                            <i className="far fa-comment-dots fa-3x"></i>
+                        </button>
+                        {contactForm ? <div><Form></Form></div> : null}
                     </div>
                 </div>
 
             </BrowserRouter >
-        );
-    }
+        </MyProvider>
+    );
 }
 
 export default App;

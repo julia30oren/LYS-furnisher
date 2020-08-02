@@ -1,39 +1,36 @@
 body {
-    /* background-image: url('../pic/old-wood-background-texture-image.jpg'); */
     background-color: rgba(128, 128, 128, 0.1);
 }
 
 .App {
-    /* width: 70%;
-     margin-left: 15%;
-    -webkit-box-shadow: 0px 0px 26px 2px #00000083;
-    box-shadow: 0px 0px 26px 2px #00000083; */
     z-index: 1;
+}
+
+
+/* .HomeMain {
+    background-color: rgba(128, 128, 128, 0.1);
+    -webkit-box-shadow: 0px 0px 26px 2px #00000083;
+    box-shadow: 0px 0px 26px 2px #00000083;
+} */
+
+.opening {
+    height: 730px;
 }
 
 .openingVid {
     position: absolute;
-    width: 50%;
-    height: 540px;
-    left: 22%;
-}
-
-.box {
+    width: 60%;
     z-index: 1;
-    width: 20%;
-    height: 620px;
-    margin-left: 67%;
-    background-color: rgb(255, 166, 0);
 }
 
-.loz-one {
+.yellow-box-one {
     position: absolute;
-    top: 20px;
-    left: 23%;
-    width: 38%;
-    background-color: rgba(128, 128, 128, 0);
-    color: rgb(255, 255, 255);
-    border: none
+    top: 0;
+    left: 60%;
+    z-index: 0;
+    width: 20%;
+    height: 720px;
+    background-color: rgb(255, 166, 0);
 }
 
 .nav {
@@ -49,11 +46,20 @@ body {
     margin-top: -2%;
     margin-left: 2%;
     background-color: rgba(128, 128, 128, 0);
-    font-size: x-large;
+    /* font-size: large; */
+}
+
+.nav-item:hover {
+    font-size: large;
 }
 
 .nav-links {
     text-align: right;
+    font-family: Century Gothic;
+}
+
+.lang-button {
+    font-family: Century Gothic;
 }
 
 .nav-links:hover {
@@ -63,18 +69,25 @@ body {
 
 .nav-text {
     color: black;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 .nav-text:hover {
     color: white;
+    text-decoration: none;
+}
+
+.lang-button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.lang {
+    font-size: medium;
 }
 
 .HomeFirst {
-    /* border: black solid 1px; */
-    width: 70%;
-    height: 900px;
-    margin-top: 80px;
+    height: 1000px;
     display: flex;
     flex-direction: row;
 }
@@ -90,8 +103,7 @@ body {
 
 .img-one {
     width: 40%;
-    height: 800px;
-    background-image: url('../pic/DSC_0200.JPG');
+    height: 750px;
     background-size: 100% 100%;
     z-index: 2;
     margin-left: 10%;
@@ -103,14 +115,12 @@ body {
     -moz-transform: rotate(-90deg);
     position: absolute;
     top: 1000px;
-    left: 65%;
+    right: 20%;
 }
 
 .HomeSecond {
     display: flex;
     flex-direction: column;
-    /* border: black solid 1px; */
-    /* height: 1700px; */
 }
 
 .img-family {
@@ -120,13 +130,14 @@ body {
     height: 1000px;
 }
 
-.text2 {
+.yellow-box-three {
     position: absolute;
-    right: 17%;
-    margin-top: 40%;
+    right: 20%;
+    margin-top: 43%;
 }
 
-.logo {
+
+/* .logo {
     background-image: url('../pic/fox-logo2.png');
     background-size: 100% 100%;
     position: absolute;
@@ -134,20 +145,18 @@ body {
     height: 700px;
     opacity: 0.5;
     margin-top: 58%;
-}
+} */
 
 .text3 {
     width: 43%;
-    margin-left: 55%;
-    margin-top: 40%;
+    margin-left: 50%;
+    margin-top: 30%;
     font-size: large;
 }
 
 .HomeThird {
     display: flex;
     flex-direction: column;
-    /* border: black solid 1px; */
-    /* height: 1700px; */
 }
 
 .row {
@@ -156,12 +165,13 @@ body {
 }
 
 .img-1 {
-    background-image: url('../pic/DSC_0833.jpg');
     background-size: 100% 100%;
     position: absolute;
     width: 35%;
     height: 600px;
-    margin-left: 33%;
+    right: 20%;
+    transform: scaleX(-1);
+    margin-top: 2%;
 }
 
 .img-2 {
@@ -171,23 +181,59 @@ body {
     width: 45%;
     height: 500px;
     margin-top: 2%;
-    margin-left: -27%;
+    left: 20%
 }
 
 .HomeFourth {
     display: flex;
     flex-direction: column;
-    /* border: black solid 1px; */
-    /* height: 1700px; */
 }
 
-.HomeLast {
+.footer {
     display: flex;
     flex-direction: row;
+    background-color: rgb(255, 166, 0);
+    width: 100%;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* -webkit-box-shadow: 0px 0px 26px 2px #00000083;
+    box-shadow: 0px 0px 26px 2px #00000083; */
 }
 
 .logo2 {
     background-image: url('../pic/fox-logo1.png');
     background-size: 100% 100%;
-    height: 150px;
+    height: 120px;
+}
+
+#contuct-button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 0.5px #00000083;
+    background-color: rgb(255, 166, 0);
+    font-size: large;
+}
+
+#contuct-button:hover {
+    height: 110px;
+    width: 110px;
+    color: white;
+    font-size: x-large;
+    text-shadow: #474747 3px 5px 2px;
+    -webkit-box-shadow: 0px 0px 26px 2px #00000083;
+    box-shadow: 0px 0px 26px 2px #00000083;
+}
+
+.carousel-div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    height: 200px;
+    width: 52%;
+    bottom: 0;
+    z-index: 10;
+    left: 25%;
+    padding: 1%;
 }
