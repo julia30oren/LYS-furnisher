@@ -29,7 +29,7 @@ body {
     left: 60%;
     z-index: 0;
     width: 20%;
-    height: 720px;
+    height: 750px;
     background-color: rgb(255, 166, 0);
 }
 
@@ -83,7 +83,8 @@ body {
 }
 
 .HomeFirst {
-    height: 1000px;
+    margin-top: 80px;
+    height: 900px;
     display: flex;
     flex-direction: row;
 }
@@ -93,7 +94,7 @@ body {
     width: 20%;
     background-color: rgb(255, 166, 0);
     position: absolute;
-    margin-top: 30%;
+    margin-top: 25%;
     left: 28%;
 }
 
@@ -232,4 +233,50 @@ body {
     z-index: 10;
     left: 25%;
     padding: 1%;
+}
+
+
+/* ABOUT US */
+
+.aboutTextDiv {
+    font-size: 20px;
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.par-1 {
+    height: 900px;
+    width: 100%;
+    background-image: url('../pic/about/about-pic-2.jpg');
+    background-size: 1100px 900px;
+}
+
+.par-2 {
+    height: 900px;
+    width: 100%;
+    background-image: url('../pic/about/about-pic-01.jpg');
+    background-size: 1100px 900px;
+}
+
+.par-3 {
+    height: 900px;
+    width: 100%;
+    background-image: url('../pic/about/about-pic-02.jpg');
+    background-size: 1100px 900px;
+}
+
+.par-4 {
+    height: 900px;
+    width: 100%;
+    background-image: url('../pic/about/about-pic-04.jpg');
+    background-size: 1100px 900px;
 }

@@ -19,8 +19,6 @@ export default function Home(props) {
                 <div className="yellow-box-one"></div>
             </div>
 
-            <br />
-
             <div className="HomeFirst">
                 <div style={{
                     width: '20%',
@@ -71,7 +69,7 @@ export default function Home(props) {
                     <div style={{
                         width: '35%',
                         fontSize: 'x-large',
-                        marginTop: '15%',
+                        // marginTop: '15%',
                         marginLeft: '5%'
                     }}>
                         {translate('home-5-text')}
@@ -84,8 +82,10 @@ export default function Home(props) {
                         padding: '2%',
                         fontSize: 'xx-large',
                         backgroundColor: 'rgb(255, 166, 0)',
-                        marginLeft: '55%', marginTop: '30%',
-                        zIndex: '4', textAlign: 'center',
+                        marginLeft: '55%',
+                        marginTop: '30%',
+                        zIndex: '4',
+                        textAlign: 'center',
                         width: '600px',
                         fontFamily: 'Century Gothic'
 
@@ -105,7 +105,7 @@ export default function Home(props) {
                     <div style={{
                         width: '20%',
                         marginLeft: '77%',
-                        marginTop: '-5%',
+                        marginTop: '5%',
                         fontSize: 'large',
                         textAlign: 'center',
 
@@ -121,9 +121,9 @@ export default function Home(props) {
                     {translate('home-9-text')}</div>
             </div>
 
-            <div className="HomeFourth" style={{ height: '600px' }}>
+            <div className="HomeFourth" style={{ height: '700px' }}>
                 <br />
-                <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{ height: '550px' }}>
+                <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{ height: '650px' }}>
                     {/* <!-- Indicators --> */}
                     <ol className="carousel-indicators" >
                         <li data-target="#myCarousel" data-slide-to="0" className="active">

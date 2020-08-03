@@ -30,5 +30,14 @@ export default {
         "form-2-t": "Email address:",
         "form-3-t": "Your message:",
         "form-4-button": "Send",
+
+        "about-0-text": "About us",
+        "about-1-text": "When the idea first arose, we were united by a common desire to make special things ourselves, which would give joy to its owner. Yes, having no resources: no tools, no savings, no connections, we stubbornly went to our goal!",
+        "about-2-text": "Thus was born the family furniture workshop «FOX».",
+        "about-3-text": "A lot of work, constant training, experiments, mistakes, improvements - made us a real qualified team.",
+        "about-4-text": "Today, our workshop has created more than 500 unique cabinets, beds, sofas and other handmade furniture. And we are ready to continue creating for you.",
+        "about-5-text": "We can say for sure - the impossible does not exist!",
+        "about-6-text": "By contacting us, you will receive not just furniture, but exclusive things that will take a special place in your life, because we love our work!",
+        "about-7-text": "Andrew and Olga",
     }
 }

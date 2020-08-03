@@ -1,10 +1,45 @@
 import React from 'react';
+import sign from '../../pic/about/sign.jpg';
+import translate from '../../translation/do-translate';
 
 export default function AboutUsUkr(props) {
 
     return (
         <div>
-            <h1>About Us page Ukr</h1>
-        </div>
+            <div style={{ backgroundColor: 'rgb(255, 166, 0)' }}>
+                <h3 style={{
+                    textAlign: 'center',
+                    padding: '1%',
+                    color: 'white',
+                    fontFamily: 'Century Gothic'
+                }}>{translate('about-0-text')}</h3></div>
+            <div className="parallax par-1"></div>
+
+            <div className="aboutTextDiv">
+                <p>{translate('about-1-text')}</p>
+                <p>{translate('about-2-text')}</p>
+            </div>
+
+            <div className="parallax par-2"></div>
+
+            <div className="aboutTextDiv">
+                <p>{translate('about-3-text')}</p>
+                <p>{translate('about-4-text')}</p>
+            </div>
+
+            <div className="parallax par-3"></div>
+
+            <div className="aboutTextDiv">
+                <p>{translate('about-5-text')}</p>
+                <p>{translate('about-6-text')}</p>
+            </div>
+
+            <div className="parallax par-4"></div>
+            <div>
+                <h5 style={{ marginLeft: '50%', marginTop: '5%' }}>{translate('about-7-text')}</h5>
+                <img style={{ width: '1000px', marginLeft: '10%' }} src={sign} alt="Андрій та Ольга Лисіхіни" />
+            </div><br />
+
+        </div >
     )
 }
