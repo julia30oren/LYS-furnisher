@@ -26,6 +26,9 @@ export default {
         "home-11-text": "We use decorative painting technologies that cannot be reproduced in mass production.",
         "home-12-text": "We complete each project on your own so that you can enjoy your new furniture without any hassle.",
 
-
+        "form-1-t": "Name:",
+        "form-2-t": "Email address:",
+        "form-3-t": "Your message:",
+        "form-4-button": "Send",
     }
 }

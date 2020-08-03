@@ -46,10 +46,6 @@ body {
     margin-top: -2%;
     margin-left: 2%;
     background-color: rgba(128, 128, 128, 0);
-    /* font-size: large; */
-}
-
-.nav-item:hover {
     font-size: large;
 }
 

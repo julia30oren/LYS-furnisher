@@ -96,7 +96,7 @@ function App() {
                         }}
                     >
                         <button id='contuct-button' onClick={() => { setContactForm(!contactForm); console.log(contactForm) }}>
-                            <i className="far fa-comment-dots fa-3x"></i>
+                            {!contactForm ? <i className="far fa-comment-dots fa-3x"></i> : <i class="fas fa-times  fa-3x"></i>}
                         </button>
                         {contactForm ? <div><Form></Form></div> : null}
                     </div>
