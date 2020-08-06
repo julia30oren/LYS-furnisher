@@ -41,5 +41,20 @@ export default {
         "about-6-text": "Звертаючись до нас, ви отримаєте не просто меблі, а ексклюзивнi рeчi, якi займуть особливе місце у вашому житті, бо ми любимо свою роботу!",
         "about-7-text": "Андрій та Ольга",
 
+        "portfolio-1-text": "Портфоліо",
+        "portfolio-2-text": "",
+        "portfolio-3-text": "",
+
+        "coating-1-text": "Покриття",
+        "coating-2-text": "",
+        "coating-3-text": "",
+
+        "creation-1-text": "Процес створення",
+        "creation-2-text": "",
+        "creation-3-text": "",
+
+        "contacts-1-text": "Контакти",
+        "contacts-2-text": "",
+        "contacts-3-text": "",
     }
 }

@@ -39,5 +39,21 @@ export default {
         "about-5-text": "We can say for sure - the impossible does not exist!",
         "about-6-text": "By contacting us, you will receive not just furniture, but exclusive things that will take a special place in your life, because we love our work!",
         "about-7-text": "Andrew and Olga",
+
+        "portfolio-1-text": "Portfolio",
+        "portfolio-2-text": "",
+        "portfolio-3-text": "",
+
+        "coating-1-text": "Coating",
+        "coating-2-text": "",
+        "coating-3-text": "",
+
+        "creation-1-text": "Creation",
+        "creation-2-text": "",
+        "creation-3-text": "",
+
+        "contacts-1-text": "Contacts",
+        "contacts-2-text": "",
+        "contacts-3-text": "",
     }
 }

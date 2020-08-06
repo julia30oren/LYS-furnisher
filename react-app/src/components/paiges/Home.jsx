@@ -5,6 +5,7 @@ import pictcher3 from '../../pic/IMG_3245.jpg';
 import pictcher4 from '../../pic/DSC_0833.jpg';
 import fenix from '../../pic/DSC_0200.JPG';
 import openingVid from '../../videos/fox_welcome_vid2.mp4';
+
 import translate from '../../translation/do-translate';
 
 

@@ -280,3 +280,33 @@ body {
     background-image: url('../pic/about/about-pic-04.jpg');
     background-size: 1100px 900px;
 }
+
+.portfolioMain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.slideColumn {
+    width: 20%;
+    margin-left: 3%;
+    padding: 0.5%;
+    height: 1080px;
+    background-color: rgb(255, 166, 0);
+    overflow: scroll;
+}
+
+.slideColumn::-webkit-scrollbar {
+    display: none;
+}
+
+.im {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.slideBlock {
+    width: 75%;
+    height: 900px;
+    margin-left: 5%;
+}

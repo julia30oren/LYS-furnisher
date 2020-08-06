@@ -2,7 +2,7 @@ import React from 'react';
 import sign from '../../pic/about/sign.jpg';
 import translate from '../../translation/do-translate';
 
-export default function AboutUsUkr(props) {
+export default function AboutUs(props) {
 
     return (
         <div>
