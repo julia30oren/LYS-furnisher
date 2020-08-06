@@ -310,3 +310,50 @@ body {
     height: 900px;
     margin-left: 5%;
 }
+
+
+/* CREATION */
+
+.vl {
+    border-left: 6px solid green;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 20%;
+    height: 500px;
+}
+
+.vid-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.video-div-left {
+    border-radius: 150px 0 0 150px;
+    margin-left: 20%;
+}
+
+.video-div-right {
+    border-radius: 0 150px 150px 0;
+    margin-right: 20%;
+}
+
+.videos {
+    width: 300px;
+    padding: 7px;
+    border-radius: 150px;
+}
+
+.text-bl-left {
+    padding-left: 5%;
+    padding-right: 2%;
+    font-size: x-large;
+}
+
+.text-bl-right {
+    padding-right: 5%;
+    padding-left: 5%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    font-size: x-large;
+}

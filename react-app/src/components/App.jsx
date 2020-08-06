@@ -14,6 +14,7 @@ function App() {
 
     const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
     const [contactForm, setContactForm] = useState(false);
+    const [clicState, setClicState] = useState('');
 
 
     return (
@@ -29,6 +30,7 @@ function App() {
                         }}
                     >
                         <img src={logo} alt="Logo" style={{ width: '90%' }} />
+                        <p>{clicState}</p>
                     </div>
 
                     <div className="left-side-bottom"
