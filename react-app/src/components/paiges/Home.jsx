@@ -34,12 +34,12 @@ export default function Home(props) {
                 </div>
                 <div className="yellow-box-two"></div>
                 <img src={fenix} alt="fenix" className="img-one" />
-                <text className="LYS" style={{
+                <p className="LYS" style={{
                     fontSize: '200px',
                     fontFamily: 'Futara',
                     color: 'rgba(128, 128, 128, 0.3)'
                 }}>
-                    LYS</text>
+                    LYS</p>
             </div>
 
             <div className="HomeSecond">
