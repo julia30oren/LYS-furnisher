@@ -370,3 +370,20 @@ body {
     /* background-color: rgba(0, 0, 0, 0.3); */
     font-size: x-large;
 }
+
+
+/* COATING */
+
+.texture-img {
+    height: 200px;
+    width: 200px;
+}
+
+.coating-text-blc {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.list {
+    list-style-type: square;
+}

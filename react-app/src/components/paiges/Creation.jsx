@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import translate from '../../translation/do-translate';
 
 import ReactCompareImage from 'react-compare-image';
