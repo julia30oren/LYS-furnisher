@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import translate from '../../translation/do-translate';
 
+import ReactCompareImage from 'react-compare-image';
+import photo_1 from '../../pic/creation/photo-1.jpg';
+import sketch_1 from '../../pic/creation/sketch-1.jpg';
+import photo_2 from '../../pic/creation/photo-2.jpg';
+import sketch_2 from '../../pic/creation/sketch-2.jpg';
+
 import scatch from '../../videos/scatch_fox_2.mp4';
 import cr from '../../videos/cr_fox.mp4';
 import work from '../../videos/work_p_fox.mp4';
@@ -9,14 +15,33 @@ import packaging from '../../videos/packaging_fox.mp4';
 import assembling from '../../videos/assembling_fox.mp4';
 
 
+export const RenderImages = (props) => {
+    return (
+        <div style={{ display: 'flex', flexDirection: 'row', marginTop: '5%' }}>
+            <div style={{ width: '55%' }}>
+                <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} />
+                {/* <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} /> */}
+            </div>
+            <div style={{ width: '45%', paddingLeft: '2%' }}>
+                <ReactCompareImage leftImage={sketch_2} rightImage={photo_2} />
+                {/* <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} /> */}
+            </div>
+        </div>
+    )
+}
+
 
 export default function Creation(props) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-
-            <div className="vid-row">
-                <h2 style={{ width: '100%', textAlign: 'center' }}>{translate('creation-1-text')}</h2>
+            <div className="vid-row" style={{ backgroundColor: 'rgb(255, 166, 0)', marginBottom: '10%' }}>
+                <h2 style={{
+                    textAlign: 'center',
+                    padding: '1%',
+                    color: 'white',
+                    fontFamily: 'Century Gothic'
+                }}>{translate('creation-1-text')}</h2>
             </div>
 
             {/* <div class="vl"></div> */}
@@ -106,9 +131,10 @@ export default function Creation(props) {
 
             <br />
 
-            <div><h3 style={{ textAlign: 'center' }}>{translate('creation-8-text')}</h3></div>
+            <div><h3 style={{ textAlign: 'center', marginTop: '9%' }}>{translate('creation-8-text')}</h3></div>
 
-            {/* <button>click on me</button> <p>{clicState}</p> */}
+            <RenderImages></RenderImages>
+            <br />
         </div>
     )
 }

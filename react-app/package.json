@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "0.0.0-7f28234f8",
+    "react-compare-image": "^3.0.2",
+    "react-dom": "0.0.0-7f28234f8",
     "react-intl": "^5.4.5",
     "react-redux": "^7.1.0-rc.1",
     "react-router-dom": "^5.2.0",

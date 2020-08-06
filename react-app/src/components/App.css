@@ -340,9 +340,9 @@ body {
 }
 
 .videos {
-    width: 300px;
-    padding: 7px;
-    border-radius: 150px;
+    width: 100%;
+    padding: 0.5%;
+    border-radius: 50%;
 }
 
 .text-bl-left {
