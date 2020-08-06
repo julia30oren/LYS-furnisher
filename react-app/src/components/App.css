@@ -1,9 +1,22 @@
 body {
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgba(128, 128, 128, 0.15);
 }
 
 .App {
     z-index: 1;
+}
+
+.titles-div {
+    background-color: rgb(255, 166, 0);
+    margin-bottom: 5%;
+}
+
+._title {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    color: white;
+    font-family: Century Gothic;
 }
 
 

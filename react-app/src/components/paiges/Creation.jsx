@@ -20,11 +20,10 @@ export const RenderImages = (props) => {
         <div style={{ display: 'flex', flexDirection: 'row', marginTop: '5%' }}>
             <div style={{ width: '55%' }}>
                 <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} />
-                {/* <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} /> */}
             </div>
+
             <div style={{ width: '45%', paddingLeft: '2%' }}>
                 <ReactCompareImage leftImage={sketch_2} rightImage={photo_2} />
-                {/* <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} /> */}
             </div>
         </div>
     )
@@ -35,13 +34,8 @@ export default function Creation(props) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div className="vid-row" style={{ backgroundColor: 'rgb(255, 166, 0)', marginBottom: '10%' }}>
-                <h2 style={{
-                    textAlign: 'center',
-                    padding: '1%',
-                    color: 'white',
-                    fontFamily: 'Century Gothic'
-                }}>{translate('creation-1-text')}</h2>
+            <div className="vid-row titles-div">
+                <h2 className="_title">{translate('creation-1-text')}</h2>
             </div>
 
             {/* <div class="vl"></div> */}

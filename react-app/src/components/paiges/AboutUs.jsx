@@ -6,13 +6,10 @@ export default function AboutUs(props) {
 
     return (
         <div>
-            <div style={{ backgroundColor: 'rgb(255, 166, 0)' }}>
-                <h3 style={{
-                    textAlign: 'center',
-                    padding: '1%',
-                    color: 'white',
-                    fontFamily: 'Century Gothic'
-                }}>{translate('about-0-text')}</h3></div>
+            <div className="vid-row titles-div">
+                <h2 className="_title">{translate('about-0-text')}</h2>
+            </div>
+
             <div className="parallax par-1"></div>
 
             <div className="aboutTextDiv">
