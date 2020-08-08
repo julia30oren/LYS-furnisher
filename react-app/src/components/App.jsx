@@ -96,9 +96,18 @@ function App() {
                         }}
                     >
                         <button id='contuct-button' onClick={() => { setContactForm(!contactForm); console.log(contactForm) }}>
-                            {!contactForm ? <i className="far fa-comment-dots fa-3x"></i> : <i class="fas fa-times  fa-3x"></i>}
+                            {!contactForm ? <i className="far fa-comment-dots fa-3x"></i> : <i className="fas fa-times  fa-3x"></i>}
                         </button>
-                        {contactForm ? <div><Form></Form></div> : null}
+                        {!contactForm ? null :
+                            <div style={{
+                                position: 'absolute',
+                                right: '1%',
+                                bottom: '120px',
+                                width: '300px',
+                                backgroundColor: 'white',
+                                border: 'solid 1px black',
+                                padding: '10%',
+                            }}> <Form></Form> </div>}
                     </div>
                 </div>
 

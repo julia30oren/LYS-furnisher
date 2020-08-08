@@ -113,7 +113,23 @@ export default {
 
 
         "contacts-1-text": "Contacts",
-        "contacts-2-text": "",
-        "contacts-3-text": "",
+        "contact-page-name-label": "Your Name:",
+        "contact-page-email-label": "Email Address:",
+        "contact-page-phone-label": "Your Phone:",
+        "contact-page-subject-label": "Subject:",
+        "contact-page-subject-option-1": "Call me back, please",
+        "contact-page-subject-option-2": "Check prices",
+        "contact-page-subject-option-3": "Clarify deadlines",
+        "contact-page-subject-option-4": "Joint cooperation",
+        "contact-page-subject-option-5": "Other...",
+        "contact-page-message-label": "Your Message:",
+        "contact-page-button-text": "Submit",
+        "contacts-2-text": "Our location:",
+        "contacts-3-text": "Solonka,",
+        "contacts-4-text": "Lviv region.,",
+        "contacts-5-text": "Ukraine",
+        "contacts-6-text": "49.757722, 24.011444",
+        "contacts-7-text": "You can contact us at any time by phone:",
+        "contacts-8-text": "+380 98 600 71 36",
     }
 }

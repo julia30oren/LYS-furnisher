@@ -113,8 +113,23 @@ export default {
 
 
         "contacts-1-text": "Контакты",
-        "contacts-2-text": "",
-        "contacts-3-text": "",
-
+        "contact-page-name-label": "Ваше имя:",
+        "contact-page-email-label": "Адрес электронной почты:",
+        "contact-page-phone-label": "Ваш телефон:",
+        "contact-page-subject-label": "Тема:",
+        "contact-page-subject-option-1": "Перезвоните мне, пожалуйста",
+        "contact-page-subject-option-2": "Узнаць цены",
+        "contact-page-subject-option-3": "Уточнить сроки выполнения",
+        "contact-page-subject-option-4": "Совместное сотрудничество",
+        "contact-page-subject-option-5": "Другое...",
+        "contact-page-message-label": "Сообщение:",
+        "contact-page-button-text": "Отправить",
+        "contacts-2-text": "Наше местонахождение",
+        "contacts-3-text": "Солонка,",
+        "contacts-4-text": "Львовская обл.,",
+        "contacts-5-text": "Украина",
+        "contacts-6-text": "49.757722, 24.011444",
+        "contacts-7-text": "Вы можете связаться с нами в любое время по телефону:",
+        "contacts-8-text": "+380 98 600 71 36",
     }
 }

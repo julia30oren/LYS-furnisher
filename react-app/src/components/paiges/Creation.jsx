@@ -38,7 +38,7 @@ export default function Creation(props) {
                 <h2 className="_title">{translate('creation-1-text')}</h2>
             </div>
 
-            {/* <div class="vl"></div> */}
+            {/* <div className="vl"></div> */}
             <br />
 
             <div className="vid-row">
