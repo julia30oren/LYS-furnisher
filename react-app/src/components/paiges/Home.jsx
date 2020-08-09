@@ -42,7 +42,7 @@ export default function Home(props) {
                     LYS</p>
             </div>
 
-            <div className="HomeSecond">
+            <div className="column">
                 <div style={{
                     fontSize: 'xx-large',
                     width: '100%',
@@ -65,7 +65,7 @@ export default function Home(props) {
                 </div>
             </div>
 
-            <div className="HomeThird">
+            <div className="column">
                 <div className="row">
                     <div style={{
                         width: '35%',

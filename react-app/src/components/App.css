@@ -6,6 +6,17 @@ body {
     z-index: 1;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .titles-div {
     background-color: rgb(255, 166, 0);
     margin-bottom: 5%;
@@ -128,10 +139,11 @@ body {
     right: 20%;
 }
 
-.HomeSecond {
+
+/* .HomeSecond {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .img-family {
     background-image: url('../pic/aboutUs.jpg');
@@ -146,32 +158,11 @@ body {
     margin-top: 43%;
 }
 
-
-/* .logo {
-    background-image: url('../pic/fox-logo2.png');
-    background-size: 100% 100%;
-    position: absolute;
-    width: 45%;
-    height: 700px;
-    opacity: 0.5;
-    margin-top: 58%;
-} */
-
 .text3 {
     width: 43%;
     margin-left: 50%;
     margin-top: 30%;
     font-size: large;
-}
-
-.HomeThird {
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
 }
 
 .img-1 {
@@ -386,4 +377,75 @@ body {
 
 .list {
     list-style-type: square;
+}
+
+
+/* PORTFOLIO */
+
+.porfolio-col {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-row {
+    height: 270px;
+    margin: auto;
+    max-width: 70%;
+}
+
+#expandedImg {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.img-column {
+    max-width: 20%;
+    padding-left: 10px;
+}
+
+#expandedImg2 {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.chosen-image:hover {
+    opacity: 0.8;
+}
+
+.big-img-div {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+}
+
+.big-img {
+    max-height: 900px;
+    max-width: 90%;
+    margin-top: 0;
+    margin-left: 20%;
+    z-index: 13;
+    border: white 10px solid;
+}
+
+.close-b {
+    z-index: 14;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.close-b:hover {
+    color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.thumbnail {
+    max-width: 350px;
+    max-height: 500px;
+    border: none;
 }
