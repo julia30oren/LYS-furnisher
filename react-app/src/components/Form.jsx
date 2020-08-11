@@ -66,7 +66,9 @@ export default function Form() {
                 <textarea className="form-control" style={{ resize: "none" }} autoFocus={true} rows="5" cols="50" ref={textInput} />
             </div>
             <div className="form-group">
-                <button className="btn" type="button" onClick={sendEmail}>{translate('contact-page-button-text')} <i className="fas fa-paper-plane"></i></button>
+                <button className="btn" type="button" onClick={sendEmail}>{translate('contact-page-button-text')}
+                    <i className="fas fa-external-link-alt" style={{ marginLeft: '15px' }}></i>
+                </button>
             </div>
         </form>
     )

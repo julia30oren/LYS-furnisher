@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
@@ -12,9 +12,22 @@ import translate from '../translation/do-translate';
 
 function App() {
 
+    function checkLocation() {
+        setInterval(() => {
+            let loc = window.location.href;
+            if (loc === 'http://localhost:3000/contacts') {
+                setContactForm(false);
+            }
+        }, 1000)
+    }
+
+    useEffect(() => {
+        checkLocation();
+    }, []);
+
+
     const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
     const [contactForm, setContactForm] = useState(false);
-
 
     return (
         <MyProvider locale={locale}>
@@ -95,10 +108,10 @@ function App() {
                             bottom: '40px'
                         }}
                     >
-                        <button id='contuct-button' onClick={() => { setContactForm(!contactForm); console.log(contactForm) }}>
+                        <button id='contuct-button' onClick={() => { setContactForm(!contactForm) }}>
                             {!contactForm ? <i className="far fa-comment-dots fa-3x"></i> : <i className="fas fa-times  fa-3x"></i>}
                         </button>
-                        {!contactForm ? null :
+                        {(!contactForm) ? null :
                             <div style={{
                                 position: 'absolute',
                                 right: '1%',

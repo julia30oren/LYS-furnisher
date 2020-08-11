@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import translate from '../../translation/do-translate';
 
 import texture_1 from '../../pic/coating/coat-1 (1).JPG';
@@ -29,7 +29,11 @@ import texture_25 from '../../pic/coating/coat-9 (1).jpg';
 import texture_26 from '../../pic/coating/coat-9 (2).jpg';
 import texture_27 from '../../pic/coating/coat-9 (3).jpg';
 
-export default function Coating(props) {
+export const Coating = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '5%' }}>
@@ -245,5 +249,12 @@ export default function Coating(props) {
             </div>
 
         </div>
+    )
+}
+
+
+export default function CoatingComp(props) {
+    return (
+        <Coating></Coating>
     )
 }

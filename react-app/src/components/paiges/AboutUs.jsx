@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import sign from '../../pic/about/sign.jpg';
 import translate from '../../translation/do-translate';
 
-export default function AboutUs(props) {
+export const AboutUs = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div>
@@ -38,5 +42,11 @@ export default function AboutUs(props) {
             </div><br />
 
         </div >
+    )
+}
+
+export default function AboutUsComp(props) {
+    return (
+        <AboutUs></AboutUs>
     )
 }

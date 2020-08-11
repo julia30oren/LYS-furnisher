@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import pictcher1 from '../../pic/IMG_4108.jpg';
 import pictcher2 from '../../pic/IMG_52508.jpg';
 import pictcher3 from '../../pic/IMG_3245.jpg';
@@ -8,8 +8,12 @@ import openingVid from '../../videos/fox_welcome_vid2.mp4';
 
 import translate from '../../translation/do-translate';
 
+export const Home = (props) => {
 
-export default function Home(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
 
     return (
         <div className="HomeMain">
@@ -174,5 +178,13 @@ export default function Home(props) {
                 </div>
             </div>
         </div>
+    )
+}
+
+
+export default function HomeComp(props) {
+
+    return (
+        <Home></Home>
     )
 }

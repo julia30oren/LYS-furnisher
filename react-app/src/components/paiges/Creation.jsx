@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import translate from '../../translation/do-translate';
 
 import ReactCompareImage from 'react-compare-image';
@@ -14,23 +14,11 @@ import coating from '../../videos/coating_fox.mp4';
 import packaging from '../../videos/packaging_fox.mp4';
 import assembling from '../../videos/assembling_fox.mp4';
 
+export const Creation = (props) => {
 
-export const RenderImages = (props) => {
-    return (
-        <div style={{ display: 'flex', flexDirection: 'row', marginTop: '5%' }}>
-            <div style={{ width: '55%' }}>
-                <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} />
-            </div>
-
-            <div style={{ width: '45%', paddingLeft: '2%' }}>
-                <ReactCompareImage leftImage={sketch_2} rightImage={photo_2} />
-            </div>
-        </div>
-    )
-}
-
-
-export default function Creation(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0, { pasive: true });
+    }, []);
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -38,7 +26,6 @@ export default function Creation(props) {
                 <h2 className="_title">{translate('creation-1-text')}</h2>
             </div>
 
-            {/* <div className="vl"></div> */}
             <br />
 
             <div className="vid-row">
@@ -125,10 +112,34 @@ export default function Creation(props) {
 
             <br />
 
-            <div><h3 style={{ textAlign: 'center', marginTop: '9%' }}>{translate('creation-8-text')}</h3></div>
-
+            <div>
+                <h3 style={{ textAlign: 'center', marginTop: '9%' }}>{translate('creation-8-text')}</h3>
+            </div>
             <RenderImages></RenderImages>
             <br />
         </div>
+    )
+}
+
+
+export const RenderImages = (props) => {
+    return (
+        <div style={{ display: 'flex', flexDirection: 'row', marginTop: '5%' }}>
+            <div style={{ width: '55%' }}>
+                <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} />
+            </div>
+
+            <div style={{ width: '45%', paddingLeft: '2%' }}>
+                <ReactCompareImage leftImage={sketch_2} rightImage={photo_2} />
+            </div>
+        </div>
+    )
+}
+
+
+export default function CreationComp(props) {
+
+    return (
+        <Creation></Creation>
     )
 }
