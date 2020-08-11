@@ -44,16 +44,7 @@ function App() {
                         <img src={logo} alt="Logo" style={{ width: '90%' }} />
                     </div>
 
-                    <div className="left-side-bottom"
-                        style={{
-                            width: '20%',
-                            position: 'fixed',
-                            left: '0',
-                            bottom: '20px',
-                            paddingRight: '3%',
-                            paddingLeft: '3%'
-                        }}
-                    >
+                    <div className="left-side-bottom">
                         <ul>
                             <li className="nav-item">
                                 <AppLinks />
@@ -70,13 +61,7 @@ function App() {
                         </ul>
                     </div>
 
-                    <div className="main"
-                        style={{
-                            marginLeft: '20%',
-                            width: '60%',
-                            height: '100%'
-                        }}
-                    >
+                    <div className="main">
                         <Switch>
                             <AppRoutes />
                         </Switch>
@@ -84,43 +69,16 @@ function App() {
                         <br />
                     </div>
 
-                    <div className="right-side-top"
-                        style={{
-                            width: '20%',
-                            position: 'fixed',
-                            right: '0',
-                        }}
-                    >
-                        <h3 style={{
-                            padding: '1%',
-                            marginLeft: '11%',
-                            fontFamily: 'Century Gothic'
-
-                        }}>
-                            {translate('loz')}</h3>
+                    <div className="right-side-top">
+                        <p> {translate('loz')} </p>
                     </div>
 
-                    <div className="right-side-bottom"
-                        style={{
-                            width: '10%',
-                            position: 'fixed',
-                            right: '2.5%',
-                            bottom: '40px'
-                        }}
-                    >
+                    <div className="right-side-bottom">
                         <button id='contuct-button' onClick={() => { setContactForm(!contactForm) }}>
                             {!contactForm ? <i className="far fa-comment-dots fa-3x"></i> : <i className="fas fa-times  fa-3x"></i>}
                         </button>
                         {(!contactForm) ? null :
-                            <div style={{
-                                position: 'absolute',
-                                right: '1%',
-                                bottom: '120px',
-                                width: '300px',
-                                backgroundColor: 'white',
-                                border: 'solid 1px black',
-                                padding: '10%',
-                            }}> <Form></Form> </div>}
+                            <div className="contact-form"> <Form></Form> </div>}
                     </div>
                 </div>
 

@@ -64,6 +64,7 @@ import pic64 from '../../pic/portfolio/portfolio-img (64).jpg';
 import pic65 from '../../pic/portfolio/portfolio-img (65).jpg';
 import pic66 from '../../pic/portfolio/portfolio-img (66).jpg';
 
+import './Portfolio.css';
 import React, { useState, useEffect } from 'react';
 import translate from '../../translation/do-translate';
 
@@ -91,11 +92,11 @@ export const Images = (props) => {
                 {!bigPicture ? null :
                     <div className="big-img-div row" style={{ width: '100%' }} >
 
-                        <div style={{ width: '60%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div className="big-pic">
                             <img src={bigPicture} alt="" className="big-img" />
                             <button className="close-b" type="button" onClick={() => setBigPicture(null)}><i className="fas fa-times  fa-3x"></i></button>
                         </div>
-                        <div className="column" style={{ width: '30%', height: ' 1100px', marginLeft: '10%', overflowX: 'auto' }}>
+                        <div className="column overflow-div" style={{ width: '30%', height: ' 1100px', marginLeft: '10%', overflowX: 'auto' }}>
                             {/* {IMAGES.map((element) => {
                                 return (
                                     <img className="thumbnail" alt="..."

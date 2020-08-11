@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import translate from '../../translation/do-translate';
+import './Coating.css';
 
 
 import texture_1 from '../../pic/coating/coat-1 (1).JPG';

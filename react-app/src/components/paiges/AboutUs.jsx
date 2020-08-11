@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import sign from '../../pic/about/sign.jpg';
 import translate from '../../translation/do-translate';
+import './AboutUs.css';
+
 
 export const AboutUs = (props) => {
 

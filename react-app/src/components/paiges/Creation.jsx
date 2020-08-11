@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import translate from '../../translation/do-translate';
+import './Creation.css';
 
 import ReactCompareImage from 'react-compare-image';
 import photo_1 from '../../pic/creation/photo-1.jpg';
@@ -124,12 +125,12 @@ export const Creation = (props) => {
 
 export const RenderImages = (props) => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', marginTop: '5%' }}>
-            <div style={{ width: '55%' }}>
+        <div className="img-row">
+            <div className="img-row1">
                 <ReactCompareImage leftImage={sketch_1} rightImage={photo_1} />
             </div>
 
-            <div style={{ width: '45%', paddingLeft: '2%' }}>
+            <div className="img-row2">
                 <ReactCompareImage leftImage={sketch_2} rightImage={photo_2} />
             </div>
         </div>

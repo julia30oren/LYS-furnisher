@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import translate from '../../translation/do-translate';
 import Form from '../Form';
+import './Contacts.css';
+
 
 export const ContactUs = (props) => {
 
@@ -15,11 +17,11 @@ export const ContactUs = (props) => {
                 <h2 className="_title">{translate('contacts-1-text')}</h2>
             </div>
 
-            <div className="content row">
-                <div style={{ width: '50%', marginTop: '5%', marginBottom: '7%' }}>
+            <div className="content">
+                <div className="contact-div">
                     <Form></Form>
                 </div>
-                <div className="column" style={{ width: '50%', marginTop: '5%', marginBottom: '7%' }}>
+                <div className="column contact-div">
                     <div style={{
                         width: '100%',
                         marginTop: '5%',
