@@ -21,12 +21,9 @@ export const Home = (props) => {
 
     return (
         <div className="column" style={{ width: '100%' }}>
-            {/* <div className="opening"> */}
             <video autoPlay loop muted className="openingVid" >
                 <source src={openingVid} type="video/mp4" />
             </video>
-            {/* <div className="yellow-box-one"></div> */}
-            {/* </div> */}
 
             <div className="HomeFirst">
                 <div className="text2">
