@@ -2,9 +2,13 @@ import React, { useEffect } from 'react';
 import pictcher1 from '../../pic/IMG_4108.jpg';
 import pictcher2 from '../../pic/IMG_52508.jpg';
 import pictcher3 from '../../pic/IMG_3245.jpg';
-import pictcher4 from '../../pic/DSC_0833.jpg';
+import pictcher4 from '../../pic/DSC_0495.jpg';
+import pictcher5 from '../../pic/DSC_0764.jpg';
+import family from '../../pic/aboutUs.jpg';
 import fenix from '../../pic/DSC_0200.JPG';
+import sketch from '../../pic/urn_cambridge.org_id_binary_20190806050935696-0565_9780511979743_47071fig12_40.png';
 import openingVid from '../../videos/fox_welcome_vid2.mp4';
+import './Home.css';
 
 import translate from '../../translation/do-translate';
 
@@ -16,28 +20,20 @@ export const Home = (props) => {
 
 
     return (
-        <div className="HomeMain">
-            <div className="opening">
-                <video autoPlay loop muted className="openingVid" >
-                    <source src={openingVid} type="video/mp4" />
-                </video>
-                <div className="yellow-box-one"></div>
-            </div>
+        <div className="column" style={{ width: '100%' }}>
+            {/* <div className="opening"> */}
+            <video autoPlay loop muted className="openingVid" >
+                <source src={openingVid} type="video/mp4" />
+            </video>
+            {/* <div className="yellow-box-one"></div> */}
+            {/* </div> */}
 
             <div className="HomeFirst">
-                <div style={{
-                    width: '20%',
-                    marginLeft: '7%',
-                    marginTop: '250px',
-                    top: '750'
-                }}>
-                    <p style={{
-                        fontSize: 'large'
-                    }}>
-                        {translate('home-1-text')}</p>
+                <div className="text2">
+                    <p> {translate('home-1-text')}</p>
                 </div>
                 <div className="yellow-box-two"></div>
-                <img src={fenix} alt="fenix" className="img-one" />
+                <div className="fenix"><img src={fenix} alt="fenix" style={{ width: '100%' }} /></div>
                 <p className="LYS" style={{
                     fontSize: '200px',
                     fontFamily: 'Futara',
@@ -46,7 +42,7 @@ export const Home = (props) => {
                     LYS</p>
             </div>
 
-            <div className="column">
+            <div className="HomeSecond column">
                 <div style={{
                     fontSize: 'xx-large',
                     width: '100%',
@@ -54,68 +50,29 @@ export const Home = (props) => {
                 }}>
                     {translate('home-2-text')}</div>
                 <br />
-                <div className="img-family"></div>
-                <div className="yellow-box-three" style={{
-                    fontSize: 'x-large',
-                    width: '20%',
-                    textAlign: 'center',
-                    backgroundColor: 'rgb(255, 166, 0)',
-                    padding: '3%'
-                }}>
+                <img className="img-family" src={family} alt="..." />
+                <div className="yellow-box-three">
                     {translate('home-3-text')} &laquo;LYS&raquo; .</div>
-                {/* <img className="logo" src={} alt="" /> */}
+                <img className="sketch" src={sketch} alt="..." />
                 <div className="text3">
                     <p>{translate('home-4-text')}</p>
                 </div>
             </div>
 
-            <div className="column">
+            <div className="HomeTherd column">
                 <div className="row">
-                    <div style={{
-                        width: '35%',
-                        fontSize: 'x-large',
-                        // marginTop: '15%',
-                        marginLeft: '5%'
-                    }}>
+                    <div className="text4">
                         {translate('home-5-text')}
                     </div>
-                    <img className="img-1" src={pictcher4} alt="" />
+                    <img className="img-1" src={pictcher4} alt="..." />
                 </div>
                 <div className="row">
-                    <div className="img-2"></div>
-                    <p style={{
-                        padding: '2%',
-                        fontSize: 'xx-large',
-                        backgroundColor: 'rgb(255, 166, 0)',
-                        marginLeft: '55%',
-                        marginTop: '30%',
-                        zIndex: '4',
-                        textAlign: 'center',
-                        width: '600px',
-                        fontFamily: 'Century Gothic'
-
-                    }}>
-                        {translate('home-6-text')}</p>
+                    <img className="img-2" src={pictcher5} alt="..." />
+                    <p className="text5">{translate('home-6-text')}</p>
                 </div>
                 <div className="row">
-                    <div style={{
-                        width: '50%',
-                        color: 'white',
-                        zIndex: '4',
-                        fontSize: 'xx-large',
-                        marginLeft: '5%',
-                        marginTop: '5%',
-                    }}>
-                        {translate('home-7-text')}</div>
-                    <div style={{
-                        width: '20%',
-                        marginLeft: '77%',
-                        marginTop: '5%',
-                        fontSize: 'large',
-                        textAlign: 'center',
-
-                    }}>
-                        {translate('home-8-text')}</div>
+                    <div className="text6">{translate('home-7-text')}</div>
+                    <div className="text7">{translate('home-8-text')}</div>
                 </div>
                 <br /><br />
                 <div style={{
@@ -126,9 +83,9 @@ export const Home = (props) => {
                     {translate('home-9-text')}</div>
             </div>
 
-            <div className="HomeFourth" style={{ height: '700px' }}>
+            <div className="HomeFourth">
                 <br />
-                <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{ height: '650px' }}>
+                <div id="myCarousel" className="carousel slide" data-ride="carousel">
                     {/* <!-- Indicators --> */}
                     <ol className="carousel-indicators" >
                         <li data-target="#myCarousel" data-slide-to="0" className="active">
@@ -140,29 +97,36 @@ export const Home = (props) => {
                     </ol>
 
                     {/* <!-- Wrapper for slides --> */}
-                    <div className="carousel-inner" style={{ height: '100%' }}>
+                    <div className="carousel-inner">
                         <div className="item active">
+
+
                             <div className="carousel-div">
-                                <p style={{ textAlign: 'center', fontSize: 'x-large' }}>
-                                    {translate('home-10-text')}</p>
+                                <p className="carousel-text">
+                                    {translate('home-10-text')}
+                                </p>
+                                <img className='im' src={pictcher1} alt="pictcher1" />
                             </div>
-                            <img src={pictcher1} alt="pictcher1" style={{ width: '100%' }} />
                         </div>
 
                         <div className="item">
                             <div className="carousel-div">
-                                <p style={{ textAlign: 'center', fontSize: 'x-large' }}>
-                                    {translate('home-11-text')}</p>
+                                <p className="carousel-text">
+                                    {translate('home-11-text')}
+                                </p>
+                                <img className='im' src={pictcher2} alt="pictcher2" />
                             </div>
-                            <img src={pictcher2} alt="pictcher2" style={{ width: '100%' }} />
+
                         </div>
 
                         <div className="item">
                             <div className="carousel-div">
-                                <p style={{ textAlign: 'center', fontSize: 'x-large' }}>
-                                    {translate('home-12-text')}</p>
+                                <p className="carousel-text">
+                                    {translate('home-12-text')}
+                                </p>
+                                <img className='im' src={pictcher3} alt="pictcher3" />
                             </div>
-                            <img src={pictcher3} alt="pictcher3" style={{ width: '100%' }} />
+
                         </div>
                     </div>
 
