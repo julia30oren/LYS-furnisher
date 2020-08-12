@@ -83,6 +83,7 @@ function App() {
                         </Switch>
                         <Footer></Footer>
                         <br />
+                        <div style={{ width: '100%', textAlign: 'center' }}>This site was designed and created by <a href="https://www.linkedin.com/in/julia-orendovskyi-026a30b6/">Julia Oren</a> & <a href="https://www.linkedin.com/in/iyar-nitzan-576184110/">Iyar Nitzan</a></div>
                     </div>
 
                     <div className="right-side-top">
