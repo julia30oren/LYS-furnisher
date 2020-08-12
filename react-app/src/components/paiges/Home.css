@@ -5,10 +5,7 @@
 } */
         
         .openingVid {
-            /* position: absolute;
-    top: 0; */
             width: 100%;
-            /* z-index: 1; */
         }
         /* .yellow-box-one {
     position: absolute;
@@ -19,6 +16,18 @@
     height: 50%;
     background-color: rgb(255, 166, 0);
 } */
+        
+        @media screen and (max-width: 1100px) {
+            .openingVid {
+                margin-top: 10%;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .openingVid {
+                margin-top: 15%;
+            }
+        }
         
         .HomeFirst {
             margin-top: 80px;

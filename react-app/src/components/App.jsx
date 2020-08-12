@@ -28,23 +28,39 @@ function App() {
 
     const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
     const [contactForm, setContactForm] = useState(false);
+    const [navbar, setNavbarOpen] = useState(false);
+
 
     return (
         <MyProvider locale={locale}>
             <BrowserRouter>
                 <div className="App" style={{ display: 'flex' }}>
 
-                    <div className="left-side-top"
-                        style={{
-                            width: '20%',
-                            position: 'fixed',
-                            left: '0'
-                        }}
-                    >
-                        <img src={logo} alt="Logo" style={{ width: '90%' }} />
+                    <div className="left-side-top">
+                        <img src={logo} alt="Logo" className="nav-logo" />
+                        <button className="burger-button" type="button" onClick={() => setNavbarOpen(!navbar)}>
+                            {navbar ? <i className="fas fa-times  fa-2x"></i> : <i className="fas fa-bars fa-3x"></i>}
+                        </button>
                     </div>
+                    {!navbar ? null :
+                        <div className="nuv-div">
+                            <ul className="nuv-lu">
+                                <li className="nav-item">
+                                    <AppLinks />
+                                    <p className="nav-links -t">
+                                        <button onClick={() => { setLocale(LOCALES.UKRAINIAN) }} className="lang-button">
+                                            <p className="-t">Укр.</p></button>/
+                                        <button onClick={() => { setLocale(LOCALES.RUSSIAN) }} className="lang-button">
+                                            <p className="-t">Рус.</p></button>/
+                                        <button onClick={() => { setLocale(LOCALES.ENGLISH) }} className="lang-button">
+                                            <p className="-t">Eng.</p></button>
+                                        <i className="fas fa-angle-double-right"></i>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>}
 
-                    <div className="left-side-bottom">
+                    <div className="NavBar NavBar-burgerOpen">
                         <ul>
                             <li className="nav-item">
                                 <AppLinks />
