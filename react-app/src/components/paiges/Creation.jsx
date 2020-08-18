@@ -23,11 +23,11 @@ export const Creation = (props) => {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div className="vid-row titles-div">
+            {/* <div className="vid-row titles-div">
                 <h2 className="_title">{translate('creation-1-text')}</h2>
             </div>
 
-            <br />
+            <br /> */}
 
             <div className="vid-row">
                 <div className="video-div-left">

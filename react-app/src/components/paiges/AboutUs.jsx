@@ -12,10 +12,6 @@ export const AboutUs = (props) => {
 
     return (
         <div>
-            <div className="vid-row titles-div">
-                <h2 className="_title">{translate('about-0-text')}</h2>
-            </div>
-
             <div className="parallax par-1"></div>
 
             <div className="aboutTextDiv">

@@ -6,7 +6,7 @@ import pictcher4 from '../../pic/DSC_0495.jpg';
 import pictcher5 from '../../pic/DSC_0764.jpg';
 import family from '../../pic/aboutUs.jpg';
 import fenix from '../../pic/DSC_0200.JPG';
-import sketch from '../../pic/urn_cambridge.org_id_binary_20190806050935696-0565_9780511979743_47071fig12_40.png';
+import wood_1 from '../../pic/ff3b5c6f6f7fd8bb4d295975a82c32bc.jpg'
 import openingVid from '../../videos/fox_welcome_vid2.mp4';
 import './Home.css';
 
@@ -19,65 +19,58 @@ export const Home = (props) => {
     }, []);
 
 
+
     return (
         <div className="column" style={{ width: '100%' }}>
             <video autoPlay loop muted className="openingVid" >
                 <source src={openingVid} type="video/mp4" />
             </video>
+            <div className="video-text">
+                <div className="vl"></div>
+                <p className="vid-t"> {translate('loz')} </p>
+            </div>
+            <p className="LYS">LYS</p>
 
             <div className="HomeFirst">
-                <div className="text2">
-                    <p> {translate('home-1-text')}</p>
+                <div className="text-1">
+                    <p style={{ padding: '5%' }}> {translate('home-1-text')}</p>
+                    <img className="wood-1" src={wood_1} alt="wood 1" />
+                    <p style={{ padding: '5%' }}> {translate('home-2-text')}</p>
                 </div>
-                <div className="yellow-box-two"></div>
-                <div className="fenix"><img src={fenix} alt="fenix" style={{ width: '100%' }} /></div>
-                <p className="LYS" style={{
-                    fontSize: '200px',
-                    fontFamily: 'Futara',
-                    color: 'rgba(128, 128, 128, 0.3)'
-                }}>
-                    LYS</p>
+                <div className="fenix">
+                    <img src={fenix} alt="fenix" style={{ width: '100%' }} />
+                </div>
             </div>
 
-            <div className="HomeSecond column">
-                <div style={{
-                    fontSize: 'xx-large',
-                    width: '100%',
-                    textAlign: 'center'
-                }}>
-                    {translate('home-2-text')}</div>
-                <br />
+            <div className="HomeSecond">
+                <div className="wood-2">
+                    <p> {translate('home-5-text')} </p>
+                    <p> {translate('home-3-text')} &laquo;LYS&raquo; .</p>
+                </div>
                 <img className="img-family" src={family} alt="..." />
-                <div className="yellow-box-three">
-                    {translate('home-3-text')} &laquo;LYS&raquo; .</div>
-                <img className="sketch" src={sketch} alt="..." />
-                <div className="text3">
-                    <p>{translate('home-4-text')}</p>
-                </div>
+                {/* <img className="sketch" src={sketch} alt="..." /> */}
+                <p className="handmaid">{translate('home-6-text')}</p>
             </div>
 
-            <div className="HomeTherd column">
-                <div className="row">
-                    <div className="text4">
-                        {translate('home-5-text')}
-                    </div>
+            <div className="HomeTherd">
+                <div className="row-3">
+                    <div className="img-2"></div>
+                    <p className="txt">{translate('home-4-text')}</p>
                     <img className="img-1" src={pictcher4} alt="..." />
                 </div>
-                <div className="row">
-                    <img className="img-2" src={pictcher5} alt="..." />
-                    <p className="text5">{translate('home-6-text')}</p>
+                <div className="row-3">
+                    <img className="img-1" src={pictcher5} alt="..." />
+                    <p className="txt">{translate('home-5-text')}</p>
+                    <div className="img-3"></div>
                 </div>
-                <div className="row">
-                    <div className="text6">{translate('home-7-text')}</div>
-                    <div className="text7">{translate('home-8-text')}</div>
+
+
+
+                <div className="wood-2">
+                    <p>{translate('home-7-text')}</p>
+                    <p>{translate('home-8-text')}</p>
                 </div>
-                <br /><br />
-                <div style={{
-                    fontSize: 'xxx-large',
-                    textAlign: 'center',
-                    fontFamily: 'Century Gothic'
-                }}>
-                    {translate('home-9-text')}</div>
+
             </div>
 
             <div className="HomeFourth">
@@ -138,7 +131,8 @@ export const Home = (props) => {
                     </a>
                 </div>
             </div>
-        </div>
+            <p className="delivery-txt"> {translate('home-9-text')}</p>
+        </div >
     )
 }
 

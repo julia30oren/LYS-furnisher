@@ -1,294 +1,234 @@
-        /* .opening {
-    height: 10%;
-    position: absolute;
-    top: 0;
-} */
+        /* VIDIO */
         
         .openingVid {
             width: 100%;
-        }
-        /* .yellow-box-one {
-    position: absolute;
-    top: 0;
-    left: 60%;
-    z-index: 0;
-    width: 20%;
-    height: 50%;
-    background-color: rgb(255, 166, 0);
-} */
-        
-        @media screen and (max-width: 1100px) {
-            .openingVid {
-                margin-top: 10%;
-            }
+            border: black solid 1px;
         }
         
-        @media screen and (max-width: 600px) {
-            .openingVid {
-                margin-top: 15%;
-            }
-        }
-        
-        .HomeFirst {
-            margin-top: 80px;
+        .video-text {
+            color: white;
+            position: absolute;
+            left: 50px;
             display: flex;
             flex-direction: row;
+            font-size: 200%;
+            width: 50%;
         }
         
-        .yellow-box-two {
-            height: 300px;
-            width: 20%;
-            background-color: rgb(255, 166, 0);
-            position: absolute;
-            margin-top: 30%;
-            left: 38%;
+        .vl {
+            border-left: 15px solid white;
+            height: 200px;
+        }
+        
+        .vid-t {
+            height: 200px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: Noto;
         }
         
         .LYS {
-            transform: rotate(-90deg);
-            -webkit-transform: rotate(-90deg);
-            -moz-transform: rotate(-90deg);
-            position: absolute;
-            margin-top: 25%;
-            right: 20%;
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .HomeFirst {
-                display: flex;
-                flex-direction: column;
-            }
-            .yellow-box-two {
-                height: 300px;
-                width: 50%;
-                position: absolute;
-                margin-top: 3%;
-                left: 20%;
-            }
-            .LYS {
-                position: absolute;
-                margin-top: 5%;
-                right: 30%;
-            }
-        }
-        
-        .text2 {
-            font-size: x-large;
-            width: 20%;
-            margin-left: 7%;
-            margin-top: 250px;
-            top: 750;
-        }
-        
-        .fenix {
-            width: 40%;
-            z-index: 2;
-            margin-left: 10%;
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .LYS {
-                right: 5%;
-            }
-            .fenix {
-                width: 100%;
-                z-index: 2;
-                margin-left: 0%;
-            }
-            .text2 {
-                font-size: larger;
-                width: 90%;
-                margin-left: 5%;
-                margin-top: 450px;
-                top: 750;
-            }
+            font-size: 180px;
+            font-family: Noto;
+            color: rgba(128, 128, 128, 0.3);
+            width: 100%;
+            text-align: center;
         }
         
         @media screen and (max-width: 800px) {
+            .video-text {
+                font-size: 100%;
+                width: 30%;
+                left: 40px;
+            }
+            .vl {
+                border-left: 10px solid white;
+                height: 130px;
+            }
+            .vid-t {
+                padding: 20px;
+                height: 130px;
+            }
             .LYS {
-                right: 1%;
-            }
-            .fenix {
-                width: 100%;
-                z-index: 2;
-                margin-left: 0%;
-            }
-            .text2 {
-                font-size: medium;
-                width: 90%;
-                margin-left: 5%;
-                margin-top: 350px;
-                top: 750;
+                font-size: 130px;
             }
         }
         
+        @media screen and (max-width: 500px) {
+            .video-text {
+                font-size: 85%;
+                width: 40%;
+                left: 30px;
+            }
+            .vl {
+                border-left: 5px solid white;
+                height: 100px;
+            }
+            .vid-t {
+                padding: 10px;
+                height: 100px;
+            }
+            .LYS {
+                font-size: 100px;
+            }
+        }
+        /* 1 */
+        
+        .HomeFirst {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        
+        .text-1 {
+            font-size: 140%;
+            width: 45%;
+            margin-left: 5%;
+        }
+        
+        .fenix {
+            width: 45%;
+        }
+        
+        .wood-1 {
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .text-1 {
+                font-size: 100%;
+                width: 50%;
+                margin-left: 0%;
+            }
+            .fenix {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .text-1 {
+                font-size: 60%;
+                width: 40%;
+            }
+            .fenix {
+                width: 60%;
+            }
+        }
+        /* 2 */
+        
         .HomeSecond {
-            margin-top: 300px;
+            width: 100%;
+            padding: 5%;
         }
         
         .img-family {
             width: 100%;
+            margin-top: -10px;
         }
         
-        .yellow-box-three {
-            position: absolute;
-            right: 20%;
-            margin-top: 46%;
-            font-size: x-large;
-            width: 20%;
+        .wood-2 {
+            width: 100%;
+            font-size: 140%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .handmaid {
+            font-size: 110px;
+            font-family: Noto;
+            color: rgba(128, 128, 128, 0.3);
+            width: 100%;
             text-align: center;
-            background-color: rgb(255, 166, 0);
-            padding: 3%;
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .HomeSecond {
-                margin-top: 20px;
-            }
-            .yellow-box-three {
-                right: 0%;
-                margin-top: 70%;
-                font-size: large;
-                width: 50%;
-                padding: 1%;
-            }
-        }
-        
-        .sketch {
-            width: 80%;
-        }
-        
-        .text3 {
-            width: 23%;
-            margin-left: 70%;
-            font-size: large;
-        }
-        
-        .text4 {
-            width: 35%;
-            font-size: x-large;
-            margin-left: 4%;
-            margin-top: 10%;
         }
         
         @media screen and (max-width: 800px) {
-            .yellow-box-three {
-                right: 0%;
-                margin-top: 120%;
-                font-size: medium;
-                width: 70%;
-                padding: 1%;
+            .HomeSecond {
+                padding: 0;
             }
-            .text3 {
-                width: 63%;
-                margin-left: 30%;
-                font-size: large;
-            }
-            .text4 {
+            .img-family {
                 width: 100%;
-                font-size: medium;
-                left: 4%;
+                margin-top: -10px;
+            }
+            .wood-2 {
+                font-size: 90%;
+            }
+            .handmaid {
+                font-size: 90px;
             }
         }
-        /* .HomeTherd {
-    margin-top: 30%;
-} */
+        
+        @media screen and (max-width: 500px) {
+            .wood-2 {
+                font-size: 60%;
+            }
+            .handmaid {
+                font-size: 50px;
+            }
+        }
+        /* 3 */
+        
+        .HomeTherd {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+        }
+        
+        .row-3 {
+            display: flex;
+            flex-direction: row;
+        }
         
         .img-1 {
-            position: absolute;
-            width: 35%;
-            right: 20%;
-            margin-top: 2%;
+            width: 50%;
         }
         
         .img-2 {
-            position: absolute;
-            width: 45%;
-            margin-top: 2%;
-            left: 20%
-        }
-        
-        .text5 {
-            padding: 2%;
-            font-size: xx-large;
-            background-color: rgb(255, 166, 0);
-            margin-left: 55%;
-            margin-top: 15%;
-            z-index: 4;
-            text-align: center;
-            width: 40%;
-            font-family: Century Gothic;
-        }
-        
-        @media screen and (max-width: 1000px) {
-            .img-1 {
-                position: absolute;
-                width: 55%;
-                right: 0%;
-                margin-top: 2%;
-            }
-            .img-2 {
-                position: absolute;
-                width: 75%;
-                margin-top: 2%;
-                left: 0%
-            }
-            .text5 {
-                font-size: x-large;
-            }
-        }
-        
-        .text6 {
-            width: 50%;
-            color: white;
-            z-index: 4;
-            font-size: xx-large;
-            margin: 5%;
-        }
-        
-        .text7 {
             width: 20%;
-            margin-left: 77%;
-            margin-top: -8%;
-            font-size: large;
-            text-align: center;
+            background-image: url('https://thepaintpeople.com/wp-content/uploads/2015/09/prepare-bare-wood-staining.jpg');
         }
         
-        @media screen and (max-width: 750px) {
-            .img-1 {
-                position: absolute;
-                width: 100%;
-                right: 0%;
-                margin-top: 30%;
+        .img-3 {
+            width: 20%;
+            background-image: url('https://storage.needpix.com/rsynced_images/wood-328244_1280.jpg');
+        }
+        
+        .txt {
+            width: 30%;
+            text-align: center;
+            font-size: 140%;
+            padding: 5%;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .HomeTherd {
+                padding: 0;
             }
-            .img-2 {
-                position: absolute;
-                width: 100%;
-                margin-top: 60%;
-                left: 0%
-            }
-            .text5 {
-                font-size: large;
-            }
-            .text6 {
-                width: 70%;
-                z-index: 4;
-                font-size: large;
-                margin: 5%;
-                margin-top: 30%;
-            }
-            .text7 {
-                width: 100%;
+            .txt {
+                width: 40%;
                 padding: 2%;
-                font-size: medium;
-                margin-top: 60%;
-                margin-left: 0%;
+                font-size: 110%;
             }
         }
+        
+        @media screen and (max-width: 500px) {
+            .txt {
+                padding: 1%;
+                font-size: 60%;
+            }
+        }
+        /* 4 */
         
         .HomeFourth {
             display: flex;
             flex-direction: column;
+        }
+        
+        .delivery-txt {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
         }
         
         .im {
@@ -298,15 +238,15 @@
         
         .carousel-text {
             text-align: center;
-            font-size: x-large;
-            min-height: 200px;
+            font-size: medium;
+            /* min-height: 200px; */
             position: absolute;
-            bottom: 0;
+            bottom: 10px;
             background-color: rgba(0, 0, 0, 0.5);
             width: 50%;
             margin-left: 25%;
             color: white;
-            padding: 5%;
+            padding: 3%;
         }
         
         #myCarousel {

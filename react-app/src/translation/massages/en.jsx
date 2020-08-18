@@ -77,7 +77,7 @@ export default {
         "coating-7-row-4": "Patina.",
         "coating-7-row-5": "Varnish.",
         "coating-7-row-6": "The difference of this technique is that the coating mimics the surface of the fabric. Embossing of fibers gives a textured relief, and drawing of a patina of various shades, emphasizes structure of weaving of threads. The image is completed by the absolute matte surface, which gives the feeling of natural linen.",
-        "coating-8-row-1": "Provence French with the invoice «brush»",
+        "coating-8-row-1": "Provence French with the texture «brush»",
         "coating-8-row-2": "Texture paste.",
         "coating-8-row-3": "Enamel.",
         "coating-8-row-4": "Patina.",

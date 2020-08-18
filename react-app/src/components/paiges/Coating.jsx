@@ -49,10 +49,7 @@ export const Coating = (props) => {
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '5%' }}>
-            <div className="vid-row titles-div">
-                <h2 className="_title">{translate('coating-1-text')}</h2>
-            </div>
+        <div className="Coating">
 
             <div onClick={() => setToningOpen(!toningOpen)} className="column part" style={{ width: '100%' }}>
                 <h4>{translate('coating-2-row-1')} {!toningOpen ? <i className="fas fa-angle-double-right"></i> : <i className="fas fa-angle-down"></i>}</h4>
