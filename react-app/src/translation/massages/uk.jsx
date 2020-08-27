@@ -117,12 +117,7 @@ export default {
         "contact-page-name-label": "Ваше ім'я:",
         "contact-page-email-label": "Адреса електронної пошти:",
         "contact-page-phone-label": "Ваш телефон:",
-        "contact-page-subject-label": "Тема:",
-        "contact-page-subject-option-1": "Передзвоніть мені, будь ласка",
-        "contact-page-subject-option-2": "Перевірити ціни",
-        "contact-page-subject-option-3": "Уточнити терміни",
-        "contact-page-subject-option-4": "Сумісна співпраця",
-        "contact-page-subject-option-5": "Інше...",
+
         "contact-page-message-label": "Ваше повідомлення:",
         "contact-page-button-text": "Надіслати",
         "contacts-2-text": "Наше місцезнаходження",
@@ -132,5 +127,18 @@ export default {
         "contacts-6-text": "49.757722, 24.011444",
         "contacts-7-text": "Ви можете зв'язатися з нами в любий час за телефоном:",
         "contacts-8-text": "+380 98 600 71 36",
+
+        "name-input-placeholder": "Введіть ім'я",
+        "email-radio-span": "Електронна пошта",
+        "phone-radio-span": "Телефон",
+        "email-input-placeholder": "Введіть електронну пошту",
+        "phone-input-placeholder": "Введіть телефон",
+        "missing-fields-alert": "Ви не заповнили всі необхідні поля",
+        "email-sent": "Листа відправлено",
+        "problem-email": "Проблема з надсиланням електронної пошти",
+        "problem-message": "Повідомлення занадто довге / коротке",
+        "problem-email-not-valid": "Неправильнф електронна пошта",
+        "problem-phone-not-valid": "Недійсний номер телефону",
+        "problem-name": "Недійсне ім’я"
     }
 }

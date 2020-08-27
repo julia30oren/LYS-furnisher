@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Portfolio.css';
 
 const BigImg = ({ className, src, onClick }) => {

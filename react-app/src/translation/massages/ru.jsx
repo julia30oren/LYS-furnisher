@@ -122,12 +122,7 @@ export default {
         "contact-page-name-label": "Ваше имя:",
         "contact-page-email-label": "Адрес электронной почты:",
         "contact-page-phone-label": "Ваш телефон:",
-        "contact-page-subject-label": "Тема:",
-        "contact-page-subject-option-1": "Перезвоните мне, пожалуйста",
-        "contact-page-subject-option-2": "Узнаць цены",
-        "contact-page-subject-option-3": "Уточнить сроки выполнения",
-        "contact-page-subject-option-4": "Совместное сотрудничество",
-        "contact-page-subject-option-5": "Другое...",
+
         "contact-page-message-label": "Сообщение:",
         "contact-page-button-text": "Отправить",
         "contacts-2-text": "Наше местонахождение",
@@ -137,5 +132,18 @@ export default {
         "contacts-6-text": "49.757722, 24.011444",
         "contacts-7-text": "Вы можете связаться с нами в любое время по телефону:",
         "contacts-8-text": "+380 98 600 71 36",
+
+        "name-input-placeholder": "Введите ваше имя",
+        "email-radio-span": "Эл. адрес",
+        "phone-radio-span": "Телефон",
+        "email-input-placeholder": "Введите адрес электронной почты",
+        "phone-input-placeholder": "Введите телефон",
+        "missing-fields-alert": "Вы не заполнили все необходимые поля",
+        "email-sent": "Письмо отправлено",
+        "problem-email": "Проблема с отправкой электронной почты",
+        "problem-message": "Сообщение слишком длинное / короткое",
+        "problem-email-not-valid": "Электронная почта недействительна",
+        "problem-phone-not-valid": "Invalid Phone number",
+        "problem-name": "Неправильное имя"
     }
 }
