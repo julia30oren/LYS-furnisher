@@ -1,0 +1,171 @@
+.Coating {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coating-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.texture-img {
+    border-radius: 50%;
+    border: rgba(68, 68, 68, 0.781) solid 0.5px;
+    -webkit-box-shadow: 0px 0px 40px -9px #000000;
+    box-shadow: 0px 0px 40px -9px #000000;
+    background-size: 400px 400px;
+}
+
+.img-1 {
+    height: 200px;
+    width: 200px;
+    background-image: url('https://i.pinimg.com/originals/73/ef/94/73ef9427c4d1079538af3cb868937107.jpg');
+}
+
+.img-1:hover {
+    background-image: url('https://i.pinimg.com/originals/0b/67/ca/0b67ca6ce53a80d432a173a3a14bf9ad.jpg');
+    background-size: 300px 300px;
+}
+
+.img-2 {
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/af/ac/43/afac43761d97d62cb0ff3572f36b8fc7.jpg');
+}
+
+.img-2:hover {
+    background-image: url('https://i.pinimg.com/originals/7f/bc/e1/7fbce1497719dbc2861436463cb7edff.jpg');
+    background-size: 600px 600px;
+}
+
+.img-3 {
+    height: 350px;
+    width: 350px;
+    background-image: url('https://i.pinimg.com/originals/93/0d/f2/930df29396a511381a1f56a520c5a3ea.jpg');
+}
+
+.img-3:hover {
+    background-image: url('https://i.pinimg.com/originals/64/b2/59/64b25972c870383a1e7d510819abfc63.jpg');
+    background-size: 400px 400px;
+}
+
+.img-4 {
+    height: 250px;
+    width: 250px;
+    background-image: url('https://i.pinimg.com/originals/03/e2/d6/03e2d6db4959d9c831b089211410cc0e.jpg');
+}
+
+.img-4:hover {
+    background-image: url('https://i.pinimg.com/originals/b4/d4/1d/b4d41d9ba6b2bb99f497962702aaad09.jpg');
+    background-size: 400px 400px;
+}
+
+.img-5 {
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/c2/9e/94/c29e949764a48b945ce4839396509997.jpg');
+}
+
+.img-5:hover {
+    background-image: url('https://i.pinimg.com/originals/f2/71/df/f271dfea9a4de7c46c006063a9bca755.jpg');
+    background-size: 300px 300px;
+}
+
+.img-6 {
+    height: 200px;
+    width: 200px;
+    background-image: url('https://i.pinimg.com/originals/dd/b4/e2/ddb4e24cc691b2a712f52e9cc2293acf.jpg');
+}
+
+.img-6:hover {
+    background-image: url('https://i.pinimg.com/originals/86/f5/aa/86f5aa8da14cee36434498903d4a7f39.jpg');
+    background-size: 500px 500px;
+}
+
+.img-7 {
+    height: 250px;
+    width: 250px;
+    background-image: url('https://i.pinimg.com/originals/49/a1/e2/49a1e23f89a1f2e22682d90d4107beab.jpg');
+}
+
+.img-7:hover {
+    background-image: url('https://i.pinimg.com/originals/14/bc/d2/14bcd2f3bf5a7f9ff4abd22d8e65ca9f.jpg');
+    background-size: 250px 250px;
+}
+
+.img-8 {
+    height: 350px;
+    width: 350px;
+    background-image: url('https://i.pinimg.com/564x/40/b6/f5/40b6f52f735ed818ee187f6a01404224.jpg');
+    background-size: 350px 350px;
+}
+
+.img-8:hover {
+    background-image: url('https://i.pinimg.com/originals/39/60/01/3960010461dca1592be6a3f0db67fdcd.jpg');
+    background-size: 350px 550px;
+}
+
+.texture-txt {
+    height: 100%;
+    margin: auto;
+    width: 65%;
+    padding-left: 5%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    font-size: larger;
+}
+
+.list,
+.sm-text {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+    .Coating {
+        padding: 0;
+    }
+    .coating-row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .texture-img {
+        height: 200px;
+        width: 200px;
+    }
+    .texture-txt {
+        width: 75%;
+        padding-left: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .coating-row {
+        flex-direction: column;
+    }
+    .texture-txt {
+        width: 100%;
+        padding: 2%;
+    }
+}

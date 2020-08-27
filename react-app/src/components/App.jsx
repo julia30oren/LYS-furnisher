@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
 import AppLinks from './appRouter/AppLinks';
-
+import Form from './Form';
 import { MyProvider, LOCALES } from '../translation';
 
 
@@ -121,9 +121,8 @@ function App() {
                             {!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}
                         </button>
                     </div>
-                    {/* {(!contactForm) ? null :
-                        <div className="contact-form"> <Form></Form> </div>} */}
-
+                    {(!contactForm) ? null :
+                        <div className="contact-form"> <Form></Form> </div>}
                 </div>
 
             </BrowserRouter >

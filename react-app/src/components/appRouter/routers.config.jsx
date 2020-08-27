@@ -1,10 +1,10 @@
 
-import Home from '../paiges/Home';
-import AboutUs from '../paiges/AboutUs';
-import Portfolio from '../paiges/Portfolio';
-import Creation from '../paiges/Creation';
-import Coating from '../paiges/Coating';
-import Contacts from '../paiges/Contacts';
+import Home from '../paiges/Home/Home';
+import AboutUs from '../paiges/AboutUs/AboutUs';
+import Creation from '../paiges/Creation/Creation';
+import Coating from '../paiges/Coating/Coating';
+import Portfolio from '../paiges/Portfolio/Portfolio';
+import Contacts from '../paiges/Contacts/Contacts';
 
 import translate from '../../translation/do-translate';
 

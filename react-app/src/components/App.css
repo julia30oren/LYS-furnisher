@@ -31,6 +31,16 @@
         
         .Nuv-div {
             min-width: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
         }
         
         .Nuv-logo {
@@ -75,8 +85,11 @@
         .nav-text,
         .Nav-lang {
             color: black;
-            font-size: 110%;
             padding: 3%;
+        }
+        
+        .Nav-lang {
+            font-size: 16px;
         }
         
         .nav-text:hover,
@@ -209,12 +222,19 @@
         }
         
         .contact-form {
-            position: absolute;
-            right: 60px;
-            bottom: 60px;
-            width: 300px;
-            height: 300px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            padding: 20px;
             background-color: white;
             border: solid 1px black;
-            padding: 10%;
+            padding-bottom: 50px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .contact-form {
+                padding: 10px;
+                bottom: 10px;
+                padding-bottom: 40px;
+            }
         }

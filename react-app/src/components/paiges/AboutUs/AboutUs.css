@@ -1,0 +1,121 @@
+.About-component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+}
+
+
+/* .photo-1 {
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    transform: rotate(-11deg);
+    -webkit-box-shadow: 0px 0px 40px -9px #000000;
+    box-shadow: 0px 0px 40px -9px #000000;
+    border: rgba(34, 34, 34, 0.5) solid 0.5px;
+}
+
+.photo-2 {
+    width: 45%;
+    margin-left: 50%;
+    margin-top: 10%;
+    z-index: -1;
+    -webkit-box-shadow: 0px 0px 20px -9px #000000a2;
+    box-shadow: 0px 0px 20px -9px #000000a2;
+    border: rgba(34, 34, 34, 0.2) solid 0.5px;
+}
+
+.leter {
+    width: 500px;
+    height: 650px;
+    z-index: 2;
+    margin-top: 5%;
+    margin-left: 40%;
+    background-image: url('https://i.pinimg.com/originals/73/9b/b8/739bb87fdd95dc677d7e8bc5b4389ff8.png');
+    background-size: 500px 650px;
+}
+
+.aboutTextDiv {
+    text-align: center;
+    width: 100%;
+    padding: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .leter {
+        width: 300px;
+        height: 450px;
+        background-size: 300px 450px;
+        font-size: 65%;
+        margin-top: 15%;
+    }
+    .photo-1 {
+        width: 60%;
+    }
+    .photo-2 {
+        width: 65%;
+    }
+} */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+}
+
+.par-1 {
+    background-image: url('https://i.pinimg.com/originals/03/3f/be/033fbebcc807f3272e7436d6bf6b727f.jpg');
+    background-size: 1000px 673px;
+}
+
+.par-2 {
+    background-image: url('https://i.pinimg.com/originals/ac/d0/30/acd0308e6c410615b16182062f8b29db.jpg');
+    background-size: 1000px 673px;
+}
+
+.aboutTextDiv {
+    width: 1000px;
+    padding: 2%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (max-width: 1100px) {
+    .About-component {
+        padding: 0;
+    }
+    .parallax {
+        height: 1000px;
+        width: 100%;
+    }
+    .aboutTextDiv {
+        padding: 0;
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .parallax {
+        height: 700px;
+        width: 800px;
+    }
+    .aboutTextDiv {
+        width: 700px;
+    }
+}

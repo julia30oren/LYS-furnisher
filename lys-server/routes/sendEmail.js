@@ -1,13 +1,14 @@
 const express = require("express")
 const router = express.Router();
 require("dotenv").config()
+const userValidation = require("../validations/validateUser")
 
+router.use(userValidation)
 
 const nodemailer = require("nodemailer");
 
 // async..await is not allowed in global scope, must use a wrapper
 router.post("/contact", async(req, res, next) => {
-    const { name, subject, phone, email, text } = req.body
     const main = async() => {
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
@@ -28,17 +29,16 @@ router.post("/contact", async(req, res, next) => {
         let info = await transporter.sendMail({
             from: process.env.SMTPHOSTEMAILUSER, // sender address
             to: process.env.DESIGNATEDSUPPORTEMAIL, // list of receivers
-            subject: `👻 Cообщение от «${name}» с сайта.`, // Subject line
-            // text: "lol?", // plain text body
+            // text: "Lorem", // plain text body
             html: `
-            <h3>Контактная информация:</h3>
+            <h2>Contact Request</h2>
+            <h3>Contact Details</h3>
             <ul>  
-              <li>Имя: ${name}</li>
-              <li>Почта: ${email}</li>
-              <li>Телефон: ${phone}</li>
+              <li>Name: ${req.body.name}</li>
+              <li>Contact Method: ${req.body.email || req.body.phone}</li>
             </ul>
-            <h3>Cообщение:</h3>
-            <p>${text}</p>
+            <h3>Message:</h3>
+            <p>${req.body.text}</p>
           `
         });
 
@@ -51,4 +51,4 @@ router.post("/contact", async(req, res, next) => {
 
 
 
-module.exports = router;
+module.exports = router

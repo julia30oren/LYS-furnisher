@@ -1,0 +1,198 @@
+        .Creation-component {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .vid-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 20px;
+        }
+        
+        .video-div-left {
+            width: 50%;
+            border-radius: 150px 0 0 150px;
+            margin-left: 20%;
+        }
+        
+        .text-bl-left {
+            width: 50%;
+            font-size: medium;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: italic;
+            font-variant: normal;
+            text-transform: none;
+        }
+        
+        .videos {
+            border: solid rgb(53, 52, 52) 1px;
+            border-radius: 50%;
+            -webkit-box-shadow: 0px 0px 40px -9px #000000;
+            box-shadow: 0px 0px 40px -9px #000000;
+        }
+        
+        .video-div-right {
+            width: 50%;
+            border-radius: 0 150px 150px 0;
+            margin-right: 10%;
+        }
+        
+        .text-bl-right {
+            width: 50%;
+            padding-right: 5%;
+            padding-left: 5%;
+            font-size: medium;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: normal;
+            text-decoration: none;
+            font-style: italic;
+            font-variant: normal;
+            text-transform: none;
+        }
+        
+        #video1 {
+            width: 55%;
+        }
+        
+        #video2 {
+            width: 70%;
+            margin-left: 5%;
+        }
+        
+        #video3 {
+            width: 65%;
+        }
+        
+        #video4 {
+            width: 50%;
+            margin-left: 25%;
+        }
+        
+        #video4-2 {
+            width: 70%;
+            margin-left: 45%;
+            margin-top: -20%;
+        }
+        
+        #video5 {
+            width: 75%;
+        }
+        
+        #video6 {
+            width: 45%;
+            margin-left: 15%;
+        }
+        
+        .big-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
+        }
+        
+        .text-3 {
+            margin-top: 50px;
+            font-size: 300%;
+            font-family: Noto;
+            color: rgba(128, 128, 128, 0.3);
+            width: 100%;
+            text-align: center;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .vid-row {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+            .text-bl-left {
+                width: 100%;
+                font-size: small;
+            }
+            .text-bl-right {
+                width: 100%;
+                font-size: small;
+            }
+            #video1 {
+                width: 100%;
+            }
+            #video2 {
+                width: 70%;
+            }
+            #video3 {
+                width: 95%;
+            }
+            #video4 {
+                width: 70%;
+                margin-left: 25%;
+            }
+            #video4-2 {
+                width: 100%;
+                margin-left: 75%;
+                margin-top: -50%;
+            }
+            #video5 {
+                width: 85%;
+            }
+            #video6 {
+                width: 65%;
+                margin-left: 15%;
+            }
+            .text-3 {
+                margin-top: 20px;
+                font-size: 150%;
+            }
+        }
+        
+        .img-row {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5%;
+        }
+        
+        .img-row1 {
+            width: 55%;
+        }
+        
+        .img-row2 {
+            width: 45%;
+            padding-left: 2%;
+        }
+        
+        @media screen and (max-width: 900px) {
+            .img-row {
+                flex-direction: column;
+            }
+            .img-row1 {
+                width: 100%;
+            }
+            .img-row2 {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 5%;
+            }
+        }
