@@ -118,7 +118,7 @@ export default {
         "contact-page-email-label": "Адреса електронної пошти:",
         "contact-page-phone-label": "Ваш телефон:",
 
-        "contact-page-message-label": "Ваше повідомлення:",
+        "contact-page-message-label": "Ваше повідомлення",
         "contact-page-button-text": "Надіслати",
         "contacts-2-text": "Наше місцезнаходження",
         "contacts-3-text": "Солонка,",
