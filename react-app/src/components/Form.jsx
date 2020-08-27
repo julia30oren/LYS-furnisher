@@ -150,7 +150,7 @@ const Form = (props) => {
                     <label>{translate("contact-page-message-label")}</label>
                     {/* <textarea className={textInp && !textInput.current.value ? "form-control misField" : "form-control"} style={{ resize: "none" }} rows="5" cols="50" name="message" ref={textInput} onFocus={classReset} /> */}
 
-                    <TranslatedMessageArea element="textarea" className={textInp && !textInput.current.value ? "form-control misField" : "form-control"} style={{ resize: "none" }} rows="5" cols="50" name="message" reference={textInput} onFocus={classReset} />
+                    <TranslatedMessageArea element="textarea" className={textInp && !textInput.current.value ? "form-control misField" : "form-control"} style={{ resize: "none" }} rows="3" cols="50" name="message" reference={textInput} onFocus={classReset} />
                 </div>
                 <div className="form-group">
                     <button id="sendBtn" className="btn" type="button" value="submit" onClick={sendEmail}>{translate('contact-page-button-text')}

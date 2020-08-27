@@ -31,21 +31,30 @@ import './AboutUs.css';
 
 export default function AboutUsComp(props) {
     return (
-        <div className="About-component">
-            <div className="parallax par-2"></div>
+        <div>
+            <div className="About-component-forComp">
+                <div className="parallax par-2"></div>
+                <div className="aboutTextDiv">
+                    <p>{translate('about-1-text')} {translate('about-2-text')}</p>
+                    <p>{translate('about-3-text')}</p>
+                </div>
 
-            <div className="aboutTextDiv">
-                <p>{translate('about-1-text')} {translate('about-2-text')}</p>
-                <p>{translate('about-3-text')}</p>
+                <div className="parallax par-1"></div>
+                <div className="aboutTextDiv">
+                    <p>{translate('about-4-text')} {translate('about-5-text')}</p>
+                    <p>{translate('about-6-text')}</p>
+                </div>
+            </div >
+
+            <div className="About-component-forphone">
+                <img src="https://i.pinimg.com/originals/ac/d0/30/acd0308e6c410615b16182062f8b29db.jpg" className="alternative" alt="..." />
+                <p className="aboutTextPhone">{translate('about-1-text')} {translate('about-2-text')}</p>
+                <p className="aboutTextPhone">{translate('about-3-text')}</p>
+                <img src="https://i.pinimg.com/originals/03/3f/be/033fbebcc807f3272e7436d6bf6b727f.jpg" className="alternative" alt="..." />
+                <p className="aboutTextPhone">{translate('about-4-text')} {translate('about-5-text')}</p>
+                <p className="aboutTextPhone">{translate('about-6-text')}</p>
             </div>
+        </div>
 
-            <div className="parallax par-1"></div>
-
-            <div className="aboutTextDiv">
-                <p>{translate('about-4-text')} {translate('about-5-text')}</p>
-                <p>{translate('about-6-text')}</p>
-            </div>
-
-        </div >
     )
 }

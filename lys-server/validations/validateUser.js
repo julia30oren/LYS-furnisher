@@ -21,8 +21,8 @@ const usersValidation = async(req, res, next) => {
             if (check === "phone") return res.json({ message: "Invalid Phone number", key: "phone" })
             if (check === "text") return res.json({ message: "Message too short/long", key: "message" })
         }
-    } catch {
-        return res.json({ message: "Something went wrong. Please try again later" })
+    } catch (error) {
+        return res.json({ message: "Something went wrong. Please try again later", ERROR: error })
     }
     next();
 }

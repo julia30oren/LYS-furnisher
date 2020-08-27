@@ -49,6 +49,19 @@
             text-transform: uppercase;
         }
         
+        .paragraf {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
+        }
+        
         @media screen and (max-width: 800px) {
             .video-text {
                 font-size: 100%;
@@ -70,9 +83,9 @@
         
         @media screen and (max-width: 500px) {
             .video-text {
-                font-size: 85%;
-                width: 40%;
-                left: 30px;
+                font-size: 70%;
+                width: 45%;
+                left: 20px;
             }
             .vl {
                 border-left: 5px solid white;
@@ -230,19 +243,6 @@
             text-transform: uppercase;
         }
         
-        .paragraf {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            font-style: normal;
-            font-variant: normal;
-            text-transform: uppercase;
-        }
-        
         @media screen and (max-width: 800px) {
             .HomeTherd {
                 padding: 0;
@@ -250,14 +250,14 @@
             .txt {
                 width: 40%;
                 padding: 2%;
-                font-size: 110%;
+                font-size: 10px;
             }
         }
         
         @media screen and (max-width: 500px) {
             .txt {
                 padding: 1%;
-                font-size: 60%;
+                font-size: 7px;
             }
         }
         /* 4 */
@@ -289,7 +289,7 @@
         
         .carousel-text {
             text-align: center;
-            font-size: medium;
+            font-size: 10px;
             position: absolute;
             bottom: 10px;
             background-color: rgba(0, 0, 0, 0.5);
@@ -313,16 +313,13 @@
         
         @media screen and (max-width: 1200px) {
             .carousel-text {
-                min-height: 100px;
-                font-size: large;
-                width: 100%;
-                margin-left: 0%;
+                visibility: hidden;
             }
         }
         
         @media screen and (max-width: 750px) {
             .carousel-text {
-                font-size: medium;
+                font-size: 7px;
             }
             .delivery-txt {
                 font-size: 120%;

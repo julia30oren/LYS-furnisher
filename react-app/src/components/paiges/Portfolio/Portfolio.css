@@ -72,8 +72,7 @@
 
 @media screen and (max-width: 1100px) {
     .big-img {
-        max-height: 700px;
-        margin-top: 100px;
+        max-height: 90%;
         margin-left: 10%;
     }
 }
