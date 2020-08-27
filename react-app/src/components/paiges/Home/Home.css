@@ -243,6 +243,18 @@
             text-transform: uppercase;
         }
         
+        .t {
+            font-size: 17px;
+            width: 100%;
+            padding: 5%;
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .t {
+                font-size: 10px;
+            }
+        }
+        
         @media screen and (max-width: 800px) {
             .HomeTherd {
                 padding: 0;
@@ -257,6 +269,9 @@
         @media screen and (max-width: 500px) {
             .txt {
                 padding: 1%;
+                font-size: 7px;
+            }
+            .t {
                 font-size: 7px;
             }
         }

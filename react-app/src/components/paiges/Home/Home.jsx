@@ -27,9 +27,9 @@ export const Home = (props) => {
 
             <div className="HomeFirst">
                 <div className="text-1">
-                    <p style={{ width: '100%', padding: '5%' }} className="txt"> {translate('home-1-text')}</p>
+                    <p className="txt t"> {translate('home-1-text')}</p>
                     <img className="wood-1" src={wood_1} alt="wood 1" />
-                    <p style={{ width: '100%', padding: '5%' }} className="txt"> {translate('home-2-text')}</p>
+                    <p className="txt t"> {translate('home-2-text')}</p>
                 </div>
                 <div className="fenix">
                     <img src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="fenix" style={{ width: '100%' }} />
