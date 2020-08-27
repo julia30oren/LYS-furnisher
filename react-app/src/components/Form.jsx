@@ -35,7 +35,7 @@ const Form = (props) => {
             return
         }
         try {
-            const url = `http://localhost:4567/contact`
+            const url = `http://104.248.92.191:4567/contact`
             const result = await axios.post(url, { name: nameInput.current.value, [primaryContact]: selectedPrimaryContact.current.value, text: textInput.current.value }, { headers: { "Content-Type": "application/json" } })
             if (result.data.message === "Email Sent") {
                 setModalText(translate("email-sent"))
