@@ -71,21 +71,22 @@
 }
 
 .par-1 {
-    background-image: url('https://i.pinimg.com/originals/03/3f/be/033fbebcc807f3272e7436d6bf6b727f.jpg');
-    background-size: 1000px 673px;
+    background-image: url('https://i.pinimg.com/originals/a5/51/6c/a5516ca3d37d02573005231ff3864632.jpg');
+    background-size: 1000px 800px;
 }
 
-.par-2 {
-    background-image: url('https://i.pinimg.com/originals/ac/d0/30/acd0308e6c410615b16182062f8b29db.jpg');
+
+/* .par-2 {
+    background-image: url('https://i.pinimg.com/originals/ac/ef/4f/acef4f704f221f48ad1c74bffedf09a9.jpg');
     background-size: 1000px 673px;
-}
+} */
 
 .alternative {
     width: 100%;
 }
 
 .aboutTextDiv {
-    width: 1000px;
+    width: 95%;
     padding: 2%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 2px;

@@ -68,8 +68,8 @@ const picturesArr = [{ pic: pic1 }, { pic: pic2 }, { pic: pic3 }, { pic: pic4 },
 export default picturesArr
 
 
-export const picturesArrCol1 = [{ pic: pic1 }, { pic: pic2 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic6 }, { pic: pic7 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 }, { pic: pic11 }, { pic: pic12 }, { pic: pic13 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 }, { pic: pic21 }, { pic: pic22 }]
+export const picturesArrCol1 = [{ pic: pic1 }, { pic: pic2 }, { pic: pic59 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic6 }, { pic: pic7 }, { pic: pic45 }, { pic: pic46 }, { pic: pic48 }, { pic: pic49 }, { pic: pic50 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 }, { pic: pic11 }, { pic: pic12 }, { pic: pic13 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 }, { pic: pic21 }, { pic: pic22 }, { pic: pic57 }, { pic: pic60 }, { pic: pic61 }]
 
-export const picturesArrCol2 = [{ pic: pic23 }, { pic: pic24 }, { pic: pic25 }, { pic: pic26 }, { pic: pic27 }, { pic: pic28 }, { pic: pic29 }, { pic: pic30 }, { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic37 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 }, { pic: pic41 }, { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic66 }]
+export const picturesArrCol2 = [{ pic: pic23 }, { pic: pic24 }, { pic: pic25 }, { pic: pic26 }, { pic: pic27 }, { pic: pic51 }, { pic: pic52 }, { pic: pic53 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic28 }, { pic: pic29 }, { pic: pic30 }, { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic37 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 }, { pic: pic41 }, { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic66 }, { pic: pic63 }, { pic: pic64 }, { pic: pic65 }]
 
-export const picturesArrCol3 = [{ pic: pic45 }, { pic: pic46 }, { pic: pic48 }, { pic: pic49 }, { pic: pic50 }, { pic: pic51 }, { pic: pic52 }, { pic: pic53 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic57 }, { pic: pic58 }, { pic: pic59 }, { pic: pic60 }, { pic: pic61 }, { pic: pic63 }, { pic: pic64 }, { pic: pic65 }]
+// { pic: pic58 },

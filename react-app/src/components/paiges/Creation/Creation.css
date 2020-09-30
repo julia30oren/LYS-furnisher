@@ -12,14 +12,14 @@
         }
         
         .video-div-left {
-            width: 50%;
+            width: 40%;
             border-radius: 150px 0 0 150px;
             margin-left: 20%;
         }
         
         .text-bl-left {
             width: 50%;
-            font-size: medium;
+            font-size: x-large;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             letter-spacing: 2px;
             word-spacing: 2px;
@@ -45,10 +45,10 @@
         }
         
         .text-bl-right {
-            width: 50%;
+            width: 60%;
             padding-right: 5%;
-            padding-left: 5%;
-            font-size: medium;
+            padding-left: 2%;
+            font-size: x-large;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             letter-spacing: 2px;
             word-spacing: 2px;
@@ -108,7 +108,7 @@
         
         .text-3 {
             margin-top: 50px;
-            font-size: 300%;
+            font-size: 210%;
             font-family: Noto;
             color: rgba(128, 128, 128, 0.3);
             width: 100%;
@@ -172,15 +172,28 @@
             display: flex;
             flex-direction: row;
             margin-top: 5%;
+            width: 100%;
         }
         
         .img-row1 {
-            width: 55%;
+            width: 53.8%;
+            margin: auto;
         }
         
         .img-row2 {
-            width: 45%;
-            padding-left: 2%;
+            width: 42%;
+            margin: auto;
+            /* padding-left: 2%; */
+        }
+        
+        .img-row3 {
+            width: 42%;
+            margin: auto;
+        }
+        
+        .img-row4 {
+            width: 54%;
+            margin: auto;
         }
         
         @media screen and (max-width: 900px) {

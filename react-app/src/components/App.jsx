@@ -16,10 +16,47 @@ function App() {
                 setContactForm(false);
             }
         }, 1000)
-    }
+    };
+
+    const checkBrowserLang = () => {
+        const defLang = localStorage.getItem("Lys-Lang")
+        if (defLang === "ru-RU") {
+            setLocale(LOCALES.RUSSIAN)
+        }
+        if (defLang === "uk-UA") {
+            setLocale(LOCALES.UKRAINIAN)
+        }
+        if (defLang === "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA") {
+            localStorage.setItem("Lys-Lang", "en-US")
+            setLocale(LOCALES.ENGLISH)
+        } else {
+            localStorage.setItem("Lys-Lang", "uk-UA")
+            setLocale(LOCALES.ENGLISH)
+        }
+        const userDefaultLanguage = navigator.language
+        // console.log(userDefaultLanguage)
+        if (!defLang) {
+            if (userDefaultLanguage === "ru-RU") {
+                localStorage.setItem("Lys-Lang", "ru-RU")
+                setLocale(LOCALES.RUSSIAN)
+            }
+            if (userDefaultLanguage === "uk-UA") {
+                localStorage.setItem("Lys-Lang", "uk-UA")
+                setLocale(LOCALES.UKRAINIAN)
+            }
+            if (userDefaultLanguage === "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA") {
+                localStorage.setItem("Lys-Lang", "en-US")
+                setLocale(LOCALES.ENGLISH)
+            } else {
+                localStorage.setItem("Lys-Lang", "uk-UA")
+                setLocale(LOCALES.ENGLISH)
+            }
+        }
+    };
 
     useEffect(() => {
         checkLocation();
+        checkBrowserLang();
     }, []);
 
 
@@ -52,17 +89,17 @@ function App() {
                         </div>
 
                         <div className="Nuv-logo">
-                            <img className="logo" src="https://i.pinimg.com/originals/43/b8/af/43b8af6608dddbe6412d546b701ae6fd.png" alt="family-logo" />
+                            <img className="logo" src="https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png" alt="family-logo" />
 
                             <div className='icon-link-div'>
                                 <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
-                                    <i className="fas fa-map-marker-alt fa-2x"></i>
+                                    <i className="fas fa-map-marker-alt fa-3x"></i>
                                 </a>
-                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-instagram fa-2x"></i>
+                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-instagram fa-3x"></i>
                                 </a>
                                 <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-facebook-f fa-2x"></i>
+                                    <i className="fab fa-facebook-f fa-3x"></i>
                                 </a>
                             </div>
                         </div>
@@ -70,9 +107,24 @@ function App() {
 
                     <div className="Navigation-top">
                         <div className="Nav-burger">
-                            <button className="burger-button" type="button" onClick={() => setNavbarOpen(!navbar)}>
-                                {navbar ? <i className="fas fa-times  fa-2x"></i> : <i className="fas fa-bars fa-3x"></i>}
-                            </button>
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <button className="burger-button" type="button" onClick={() => setNavbarOpen(!navbar)}>
+                                    {navbar ? <i className="fas fa-times  fa-2x"></i> : <i className="fas fa-bars fa-3x"></i>}
+                                </button>
+                                <img className="top-logo" src="https://i.pinimg.com/originals/30/11/d0/3011d0882f8e3efdb6402b6e381c1753.png" alt="family-logo" />
+                                <div className='Icos-top-div'>
+                                    <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
+                                        <i className="fas fa-map-marker-alt fa-2x"></i>
+                                    </a>
+                                    <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-instagram fa-2x"></i>
+                                    </a>
+                                    <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
+                                        <i className="fab fa-facebook-f fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+
                             {!navbar ? null :
                                 <div className="Nav-Top">
                                     <ul className="Nuv-lu" onClick={() => setNavbarOpen(!navbar)}>
@@ -91,22 +143,8 @@ function App() {
                                     </ul>
                                 </div>
                             }
-                            <img className="top-logo" src="https://i.pinimg.com/originals/43/b8/af/43b8af6608dddbe6412d546b701ae6fd.png" alt="family-logo" />
-                            <div className='Icos-top-div'>
-                                <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
-                                    <i className="fas fa-map-marker-alt fa-1x"></i>
-                                </a>
-                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-instagram fa-1x"></i>
-                                </a>
-                                <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-facebook-f fa-1x"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
-
-
 
                     <div className="Main-Component">
                         <Switch>

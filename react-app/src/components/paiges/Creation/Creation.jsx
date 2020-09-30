@@ -106,13 +106,14 @@ export const Creation = (props) => {
             </div>
 
             <p className="text-3">{translate('creation-8-text')}</p>
-            <RenderImages></RenderImages>
+            <RenderImages2></RenderImages2>
+            <RenderImages1></RenderImages1>
         </div>
     )
 }
 
 
-export const RenderImages = (props) => {
+export const RenderImages1 = (props) => {
     return (
         <div className="img-row">
             <div className="img-row1">
@@ -125,6 +126,24 @@ export const RenderImages = (props) => {
                 <ReactCompareImage
                     leftImage="https://i.pinimg.com/originals/6b/56/5e/6b565e66adb5d9d56a61200307fa5724.jpg"
                     rightImage="https://i.pinimg.com/originals/74/80/10/7480104cf2ded3ce8d087704dd154eac.jpg" />
+            </div>
+        </div>
+    )
+}
+
+export const RenderImages2 = (props) => {
+    return (
+        <div className="img-row">
+            <div className="img-row3">
+                <ReactCompareImage
+                    leftImage="https://i.pinimg.com/originals/c6/16/04/c61604b59e1ae8e47014ea3d52ca907b.jpg"
+                    rightImage="https://i.pinimg.com/originals/71/0a/54/710a54c243af44e489f2115d517a74bb.jpg" />
+            </div>
+
+            <div className="img-row4">
+                <ReactCompareImage
+                    leftImage="https://i.pinimg.com/originals/51/71/52/517152d09e1f87f4c78cf50ba41c8731.jpg"
+                    rightImage="https://i.pinimg.com/originals/59/33/fb/5933fb81804d1eb8ad085c0b84210735.jpg" />
             </div>
         </div>
     )

@@ -4,12 +4,20 @@ import { injectIntl } from "react-intl";
 const Input = (props) => {
     const { formatMessage } = props.intl;
     return (
-        (<props.element type={props.text} name={props.name} type={props.type} className={props.className} ref={props.nameInput} onFocus={props.onFocus} ref={props.reference} placeholder={formatMessage({ id: props.translatedIdTarget })} />)
+        (<props.element
+            name={props.name}
+            type={props.type}
+            className={props.className}
+            onFocus={props.onFocus}
+            ref={props.reference}
+            // type={props.text}             ref={props.nameInput}
+            placeholder={formatMessage({ id: props.translatedIdTarget })} />)
     )
+
 }
 
 const TextArea = (props) => {
-    const { formatMessage } = props.intl;
+    // const { formatMessage } = props.intl;
     return (
 
         (<props.element className={props.className} style={props.style} rows={props.rows} cols={props.cols} name={props.name} ref={props.reference} onFocus={props.onFocus} />)

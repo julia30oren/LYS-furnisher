@@ -3,7 +3,7 @@ import { LOCALES } from '../locales';
 export default {
     [LOCALES.ENGLISH]: {
         "title": "English language",
-        "loz": "Family workshop of author's furniture and interior items.",
+        "loz": "Family workshop of furniture «LYS».",
         "buttonTxt": "Contuct Us",
 
         "home-nuv": "Homepage",
@@ -13,18 +13,17 @@ export default {
         "painting-nuv": "Coating",
         "contacts-nuv": "Contacts",
 
-        "home-1-text": "«The impossible does not exist» - our motto in life and at work.We, interior designers by education, realized in 2012 that our vocation is to create an atmosphere of comfort and harmony, filling the space with their furniture.",
-        "home-2-text": "We learned a lot, experimented, improved on our own mistakes.",
-        "home-3-text": "Today we can say for sure that nothing is impossible! Thus was born the family furniture workshop",
-        "home-4-text": "Each of our products is unique and inimitable. We design and manufacture our own furniture, which we do not find in any store.",
-        "home-5-text": "Our goal is to make items that will take their place in the interior. Paying attention to all the details, we create furniture based on your taste and wishes.",
+        "home-1-text": "Our goal is to make items that will take their place in the interior. Paying attention to all the details, we create furniture based on your taste and wishes.",
+        "home-2-text": "We are a family furniture workshop «LYS», which personally develops and manufactures items of both classical style and inimitable original products, taking into account the wishes of our customers.",
+        "home-3-text": "Why family? Because we are a team that treats responsibly and with love in our work. Our products are like family values, in which all knowledge, skill and part of our soul are invested.",
+        "home-4-text": "Each of our products is unique and inimitable. We design and manufacture our own furniture that you will not find in any store.",
+        "home-5-text": "When making furniture, we take into account their convenient and functional location in the room. This helps to plan the composition best for you.",
         "home-6-text": "Handmade",
-        "home-7-text": "We perform and control all stages of production (from sketches and design to installation work) to save your time.",
-        "home-8-text": "When making furniture, we take into account their convenient and functional location in the room. This helps to better plan the composition.",
+        "home-7-text": "We are professionals and care about the high quality and reliability not only of the products, but also of the whole project.",
+        "home-8-text": "We complete each project on your own so that you can enjoy your new furniture without any hassle.",
         "home-9-text": "Delivery and installation in all regions of Ukraine!",
-        "home-10-text": "We are professionals and care about the high quality and reliability not only of the products, but also of the whole project.",
-        "home-11-text": "We use decorative painting technologies that cannot be reproduced in mass production.",
-        "home-12-text": "We complete each project on your own so that you can enjoy your new furniture without any hassle.",
+        "home-10-text": "We use decorative painting technologies that cannot be reproduced in mass production.",
+        "home-11-text": "We perform and control all stages of production (from sketches and design to installation work) to save your time.",
 
         "form-1-t": "Name:",
         "form-2-t": "Email address:",
@@ -39,9 +38,12 @@ export default {
         "about-5-text": "We can say for sure - the impossible does not exist!",
         "about-6-text": "By contacting us, you will receive not just furniture, but exclusive things that will take a special place in your life, because we love our work!",
         "about-7-text": "Andrew and Olga",
+        "about-8-text": "«The impossible does not exist» - our motto in life and at work. We realized that our vocation is to create an atmosphere of comfort and harmony, filling the space with their furniture.",
+        "about-9-text": "We learned a lot, experimented and improved on our own mistakes.",
+        "about-10-text": "And today we can say for sure that nothing is impossible! Thus was born the family furniture workshop.",
 
         "portfolio-1-text": "Portfolio",
-        "portfolio-2-text": "All works are unique and handmade.",
+        "portfolio-2-text": "All works are unique and handmade",
         "portfolio-3-text": "",
 
         "coating-1-text": "Coating",
@@ -116,7 +118,7 @@ export default {
         "creation-6-text": "We carefully pack all the furniture we make so that it reaches its owner successfully: we immobilize drawers and doors, use double packaging for the ends of countertops and all protruding parts. And if necessary - we make a box for transportation.",
         "creation-7-title": "Delivery and installation",
         "creation-7-text": "We deliver and assemble furniture in the house or apartment so that there are no surprises.",
-        "creation-8-text": "The result of our work will exceed all your expectations",
+        "creation-8-text": "The result of our work will surpass your expectations",
 
 
         "contacts-1-text": "Contacts",
@@ -133,6 +135,8 @@ export default {
         "contacts-6-text": "49.757722, 24.011444",
         "contacts-7-text": "You can contact us at any time by phone:",
         "contacts-8-text": "+380 98 600 71 36",
+        "contacts-9-text": "Or",
+
 
         "name-input-placeholder": "Enter Your Name",
         "email-radio-span": "Email",

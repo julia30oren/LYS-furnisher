@@ -113,7 +113,7 @@ const Form = (props) => {
 
     //////JSX///////
     return (
-        <>
+        <div style={{ padding: '10px' }}>
             <form>
                 <div className="form-group">
                     <label>{translate("contact-page-name-label")}</label>
@@ -164,7 +164,7 @@ const Form = (props) => {
                     <br />
                     <button type="button" className="btn btn-dark" style={{ marginTop: "15px", marginBottom: "15px" }} onClick={() => { setShowModal(false) }}>Ok</button>
                 </Modal >}
-        </>
+        </div>
     )
 }
 

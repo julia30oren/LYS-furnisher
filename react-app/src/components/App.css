@@ -19,33 +19,46 @@
         /* NAVIGATION */
         
         .Navigation-left-side {
-            min-height: 100%;
-            background-image: url('../pic/wood-background.jpg');
+            height: 100%;
+            width: 250px;
+            /* background-image: url('../pic/wood-background.jpg'); */
+            /* background-image: url('https://image.freepik.com/free-photo/textures-blackboard-background-light_127093-733.jpg'); */
+            /* background-image: url('https://image.freepik.com/free-photo/wooden-textured-background-christmas_23-2148343257.jpg'); */
+            /* background-image: url('https://image.freepik.com/free-photo/aged-woo-surface-with-knots_23-2148413346.jpg'); */
+            /* background-image: url('https://thepaintpeople.com/wp-content/uploads/2015/09/prepare-bare-wood-staining.jpg'); */
+            /* background-image: url('https://i.pinimg.com/originals/f5/bc/db/f5bcdb59bf775cbb509f79e53a9fcc52.jpg'); */
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/13/20/30/wood-938698_960_720.jpg');
+            background-size: cover;
             display: flex;
             flex-direction: column;
             position: fixed;
             border-right: 1px solid rgba(0, 0, 0, 0.26);
             -webkit-box-shadow: 0px 0px 40px -9px #000000;
             box-shadow: 0px 0px 40px -9px #000000;
+            z-index: 2;
         }
         
         .Nuv-div {
-            min-width: 200px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
+            font-size: 15px;
             letter-spacing: 2px;
             word-spacing: 2px;
             color: #000000;
-            font-weight: 400;
+            font-weight: 700;
             text-decoration: none;
             font-style: normal;
             font-variant: normal;
             text-transform: uppercase;
+            /* background-image: url('https://i.pinimg.com/originals/ef/95/f6/ef95f674ba49e65e31f228953bae995c.png');
+            background-size: cover; */
+            position: absolute;
+            width: 250%;
+            /* text-shadow: #00000085 1px 1px 0.5px; */
         }
         
         .Nuv-logo {
             position: absolute;
-            bottom: 15px;
+            bottom: 20px;
         }
         
         .logo {
@@ -54,11 +67,18 @@
         }
         
         #contuct-button {
+            /* color: white; */
+            color: black;
             height: 75px;
             width: 75px;
             border-radius: 50%;
             border: solid 0.5px #00000083;
-            background-image: url('../pic/wood-background.jpg');
+            text-shadow: #00000085 3px 3px 2px;
+            /* background-image: url('../pic/wood-background.jpg'); */
+            /* background-image: url('https://image.freepik.com/free-photo/textures-blackboard-background-light_127093-733.jpg'); */
+            /* background-image: url('https://i.pinimg.com/originals/f5/bc/db/f5bcdb59bf775cbb509f79e53a9fcc52.jpg'); */
+            background-image: url('https://thepaintpeople.com/wp-content/uploads/2015/09/prepare-bare-wood-staining.jpg');
+            background-size: 250px 250px;
             font-size: large;
             -webkit-box-shadow: 0px 0px 23px 2px #00000083;
             box-shadow: 0px 0px 23px 2px #00000083;
@@ -69,12 +89,11 @@
             width: 85px;
             color: white;
             font-size: x-large;
-            text-shadow: #474747 3px 5px 2px;
+            text-shadow: #00000085 7px 7px 5px;
         }
-        
-        .Nuv-lu {
+        /* .Nuv-lu {
             text-align: right;
-        }
+        } */
         
         .Nav-item {
             padding-top: 3%;
@@ -85,7 +104,12 @@
         .nav-text,
         .Nav-lang {
             color: black;
-            padding: 3%;
+            /* color: white; */
+            padding: 1%;
+            margin-top: 1%;
+            /* background: #0000003a;
+            text-shadow: 4px 3px 0 #7A7A7A; */
+            /* border: rgba(36, 36, 36, 0.411) solid 0.5px; */
         }
         
         .Nav-lang {
@@ -121,6 +145,7 @@
         }
         
         .footer-icon {
+            /* color: white; */
             color: black;
             margin-left: 5%;
         }
@@ -144,17 +169,16 @@
         
         .Main-Component {
             position: absolute;
-            right: 5%;
-            width: 75%;
+            left: 17%;
+            width: 70%;
             height: 100%;
-            padding-right: 10%;
         }
         
         .right-side-bottom {
             width: 10%;
             position: fixed;
-            right: 20px;
-            bottom: 40px;
+            right: 0px;
+            top: 50%;
             z-index: 10;
         }
         /* FOR TUBLET */
@@ -178,11 +202,12 @@
             }
             .Nav-burger {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
             }
             .burger-button {
                 border: none;
                 height: 50px;
+                width: 50px;
                 margin: 5px;
                 background-color: rgba(0, 0, 0, 0);
             }
@@ -199,13 +224,10 @@
             .top-logo {
                 height: 50px;
                 margin: 5px;
-                position: absolute;
-                right: 25%;
             }
             .Main-Component {
-                width: 90%;
-                padding: 0;
-                right: 5%;
+                left: 2%;
+                width: 96%;
                 top: 60px;
             }
             #contuct-button {
@@ -220,23 +242,26 @@
                 /* margin-top: 60px; */
                 width: 200px;
             }
+            .right-side-bottom {
+                right: 45%;
+                bottom: 4%;
+            }
         }
         
         .contact-form {
+            width: 500px;
             position: fixed;
-            right: 10px;
-            bottom: 10px;
-            padding: 20px;
+            top: 50px;
+            right: 200px;
             background-color: white;
             border: solid 1px black;
-            padding-bottom: 50px;
         }
         
         @media screen and (max-width: 800px) {
             .contact-form {
-                padding: 10px;
-                bottom: 10px;
-                padding-bottom: 40px;
+                top: 30px;
+                left: 0;
+                width: 100%;
             }
         }
         

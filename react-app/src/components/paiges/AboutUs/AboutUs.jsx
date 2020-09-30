@@ -12,7 +12,14 @@ export const AboutUs = (props) => {
     return (
         <div>
             <div className="About-component-forComp">
-                <div className="parallax par-2"></div>
+                <div className="parallax par-1"></div>
+                <div className="aboutTextDiv">
+                    <p>{translate('about-8-text')}</p>
+                    <p>{translate('about-9-text')}</p>
+                    <p>{translate('about-10-text')} &laquo;LYS&raquo; .</p>
+                </div>
+
+                <div className="parallax par-1"></div>
                 <div className="aboutTextDiv">
                     <p>{translate('about-1-text')} {translate('about-2-text')}</p>
                     <p>{translate('about-3-text')}</p>
