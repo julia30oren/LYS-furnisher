@@ -181,72 +181,6 @@
             top: 50%;
             z-index: 10;
         }
-        /* FOR TUBLET */
-        
-        @media screen and (max-width: 800px) {
-            .Navigation-left-side {
-                visibility: hidden;
-            }
-            .Navigation-top {
-                visibility: visible;
-                width: 100%;
-                /* background-image: url('../pic/wood-background.jpg'); */
-                background-size: 400px 700px;
-                display: flex;
-                flex-direction: row;
-                position: fixed;
-                z-index: 11;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.26);
-                -webkit-box-shadow: 0px 0px 40px -9px #000000;
-                box-shadow: 0px 0px 40px -9px #000000;
-            }
-            .Nav-burger {
-                display: flex;
-                flex-direction: column;
-            }
-            .burger-button {
-                border: none;
-                height: 50px;
-                width: 50px;
-                margin: 5px;
-                background-color: rgba(0, 0, 0, 0);
-            }
-            .Icos-top-div {
-                position: absolute;
-                bottom: 0;
-                right: 10px;
-                display: flex;
-                flex-direction: row;
-            }
-            .footer-icon {
-                margin: 5px;
-            }
-            .top-logo {
-                height: 50px;
-                margin: 5px;
-            }
-            .Main-Component {
-                left: 2%;
-                width: 96%;
-                top: 60px;
-            }
-            #contuct-button {
-                height: 55px;
-                width: 55px;
-                font-size: medium;
-                position: absolute;
-                bottom: 10px;
-                right: 10px;
-            }
-            .Nav-Top {
-                /* margin-top: 60px; */
-                width: 200px;
-            }
-            .right-side-bottom {
-                right: 45%;
-                bottom: 4%;
-            }
-        }
         
         .contact-form {
             width: 500px;
@@ -255,14 +189,6 @@
             right: 200px;
             background-color: white;
             border: solid 1px black;
-        }
-        
-        @media screen and (max-width: 800px) {
-            .contact-form {
-                top: 30px;
-                left: 0;
-                width: 100%;
-            }
         }
         
         .misField {

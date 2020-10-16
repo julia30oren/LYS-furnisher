@@ -142,34 +142,6 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1100px) {
-    .Coating {
-        padding: 0;
-    }
-    .coating-row {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .texture-img {
-        height: 200px;
-        width: 200px;
-    }
-    .texture-txt {
-        width: 75%;
-        padding-left: 3%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .coating-row {
-        flex-direction: column;
-    }
-    .texture-txt {
-        width: 100%;
-        padding: 2%;
-    }
-}
-
 .open-div {
     width: 100%;
     height: 100%;
@@ -203,10 +175,4 @@
 
 .button-close:hover {
     color: black;
-}
-
-@media screen and (max-width: 900px) {
-    .images-div {
-        margin-top: 20%;
-    }
 }

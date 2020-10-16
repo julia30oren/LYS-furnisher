@@ -42,23 +42,7 @@
     text-align: center;
     width: 100%;
     padding: 10%;
-}
-
-@media screen and (max-width: 800px) {
-    .leter {
-        width: 300px;
-        height: 450px;
-        background-size: 300px 450px;
-        font-size: 65%;
-        margin-top: 15%;
-    }
-    .photo-1 {
-        width: 60%;
-    }
-    .photo-2 {
-        width: 65%;
-    }
-} */
+}*/
 
 .parallax {
     background-attachment: fixed;
@@ -123,18 +107,3 @@
     text-align: center;
     font-size: larger;
 }
-
-@media screen and (max-width: 1100px) {
-    .About-component-forComp {
-        visibility: hidden;
-        position: absolute;
-        height: 0;
-    }
-    .About-component-forphone {
-        visibility: visible;
-        position: relative;
-        min-height: 1500px;
-    }
-}
-
-@media screen and (max-width: 900px) {}

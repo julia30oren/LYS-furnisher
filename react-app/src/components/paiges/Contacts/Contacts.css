@@ -27,7 +27,12 @@
     font-size: larger;
 }
 
-@media screen and (max-width: 1100px) {
+.messangers {
+    padding: 5px;
+}
+
+
+/* @media screen and (max-width: 1100px) {
     .Contact-content {
         height: auto;
         margin-top: 50px;
@@ -41,8 +46,4 @@
     .contact-div {
         width: 100%;
     }
-}
-
-.messangers {
-    padding: 5px;
-}
+} */
