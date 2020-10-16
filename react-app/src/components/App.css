@@ -21,20 +21,20 @@
         .Navigation-left-side {
             height: 100%;
             width: 250px;
-            /* background-image: url('../pic/wood-background.jpg'); */
+            /* background-image: url('https://st2.depositphotos.com/2319687/7476/i/950/depositphotos_74763371-stock-photo-different-colored-old-natural-wooden.jpg'); */
             /* background-image: url('https://image.freepik.com/free-photo/textures-blackboard-background-light_127093-733.jpg'); */
             /* background-image: url('https://image.freepik.com/free-photo/wooden-textured-background-christmas_23-2148343257.jpg'); */
             /* background-image: url('https://image.freepik.com/free-photo/aged-woo-surface-with-knots_23-2148413346.jpg'); */
             /* background-image: url('https://thepaintpeople.com/wp-content/uploads/2015/09/prepare-bare-wood-staining.jpg'); */
             /* background-image: url('https://i.pinimg.com/originals/f5/bc/db/f5bcdb59bf775cbb509f79e53a9fcc52.jpg'); */
-            background-image: url('https://cdn.pixabay.com/photo/2015/09/13/20/30/wood-938698_960_720.jpg');
+            /* background-image: url('https://cdn.pixabay.com/photo/2015/09/13/20/30/wood-938698_960_720.jpg'); */
             background-size: cover;
             display: flex;
             flex-direction: column;
             position: fixed;
-            border-right: 1px solid rgba(0, 0, 0, 0.26);
+            /* border-right: 1px solid rgba(0, 0, 0, 0.26);
             -webkit-box-shadow: 0px 0px 40px -9px #000000;
-            box-shadow: 0px 0px 40px -9px #000000;
+            box-shadow: 0px 0px 40px -9px #000000; */
             z-index: 2;
         }
         
@@ -52,7 +52,7 @@
             /* background-image: url('https://i.pinimg.com/originals/ef/95/f6/ef95f674ba49e65e31f228953bae995c.png');
             background-size: cover; */
             position: absolute;
-            width: 250%;
+            /* width: 150%; */
             /* text-shadow: #00000085 1px 1px 0.5px; */
         }
         
@@ -169,7 +169,7 @@
         
         .Main-Component {
             position: absolute;
-            left: 17%;
+            left: 15%;
             width: 70%;
             height: 100%;
         }
@@ -190,7 +190,7 @@
             .Navigation-top {
                 visibility: visible;
                 width: 100%;
-                background-image: url('../pic/wood-background.jpg');
+                /* background-image: url('../pic/wood-background.jpg'); */
                 background-size: 400px 700px;
                 display: flex;
                 flex-direction: row;

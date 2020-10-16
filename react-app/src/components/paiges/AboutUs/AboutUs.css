@@ -86,7 +86,7 @@
 }
 
 .aboutTextDiv {
-    width: 95%;
+    width: 100%;
     padding: 2%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 2px;
@@ -98,7 +98,7 @@
     font-variant: normal;
     text-transform: none;
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
 }
 
 .About-component-forphone {

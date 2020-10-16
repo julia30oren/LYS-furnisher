@@ -56,7 +56,7 @@ function App() {
 
     useEffect(() => {
         checkLocation();
-        checkBrowserLang();
+        // checkBrowserLang();
     }, []);
 
 
@@ -72,6 +72,7 @@ function App() {
                 <div className="App" style={{ display: 'flex' }}>
 
                     <div className="Navigation-left-side">
+
                         <div className="Nuv-div">
                             <ul className="Nuv-lu">
                                 <li className="Nav-item">
@@ -88,24 +89,24 @@ function App() {
                             </ul>
                         </div>
 
-                        <div className="Nuv-logo">
+                        {/* <div className="Nuv-logo">
                             <img className="logo" src="https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png" alt="family-logo" />
 
                             <div className='icon-link-div'>
                                 <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
                                     <i className="fas fa-map-marker-alt fa-3x"></i>
                                 </a>
-                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture" target="_blank" rel="noopener noreferrer">
+                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-instagram fa-3x"></i>
                                 </a>
                                 <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook-f fa-3x"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div className="Navigation-top">
+                    {/* <div className="Navigation-top">
                         <div className="Nav-burger">
                             <div style={{ display: 'flex', flexDirection: 'row' }}>
                                 <button className="burger-button" type="button" onClick={() => setNavbarOpen(!navbar)}>
@@ -144,13 +145,13 @@ function App() {
                                 </div>
                             }
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="Main-Component">
                         <Switch>
                             <AppRoutes />
                         </Switch>
-                        <br /><br /><br />
+
                         <div style={{ width: '100%', textAlign: 'center' }}>This site was designed and created by <a href="https://www.linkedin.com/in/julia-orendovskyi-026a30b6/">Julia Oren</a> & <a href="https://www.linkedin.com/in/iyar-nitzan-576184110/">Iyar Nitzan</a></div>
                     </div>
 

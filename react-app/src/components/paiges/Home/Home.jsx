@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react';
-import pictcher1 from '../../../pic/IMG_4108.jpg';
-// import pictcher2 from '../../../pic/IMG_52508.jpg';
-import pictcher3 from '../../../pic/IMG_3245.jpg';
-import wood_1 from '../../../pic/ff3b5c6f6f7fd8bb4d295975a82c32bc.jpg'
 import openingVid from '../../../videos/fox_welcome_vid3.mp4';
 import './Home.css';
 
@@ -12,65 +8,111 @@ export const Home = (props) => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        // window.onscroll = function () { myFunction() };
+
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
+
+        // function myFunction() {
+        //     if (window.pageYOffset >= sticky) {
+        //         navbar.classList.add("sticky")
+        //     } else {
+        //         navbar.classList.remove("sticky");
+        //     }
+        // }
     }, []);
+
+
 
     return (
         <div className="column" style={{ width: '100%' }}>
+
             <video autoPlay loop muted className="openingVid" >
                 <source src={openingVid} type="video/mp4" />
             </video>
-            <div className="video-text">
+
+            {/* <div id="navbar">
+                <a class="active" href="javascript:void(0)">Home</a>
+                <a href="javascript:void(0)">News</a>
+                <a href="javascript:void(0)">Contact</a>
+            </div> */}
+
+            {/* <div className="video-text">
                 <div className="vl"></div>
                 <p className="vid-t"> {translate('loz')} </p>
-            </div>
+            </div> */}
 
-            <div className="HomeFirst">
+            <div className="HomeFirst" style={{ marginBottom: '200px' }}>
                 <div className="text-1">
-                    <p className="txt"> </p>
-                    {/* <img className="wood-1" src={wood_1} alt="wood 1" /> */}
-                    <p className="txt txt-wood-1">{translate('home-1-text')}</p>
-                    <p className="txt">{translate('home-2-text')}</p>
+                    {/* <img className="img-family" src="https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg" alt="family" /> */}
+
+                    <p className="wood-back txt-wood-1"> - {translate('home-2-text')}</p>
+                    <p className="txt">{translate('home-3-text')}</p>
+                    <div className="wood-texture"></div>
                 </div>
-                <div className="fenix">
-                    <img src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="fenix" style={{ width: '100%' }} />
+                <div className="fenix" style={{ marginTop: '50px' }}>
+                    <img src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="fenix" style={{ width: '100%', padding: '5%' }} />
                 </div>
             </div>
 
             <div className="HomeSecond">
                 <div className="wood-2">
-                    <p className="paragraf"> {translate('home-3-text')} </p>
+                    <p className="handmaid"> {translate('home-4-text')} </p>
                 </div>
-                <img className="img-family" src="https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg" alt="family" />
-                <p className="handmaid">{translate('home-6-text')}</p>
             </div>
 
             <div className="HomeTherd">
                 <div className="row-3">
-                    {/* <div className="img-2-2" style={{ width: '20%' }}></div> */}
-                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
-                        <p className="txt txt-wood-2">{translate('home-4-text')}</p>
-                        {/* <p className="txt">{translate('home-7-text')}</p> */}
-                    </div>
-                    <img style={{ width: '55%' }} className="img-1-1" src="https://i.pinimg.com/564x/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg" alt="pictcher 1" />
-                </div>
-                <div className="row-3" style={{ marginTop: '20px' }}>
-                    <img style={{ width: '55%' }} className="img-1-1" src="https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg" alt="pictcher 2" />
-                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
-                        <p className="txt txt-wood-3">{translate('home-5-text')}</p>
-                        {/* <p className="txt">{translate('home-8-text')}</p> */}
-                    </div>
-                    {/* <div className="img-3-3" style={{ width: '20%' }}></div> */}
-                </div>
-                <p className="delivery-txt"> {translate('home-7-text')}</p>
+                    <img style={{ width: '55%', height: '100%' }} className="img-1-1" src="https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg" alt="pictcher 2" />
 
-                {/* <div className="wood-2">
-                    <p className="paragraf">{translate('home-10-text')}</p>
-                    <p className="paragraf"> {translate('home-11-text')}</p>
-                </div> */}
+
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
+                        <p className="txt">{translate('home-5-text')}</p>
+                        <p className="wood-back txt-wood-2">{translate('home-6-text')}</p>
+                        <p className="handmaid grey-font">{translate('home-7-text')}</p>
+                        <p className="txt">{translate('home-8-text')}</p>
+                    </div>
+                </div>
+
+                <div className="row-3">
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
+                        <p className="handmaid grey-font">{translate('home-9-text')}</p>
+                        <p className="txt">{translate('home-10-text')}</p>
+                        <p className="wood-back txt-wood-5">{translate('home-11-text')}</p>
+                        <p className="txt">{translate('home-12-text')}</p>
+                    </div>
+
+                    <img style={{ width: '55%', height: '100%' }} className="img-1-1" src="https://i.pinimg.com/564x/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg" alt="pictcher 1" />
+
+                </div>
+
+                <div className="row-3">
+                    <img style={{ width: '55%', height: '100%' }} className="img-1-1" src="https://i.pinimg.com/originals/10/52/4b/10524b2431ffaa750fb9b3757d39d963.jpg" alt="pictcher 1" />
+
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
+                        <p className="txt">{translate('home-13-text')}</p>
+                        <p className="wood-back txt-wood-4">{translate('home-14-text')}</p>
+                        <p className="handmaid grey-font">{translate('home-15-text')}</p>
+                        <p className="txt">{translate('home-16-text')}</p>
+                    </div>
+                </div>
+
+                <div className="row-3">
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '45%', height: '100%', margin: 'auto' }}>
+                        <p className="handmaid grey-font">{translate('home-17-text')}</p>
+                        <p className="txt">{translate('home-18-text')}</p>
+                        <p className="wood-back txt-wood-3">{translate('home-19-text')}</p>
+                        <p className="txt">{translate('home-20-text')}</p>
+
+                    </div>
+                    <img style={{ width: '55%', height: '100%' }} className="img-1-1" src="https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97061597_116044153434214_5315274869229748224_o.jpg?_nc_cat=100&_nc_sid=a26aad&_nc_ohc=mq_ee4ZQtYkAX871XOy&_nc_ht=scontent.fhfa2-2.fna&oh=77a240ce0e8348236fbc09a0ee1342bb&oe=5F9864DA" alt="pictcher 2" />
+                </div>
 
             </div>
+            <p className="handmaid grey-font" style={{ marginTop: '150px', marginBottom: '100px', fontSize: '30px' }}> {translate('home-21-text')}</p>
 
             <div className="HomeFourth">
+
                 <div id="myCarousel" className="carousel slide" data-ride="carousel">
                     {/* <!-- Indicators --> */}
                     <ol className="carousel-indicators" >
@@ -90,13 +132,13 @@ export const Home = (props) => {
                     <div className="carousel-inner">
                         <div className="item active">
                             <div className="carousel-div">
-                                <img className='im' src={pictcher1} alt="pictcher1" />
+                                <img className='im' src="https://i.pinimg.com/originals/cf/4c/a7/cf4ca7657a0783f3a47a050991d37176.jpg" alt="pictcher1" />
                             </div>
                         </div>
 
                         <div className="item">
                             <div className="carousel-div">
-                                <img className='im' src={pictcher3} alt="pictcher2" />
+                                <img className='im' src="https://i.pinimg.com/originals/49/c6/79/49c679b8f33d4d7c00d16b7d5bd6052a.jpg" alt="pictcher2" />
                             </div>
                         </div>
 
@@ -118,7 +160,6 @@ export const Home = (props) => {
                             </div>
                         </div>
 
-
                     </div>
 
                     {/* <!-- Left and right controls --> */}
@@ -132,6 +173,7 @@ export const Home = (props) => {
                     </a>
                 </div>
             </div>
+
         </div >
     )
 }

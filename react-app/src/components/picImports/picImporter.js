@@ -1,75 +1,225 @@
-import pic1 from '../../pic/portfolio/portfolio-img (1).jpg';
-import pic2 from '../../pic/portfolio/portfolio-img (2).jpg';
-import pic3 from '../../pic/portfolio/portfolio-img (3).JPG';
-import pic4 from '../../pic/portfolio/portfolio-img (4).JPG';
-import pic5 from '../../pic/portfolio/portfolio-img (5).JPG';
-import pic6 from '../../pic/portfolio/portfolio-img (6).jpg';
-import pic7 from '../../pic/portfolio/portfolio-img (7).JPG';
-import pic8 from '../../pic/portfolio/portfolio-img (8).JPG';
-import pic9 from '../../pic/portfolio/portfolio-img (9).JPG';
-import pic10 from '../../pic/portfolio/portfolio-img (10).JPG';
-import pic11 from '../../pic/portfolio/portfolio-img (11).jpg';
-import pic12 from '../../pic/portfolio/portfolio-img (12).JPG';
-import pic13 from '../../pic/portfolio/portfolio-img (13).JPG';
-import pic14 from '../../pic/portfolio/portfolio-img (14).JPG';
-import pic15 from '../../pic/portfolio/portfolio-img (15).jpg';
-import pic16 from '../../pic/portfolio/portfolio-img (16).jpg';
-import pic17 from '../../pic/portfolio/portfolio-img (17).jpg';
-import pic18 from '../../pic/portfolio/portfolio-img (18).jpg';
-import pic19 from '../../pic/portfolio/portfolio-img (19).jpg';
-import pic20 from '../../pic/portfolio/portfolio-img (20).jpg';
-import pic21 from '../../pic/portfolio/portfolio-img (21).jpg';
-import pic22 from '../../pic/portfolio/portfolio-img (22).jpg';
-import pic23 from '../../pic/portfolio/portfolio-img (23).jpg';
-import pic24 from '../../pic/portfolio/portfolio-img (24).JPG';
-import pic25 from '../../pic/portfolio/portfolio-img (25).jpg';
-import pic26 from '../../pic/portfolio/portfolio-img (26).JPG';
-import pic27 from '../../pic/portfolio/portfolio-img (27).JPG';
-import pic28 from '../../pic/portfolio/portfolio-img (28).JPG';
-import pic29 from '../../pic/portfolio/portfolio-img (29).JPG';
-import pic30 from '../../pic/portfolio/portfolio-img (30).jpg';
-import pic31 from '../../pic/portfolio/portfolio-img (31).JPG';
-import pic32 from '../../pic/portfolio/portfolio-img (32).JPG';
-import pic33 from '../../pic/portfolio/portfolio-img (33).JPG';
-import pic34 from '../../pic/portfolio/portfolio-img (34).JPG';
-import pic35 from '../../pic/portfolio/portfolio-img (35).jpg';
-import pic36 from '../../pic/portfolio/portfolio-img (36).jpg';
-import pic37 from '../../pic/portfolio/portfolio-img (37).jpg';
-import pic38 from '../../pic/portfolio/portfolio-img (38).jpg';
-import pic39 from '../../pic/portfolio/portfolio-img (39).jpg';
-import pic40 from '../../pic/portfolio/portfolio-img (40).JPG';
-import pic41 from '../../pic/portfolio/portfolio-img (41).jpg';
-import pic42 from '../../pic/portfolio/portfolio-img (42).JPG';
-import pic43 from '../../pic/portfolio/portfolio-img (43).JPG';
-import pic44 from '../../pic/portfolio/portfolio-img (44).JPG';
-import pic45 from '../../pic/portfolio/portfolio-img (45).jpg';
-import pic46 from '../../pic/portfolio/portfolio-img (46).jpg';
-import pic47 from '../../pic/portfolio/portfolio-img (47).JPG';
-import pic48 from '../../pic/portfolio/portfolio-img (48).jpg';
-import pic49 from '../../pic/portfolio/portfolio-img (49).jpg';
-import pic50 from '../../pic/portfolio/portfolio-img (50).JPG';
-import pic51 from '../../pic/portfolio/portfolio-img (51).JPG';
-import pic52 from '../../pic/portfolio/portfolio-img (52).jpg';
-import pic53 from '../../pic/portfolio/portfolio-img (53).jpg';
-import pic54 from '../../pic/portfolio/portfolio-img (54).JPG';
-import pic55 from '../../pic/portfolio/portfolio-img (55).jpg';
-import pic56 from '../../pic/portfolio/portfolio-img (56).JPG';
-import pic57 from '../../pic/portfolio/portfolio-img (57).JPG';
-import pic58 from '../../pic/portfolio/portfolio-img (58).jpg';
-import pic59 from '../../pic/portfolio/portfolio-img (59).jpg';
-import pic60 from '../../pic/portfolio/portfolio-img (60).jpg';
-import pic61 from '../../pic/portfolio/portfolio-img (61).JPG';
-import pic63 from '../../pic/portfolio/portfolio-img (63).jpg';
-import pic64 from '../../pic/portfolio/portfolio-img (64).jpg';
-import pic65 from '../../pic/portfolio/portfolio-img (65).jpg';
-import pic66 from '../../pic/portfolio/portfolio-img (66).jpg';
-const picturesArr = [{ pic: pic1 }, { pic: pic2 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic6 }, { pic: pic7 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 }, { pic: pic11 }, { pic: pic12 }, { pic: pic13 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 }, { pic: pic21 }, { pic: pic22 }, { pic: pic23 }, { pic: pic24 }, { pic: pic25 }, { pic: pic26 }, { pic: pic27 }, { pic: pic28 }, { pic: pic29 }, { pic: pic30 }, { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic37 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 }, { pic: pic41 }, { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic45 }, { pic: pic46 }, { pic: pic47 }, { pic: pic48 }, { pic: pic49 }, { pic: pic50 }, { pic: pic51 }, { pic: pic52 }, { pic: pic53 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic57 }, { pic: pic58 }, { pic: pic59 }, { pic: pic60 }, { pic: pic61 }, { pic: pic63 }, { pic: pic64 }, { pic: pic65 }, { pic: pic66 }]
+const pic1 = 'https://i.pinimg.com/originals/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg';
+const pic2 = 'https://i.pinimg.com/originals/10/52/4b/10524b2431ffaa750fb9b3757d39d963.jpg';
+const pic3 = 'https://i.pinimg.com/originals/a9/4a/18/a94a18ddd68101e973cfa2097abed8d5.jpg';
+const pic4 = 'https://i.pinimg.com/originals/51/6a/89/516a89e238c78c4fd65ecb6d9cb5eeff.jpg';
+const pic5 = 'https://i.pinimg.com/564x/cd/9c/b9/cd9cb93861dce0b73b8b3b5bb51e7418.jpg';
+const pic6 = 'https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg';
+const pic7 = 'https://i.pinimg.com/originals/e6/47/a6/e647a6bb9c56fa09211e0e200ea66854.jpg';
+const pic8 = 'https://i.pinimg.com/originals/23/33/40/233340f0849268057bd86fdef94b63dd.jpg';
+const pic9 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/103611858_138707837834512_6997005151815177179_n.jpg?_nc_cat=102&_nc_sid=9267fe&_nc_ohc=DTOMrwufXToAX_s2w7T&_nc_ht=scontent.fhfa2-2.fna&oh=3dd169f8dee15a794874d88c049292b7&oe=5F9D95C0';
+const pic10 = 'https://i.pinimg.com/originals/2e/8d/37/2e8d37a1691affe730ab8cfcf1e3ec21.jpg';
+const pic11 = 'https://i.pinimg.com/originals/e5/44/cc/e544cc9a6253ab2a04f4368337baf253.jpg';
+const pic12 = 'https://i.pinimg.com/originals/f4/ad/08/f4ad08c6fba966af40bfe8d752c2838c.jpg';
+const pic13 = 'https://i.pinimg.com/564x/1e/17/32/1e1732840a1021d3c5f3999d2c298788.jpg';
+const pic14 = 'https://i.pinimg.com/originals/ba/6c/3b/ba6c3b84947ff400cab17419c70e838f.jpg';
+const pic15 = 'https://i.pinimg.com/originals/88/3b/0b/883b0bf90b020c617608763a28f2e04d.jpg';
+const pic16 = 'https://i.pinimg.com/originals/ba/d1/ec/bad1ec3c4b7404d977ccfeb395f5f144.jpg';
+const pic17 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101977430_136021468103149_7236328911181174034_o.jpg?_nc_cat=100&_nc_sid=9267fe&_nc_ohc=dRN0AjYCj-0AX8OOaGM&_nc_ht=scontent.fhfa2-2.fna&oh=c3489b48942d553f292ab1d3368dbe10&oe=5F9FE934';
+const pic18 = 'https://i.pinimg.com/originals/2f/57/31/2f57312bf4c32561ab102d118f151c9b.jpg';
+const pic19 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/98061225_118592586512704_6499456447191973888_o.jpg?_nc_cat=103&_nc_sid=a26aad&_nc_ohc=vOlo1dynPXsAX8lzGjm&_nc_ht=scontent.fhfa2-2.fna&oh=98bb483419142a938ded46ad74fa3668&oe=5FA11653';
+const pic20 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97566940_118062993232330_8664319349642756096_o.jpg?_nc_cat=101&_nc_sid=a26aad&_nc_ohc=dlmmZ4HXH5IAX-_ieIY&_nc_ht=scontent.fhfa2-2.fna&oh=605b76eef8b975f2e0ce08e8aac2d391&oe=5F9D70B1';
+const pic21 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97111442_118062939899002_8969748136352284672_o.jpg?_nc_cat=107&_nc_sid=a26aad&_nc_ohc=WpNGmST8AVgAX9EuiNO&_nc_ht=scontent.fhfa2-2.fna&oh=2ddba7ce4df47b09869b0c62d8d98052&oe=5F9F9D0F';
+const pic22 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/98005902_118063049898991_8895161287613349888_o.jpg?_nc_cat=101&_nc_sid=a26aad&_nc_ohc=DjsEdZYIdPkAX-RuWiQ&_nc_ht=scontent.fhfa2-2.fna&oh=ae3a8b61eb9fce277c38a138389d823b&oe=5FA02E82';
+const pic23 = 'https://i.pinimg.com/originals/ba/ab/1b/baab1b027f7089e654cdca45652b2097.jpg';
+const pic24 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95838000_116784093360220_5359710635233902592_o.jpg?_nc_cat=110&_nc_sid=a26aad&_nc_ohc=2a-fMf5ixZ0AX9Em4ez&_nc_ht=scontent.fhfa2-2.fna&oh=3fc1914debca1e56910e0f8b94122c6c&oe=5FA022A9';
+const pic25 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96812106_116784063360223_3863544243502972928_o.jpg?_nc_cat=108&_nc_sid=a26aad&_nc_ohc=XCIXWUc4XZkAX9IegoB&_nc_ht=scontent.fhfa2-2.fna&oh=2483d0fa1dee178a0909fdcc1c8078b4&oe=5F9F7EE3';
+const pic26 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97857338_116783946693568_6139579260559425536_o.jpg?_nc_cat=111&_nc_sid=a26aad&_nc_ohc=NkDe8JXSf7gAX_5ODM6&_nc_ht=scontent.fhfa2-2.fna&oh=b709a37679b065169229603b11db057d&oe=5FA037F3';
+const pic27 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95851856_116783983360231_5096715201990885376_o.jpg?_nc_cat=107&_nc_sid=a26aad&_nc_ohc=_5ZUfOUzNNUAX_l4gCE&_nc_ht=scontent.fhfa2-2.fna&oh=3e33ddb27e8a47b04a79e2abc4505558&oe=5F9E1CD8';
+const pic28 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97134959_116784023360227_4338207085410910208_o.jpg?_nc_cat=101&_nc_sid=a26aad&_nc_ohc=ik_vhaao1I4AX-SuRa1&_nc_ht=scontent.fhfa2-2.fna&oh=916a5dfa08d4c1f0f8d30a9691f0555b&oe=5FA12A2B';
+const pic29 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95898182_110814640623832_5679663455150276608_o.jpg?_nc_cat=109&_nc_sid=a26aad&_nc_ohc=qdkS8_Dp8dwAX9oOZaP&_nc_ht=scontent.fhfa2-2.fna&oh=82d9071bdfd4a347c05c679f8aef5a7b&oe=5F9EF578';
+const pic30 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/106968612_146648217040474_2159649764073456741_o.jpg?_nc_cat=102&_nc_sid=a26aad&_nc_ohc=jhi9_-TmhbQAX998-ot&_nc_ht=scontent.fhfa2-2.fna&oh=69184a9a2684bd158977b55a1c2adad8&oe=5F9F2E89';
+const pic31 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95752433_116044116767551_2145170099441500160_o.jpg?_nc_cat=109&_nc_sid=a26aad&_nc_ohc=B1hAWcIU9iIAX_L6HjQ&_nc_ht=scontent.fhfa2-2.fna&oh=92270fd6e12e9e34ed9f1b75d65e3c6a&oe=5FA04009';
+const pic32 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/97311437_116044040100892_7379637186221572096_o.jpg?_nc_cat=105&_nc_sid=a26aad&_nc_ohc=olx1T8J3xvQAX83vYm4&_nc_ht=scontent.fhfa2-2.fna&oh=40aa8ba1f8e172312551ad825cbc4396&oe=5FA0398E';
+const pic33 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95462850_110416477330315_7882319166407966720_o.jpg?_nc_cat=105&_nc_sid=a26aad&_nc_ohc=MJEU0D7ssLkAX87ItCu&_nc_ht=scontent.fhfa2-2.fna&oh=42f0381750eba4bd179ddf391df1f928&oe=5F9FBD33';
+const pic34 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95369526_110416547330308_9077905166736293888_o.jpg?_nc_cat=106&_nc_sid=a26aad&_nc_ohc=rzPz513EeUUAX8Q2BgV&_nc_ht=scontent.fhfa2-2.fna&oh=10fdbc7995708e475ef0e28b832fa97f&oe=5F9E8F7E';
+const pic35 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96215255_108470994191530_3359951803264270336_o.jpg?_nc_cat=106&_nc_sid=a26aad&_nc_ohc=aVEkdNKByE0AX8-dxD8&_nc_ht=scontent.fhfa2-2.fna&oh=b007bd7bd7ac820234009fc601ae078f&oe=5FA138F9';
+const pic36 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96012959_108471067524856_6758976663482007552_o.jpg?_nc_cat=111&_nc_sid=a26aad&_nc_ohc=OZ3Gdqu_b4UAX9KeVVV&_nc_ht=scontent.fhfa2-2.fna&oh=0a713b96607b285dc6aeca4914aa827c&oe=5F9F881E';
+const pic37 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95951444_108471027524860_1785424175599452160_o.jpg?_nc_cat=111&_nc_sid=a26aad&_nc_ohc=z-etz7O0PqoAX9SjVHE&_nc_ht=scontent.fhfa2-2.fna&oh=db24966d031c8e4477a75de8b0426b93&oe=5F9DF88F';
+const pic38 = 'https://i.pinimg.com/originals/36/65/58/366558d33161fb9b4643e40b957653fd.jpg';
+const pic39 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95827661_109700480735248_1065951891491389440_o.jpg?_nc_cat=107&_nc_sid=a26aad&_nc_ohc=JJKfAq9WRnoAX9yJK_l&_nc_ht=scontent.fhfa2-2.fna&oh=1f90f3f9803ad7345b8d2e9c49fca1df&oe=5F9F8CDA';
+const pic40 = 'https://i.pinimg.com/originals/17/9a/e9/179ae91e715ba58d00898820935c1e9d.jpg';
+const pic41 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95707140_109700514068578_6660947999205621760_o.jpg?_nc_cat=104&_nc_sid=a26aad&_nc_ohc=tRkGb32Rlj8AX-CZea8&_nc_ht=scontent.fhfa2-2.fna&oh=c0d698ec36a58928f49d7176f163c66b&oe=5FA0CDB1';
+const pic42 = 'https://i.pinimg.com/originals/fe/8e/44/fe8e44c7bfe199a3313579ea5bd70708.jpg';
+const pic43 = 'https://i.pinimg.com/originals/eb/67/69/eb6769950be829b7601b881a53a72134.jpg';
+const pic44 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96515813_109180370787259_459607474001936384_o.jpg?_nc_cat=102&_nc_sid=cdbe9c&_nc_ohc=VBE1O_hMV4YAX9cs0hl&_nc_ht=scontent.fhfa2-2.fna&oh=ec82c22add19cf3d0a8de14c67218595&oe=5F9FE4D6';
+const pic45 = 'https://i.pinimg.com/originals/8a/0a/9c/8a0a9c2f88efb0c3e5c1c6018962d717.jpg';
+const pic46 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/95327841_106062034432426_415403065001115648_o.jpg?_nc_cat=108&_nc_sid=cdbe9c&_nc_ohc=hPYZns2hImgAX-GU8lX&_nc_ht=scontent.fhfa2-2.fna&oh=f5bee00891e1440072d854108ffa5082&oe=5FA0E0CF';
+const pic47 = 'https://i.pinimg.com/originals/26/21/a2/2621a2e83ffa98f7bd3be5bb07626b83.jpg';
+const pic48 = 'https://i.pinimg.com/originals/2a/f4/12/2af412cbc9e23ecc5ae79b8fdf6a0735.jpg';
+const pic49 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101121225_129801975391765_1784420806814597120_o.jpg?_nc_cat=107&_nc_sid=a26aad&_nc_ohc=Nw05MdJ9fdkAX-rgObC&_nc_ht=scontent.fhfa2-2.fna&oh=dbc51d30cd1cc455f39648390d24d9a8&oe=5F9ECFE5';
+const pic50 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101645510_129802018725094_1010325712751558656_o.jpg?_nc_cat=110&_nc_sid=a26aad&_nc_ohc=gSzAfP0LadQAX-kqmRQ&_nc_ht=scontent.fhfa2-2.fna&oh=e541d4bae89821a93a3e3837708fa4ef&oe=5F9ED15E';
+const pic51 = 'https://i.pinimg.com/originals/b7/b5/ed/b7b5ed36d2c11fd561ae8b550c2c15f0.jpg';
+const pic52 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101273475_129570612081568_1262105392951853056_o.jpg?_nc_cat=110&_nc_sid=a26aad&_nc_ohc=yJJ5GNXuF6AAX9x_v8q&_nc_ht=scontent.fhfa2-2.fna&oh=30e2b0ba1c7b825b5dedb88e3be913d4&oe=5FA11109';
+const pic53 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101327890_129570698748226_1729398268548349952_o.jpg?_nc_cat=107&_nc_sid=a26aad&_nc_ohc=sG9NDS2LHZ4AX9dSyax&_nc_ht=scontent.fhfa2-2.fna&oh=7ae0a53b2a1e7e881b6a8e53214f7a3e&oe=5F9E6C5D';
+const pic54 = 'https://i.pinimg.com/originals/00/0a/af/000aaf9455d04fea89ee3b88f0a3d423.jpg';
+const pic55 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96150652_109157327456230_910978364666281984_o.jpg?_nc_cat=103&_nc_sid=cdbe9c&_nc_ohc=5nSkq43hrVoAX9YNTAT&_nc_ht=scontent.fhfa2-2.fna&oh=73f8928a10513e1d8fc1e9534ef92950&oe=5FA10734';
+const pic56 = 'https://i.pinimg.com/originals/4b/5b/22/4b5b22d1d135fccd9dc5ee61262500a9.jpg';
+const pic57 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/78263617_144556423916320_2856042165645780296_o.jpg?_nc_cat=103&_nc_sid=9267fe&_nc_ohc=lr_xqlFyC_cAX_sGysO&_nc_ht=scontent.fhfa2-2.fna&oh=7aa4c15c19c0af681ce0c6447d5958a5&oe=5F9FC29E';
+const pic58 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/100614941_132232941815335_7792902637409533952_o.jpg?_nc_cat=111&_nc_sid=9267fe&_nc_ohc=vbuXcqZSdcAAX8Lb6H4&_nc_ht=scontent.fhfa2-2.fna&oh=a17b8b9eef9066cf56dd74b3cfa1cfb2&oe=5F9EDB2D';
+const pic59 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/100824442_131108671927762_3572160029916135424_o.jpg?_nc_cat=104&_nc_sid=9267fe&_nc_ohc=Bsq4ilSW4yoAX9yFvQv&_nc_ht=scontent.fhfa2-2.fna&oh=250cbfef0f347aa21fcc642b12fb43ec&oe=5FA05142';
+const pic60 = 'https://i.pinimg.com/originals/cf/c2/d0/cfc2d0a7de39482c13bfcb39b5bae341.jpg';
+const pic61 = 'https://i.pinimg.com/originals/15/17/ae/1517ae2f62356dfc7944145fe44ffb7a.jpg';
+const pic62 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101415664_131608348544461_3717393739145019392_o.jpg?_nc_cat=106&_nc_sid=a26aad&_nc_ohc=mxsA1jxjBgoAX96WmUc&_nc_ht=scontent.fhfa2-2.fna&oh=a6e73aa4503d8f61981a0e5c41b4a8fe&oe=5F9F4EA7';
+const pic63 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101813839_131608555211107_4493426473343909888_o.jpg?_nc_cat=108&_nc_sid=a26aad&_nc_ohc=-oNej1bV-GMAX9X1rd3&_nc_ht=scontent.fhfa2-2.fna&oh=b6eee15acd0af8713586d12d97d33c49&oe=5FA0492D';
+const pic64 = 'https://i.pinimg.com/564x/f8/38/2c/f8382c2e102983211dbcc4767ab3dcbb.jpg';
+const pic65 = 'https://i.pinimg.com/originals/cf/4c/a7/cf4ca7657a0783f3a47a050991d37176.jpg';
+const pic66 = 'https://i.pinimg.com/originals/49/c6/79/49c679b8f33d4d7c00d16b7d5bd6052a.jpg';
+const pic67 = 'https://i.pinimg.com/564x/69/7d/80/697d80a8b2df3dfc20b4d01ed55a6cf9.jpg';
+const pic68 = 'https://i.pinimg.com/564x/f2/71/df/f271dfea9a4de7c46c006063a9bca755.jpg';
+const pic69 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96288199_108023214236308_4393473513395060736_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=6uaUF9QqcgIAX_75enu&_nc_ht=scontent.fhfa2-2.fna&oh=474dc021fa48a320990193612afefe61&oe=5F9D947C';
+const pic70 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96075834_108023137569649_8637453156680204288_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=Ux2tsPcqbdIAX-F122n&_nc_ht=scontent.fhfa2-2.fna&oh=a60031453394e2b361af99e3970da294&oe=5FA0811A';
+const pic71 = 'https://i.pinimg.com/originals/92/36/50/9236506d1a14b3e898b213106d2b8834.jpg';
+const pic72 = 'https://i.pinimg.com/originals/bd/08/89/bd08890ad651c54b673e4371b85424f2.jpg';
+const pic73 = 'https://i.pinimg.com/originals/35/a5/a0/35a5a0576a860cf6e514500bc8e8cc9c.jpg';
+const pic74 = 'https://i.pinimg.com/originals/dc/a4/2a/dca42a078c04477f093a49dc5426d3f1.jpg';
+const pic75 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/117762025_161181998920429_5955748860043230603_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=bEDOR7P_Kv8AX9nPkgG&_nc_ht=scontent.fhfa2-2.fna&oh=76afd1bb0fd3ee33b5a88702a4ca9456&oe=5FA13097';
+const pic76 = 'https://i.pinimg.com/564x/a6/2d/ba/a62dba49fb55f0b1320ef9132558b692.jpg';
+const pic77 = 'https://i.pinimg.com/564x/e2/23/7a/e2237a7a23ec1741a3bd46a7f74b174d.jpg';
+const pic78 = 'https://i.pinimg.com/originals/e7/6f/85/e76f855c9d4940aa25c0f4dcb9930809.jpg';
+const pic79 = 'https://i.pinimg.com/originals/c1/1a/2c/c11a2cb0c1b4999e30612fe648c61f04.jpg';
+const pic80 = 'https://i.pinimg.com/originals/c5/30/4e/c5304e3a3c534a71fbf455b0abdf1d53.jpg';
+const pic81 = 'https://i.pinimg.com/originals/85/05/22/850522e8229c7168c03ec757e0ea54a1.jpg';
+const pic82 = 'https://i.pinimg.com/originals/1e/05/ab/1e05ab38df96d29c578da114938ee81b.jpg';
+const pic83 = 'https://i.pinimg.com/originals/b4/d4/1d/b4d41d9ba6b2bb99f497962702aaad09.jpg';
+const pic84 = "https://i.pinimg.com/originals/de/ce/74/dece748973057b289b556f2d6f9bce54.jpg";
+const pic86 = "https://i.pinimg.com/originals/9a/3b/d7/9a3bd7e5ec019a3afbf8d5b9f77075a5.jpg";
+const pic87 = "https://i.pinimg.com/originals/a3/ba/d7/a3bad76626bc3f3800d30d89fe9e1f6c.jpg";
+const pic88 = "https://i.pinimg.com/originals/00/ab/85/00ab8518e853bb74f79ffe4a9f9670b4.jpg";
+const pic89 = "https://i.pinimg.com/originals/dc/11/2f/dc112f0e1c72586067b7e84ef1bd28f9.jpg";
+const pic90 = "https://i.pinimg.com/originals/b5/ab/db/b5abdbc050f420f4e7b8b796a7ccc6fc.jpg";
+const pic91 = "https://i.pinimg.com/originals/2f/d0/fe/2fd0fe5cf6bbb306f9a65db7a851497f.jpg";
+const pic92 = "https://i.pinimg.com/originals/0e/4e/d4/0e4ed41edfbcefca929a18cbe168031c.jpg";
+const pic93 = "https://i.pinimg.com/originals/f2/af/be/f2afbe248f053fd09fcea4d74c8678c4.jpg";
+const pic94 = "https://i.pinimg.com/originals/2e/70/c5/2e70c5ae6e2dd599a1b6eff5ab9cad26.jpg";
+const pic95 = "https://i.pinimg.com/originals/54/8f/fa/548ffa300f01015fe5d241c8212c60bd.jpg";
+const pic96 = "https://i.pinimg.com/originals/a2/da/63/a2da63367fa322259d74aad6da4e4aa6.jpg";
+const pic97 = "https://i.pinimg.com/originals/e4/7f/6e/e47f6e7071f8579d528c350aa3aa8e4b.jpg";
+const pic98 = "https://i.pinimg.com/originals/fa/b0/75/fab075d86e10fcd46df9328c202f35c4.jpg";
+const pic99 = "https://i.pinimg.com/originals/43/19/3e/43193e690755130d5da8c3a8a7681fd1.jpg";
+const pic100 = "https://i.pinimg.com/originals/e4/7f/6e/e47f6e7071f8579d528c350aa3aa8e4b.jpg";
+const pic101 = "https://i.pinimg.com/originals/0c/ad/51/0cad51f6c5d1dc3ecb8b7a94f8e25f92.jpg";
+const pic102 = "https://i.pinimg.com/originals/dd/21/2a/dd212ab264f48be4f0257373bd900957.jpg";
+const pic103 = "https://i.pinimg.com/originals/21/17/07/211707ccef0072e3ecbbda2fb510a60a.jpg";
 
-export default picturesArr
+const picturesArr = [
+    { pic: pic1 }, { pic: pic2 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic6 }, { pic: pic7 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 },
+    { pic: pic11 }, { pic: pic12 }, { pic: pic13 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 },
+    { pic: pic21 }, { pic: pic22 }, { pic: pic23 }, { pic: pic24 }, { pic: pic25 }, { pic: pic26 }, { pic: pic27 }, { pic: pic28 }, { pic: pic29 }, { pic: pic30 },
+    { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic37 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 },
+    { pic: pic41 }, { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic45 }, { pic: pic46 }, { pic: pic47 }, { pic: pic48 }, { pic: pic49 }, { pic: pic50 },
+    { pic: pic51 }, { pic: pic52 }, { pic: pic53 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic57 }, { pic: pic58 }, { pic: pic59 }, { pic: pic60 },
+    { pic: pic61 }, { pic: pic62 }, { pic: pic63 }, { pic: pic64 }, { pic: pic65 }, { pic: pic66 }, { pic: pic67 }, { pic: pic68 }, { pic: pic69 }, { pic: pic70 },
+    { pic: pic71 }, { pic: pic72 }, { pic: pic73 }, { pic: pic74 }, { pic: pic75 }, { pic: pic76 }, { pic: pic77 }, { pic: pic78 }, { pic: pic79 }, { pic: pic80 },
+    { pic: pic81 }, { pic: pic82 }, { pic: pic83 }, { pic: pic84 }, { pic: pic86 }, { pic: pic87 }, { pic: pic88 }, { pic: pic89 }, { pic: pic90 },
+    { pic: pic91 }, { pic: pic92 }, { pic: pic93 }, { pic: pic94 }, { pic: pic95 }, { pic: pic96 }, { pic: pic97 }, { pic: pic98 }, { pic: pic99 }, { pic: pic100 },
+    { pic: pic101 }, { pic: pic102 }, { pic: pic103 }
+]
 
+export default picturesArr;
 
-export const picturesArrCol1 = [{ pic: pic1 }, { pic: pic2 }, { pic: pic59 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic6 }, { pic: pic7 }, { pic: pic45 }, { pic: pic46 }, { pic: pic48 }, { pic: pic49 }, { pic: pic50 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 }, { pic: pic11 }, { pic: pic12 }, { pic: pic13 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 }, { pic: pic21 }, { pic: pic22 }, { pic: pic57 }, { pic: pic60 }, { pic: pic61 }]
+export const picturesArrCol_1 = [
+    { pic: pic1 },
+    { pic: pic2 },
+    { pic: pic87 },
+    { pic: pic6 },
+    { pic: pic7 },
+    { pic: pic8 },
+    { pic: pic9 },
+    { pic: pic12 },
+    { pic: pic14 },
+    { pic: pic21 },
+    { pic: pic18 },
+    { pic: pic26 },
+    { pic: pic27 },
+    { pic: pic28 },
+    { pic: pic19 },
+    { pic: pic30 },
+    { pic: pic32 },
+    { pic: pic35 },
+    { pic: pic33 },
+    { pic: pic34 },
+    { pic: pic100 },
+    { pic: pic38 },
+    { pic: pic102 },
+    { pic: pic39 },
+    { pic: pic103 },
+    { pic: pic43 },
+    { pic: pic45 },
+    { pic: pic46 },
+    { pic: pic51 },
+    { pic: pic52 },
+    { pic: pic16 },
+    { pic: pic56 },
+    { pic: pic54 },
+    { pic: pic55 },
+    { pic: pic60 },
+    { pic: pic62 },
+    { pic: pic63 },
+    { pic: pic23 },
+    { pic: pic64 },
+    { pic: pic65 },
+    { pic: pic69 },
+    { pic: pic73 },
+    { pic: pic91 },
+    { pic: pic75 },
+    { pic: pic76 },
+    { pic: pic78 },
+    { pic: pic96 },
+    { pic: pic94 },
+    { pic: pic93 },
+    { pic: pic82 },
+    { pic: pic83 }
+];
 
-export const picturesArrCol2 = [{ pic: pic23 }, { pic: pic24 }, { pic: pic25 }, { pic: pic26 }, { pic: pic27 }, { pic: pic51 }, { pic: pic52 }, { pic: pic53 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic28 }, { pic: pic29 }, { pic: pic30 }, { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic37 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 }, { pic: pic41 }, { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic66 }, { pic: pic63 }, { pic: pic64 }, { pic: pic65 }]
-
-// { pic: pic58 },
+export const picturesArrCol_2 = [
+    { pic: pic3 },
+    { pic: pic4 },
+    { pic: pic5 },
+    { pic: pic11 },
+    { pic: pic10 },
+    { pic: pic13 },
+    { pic: pic17 },
+    { pic: pic15 },
+    { pic: pic20 },
+    { pic: pic22 },
+    { pic: pic24 },
+    { pic: pic25 },
+    { pic: pic29 },
+    { pic: pic86 },
+    { pic: pic31 },
+    { pic: pic36 },
+    { pic: pic37 },
+    { pic: pic98 },
+    { pic: pic101 },
+    { pic: pic40 },
+    { pic: pic41 },
+    { pic: pic42 },
+    { pic: pic84 },
+    { pic: pic44 },
+    { pic: pic47 },
+    { pic: pic53 },
+    { pic: pic48 },
+    { pic: pic49 },
+    { pic: pic50 },
+    { pic: pic57 },
+    { pic: pic58 },
+    { pic: pic59 },
+    { pic: pic88 },
+    { pic: pic61 },
+    { pic: pic89 },
+    { pic: pic90 },
+    { pic: pic66 },
+    { pic: pic67 },
+    { pic: pic68 },
+    { pic: pic70 },
+    { pic: pic71 },
+    { pic: pic72 },
+    { pic: pic74 },
+    { pic: pic77 },
+    { pic: pic79 },
+    { pic: pic80 },
+    { pic: pic99 },
+    { pic: pic95 },
+    { pic: pic92 },
+    { pic: pic81 }
+];

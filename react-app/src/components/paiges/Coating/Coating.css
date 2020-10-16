@@ -100,13 +100,13 @@
 .img-8 {
     height: 350px;
     width: 350px;
-    background-image: url('https://i.pinimg.com/564x/40/b6/f5/40b6f52f735ed818ee187f6a01404224.jpg');
-    background-size: 350px 350px;
+    background-image: url('https://i.pinimg.com/originals/39/60/01/3960010461dca1592be6a3f0db67fdcd.jpg');
+    background-size: 350px 550px;
 }
 
 .img-8:hover {
-    background-image: url('https://i.pinimg.com/originals/39/60/01/3960010461dca1592be6a3f0db67fdcd.jpg');
-    background-size: 350px 550px;
+    background-image: url('https://i.pinimg.com/564x/40/b6/f5/40b6f52f735ed818ee187f6a01404224.jpg');
+    background-size: 350px 350px;
 }
 
 .texture-txt {
