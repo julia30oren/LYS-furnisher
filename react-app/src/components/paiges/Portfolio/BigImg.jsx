@@ -6,9 +6,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 const BigImg = ({ name, className, src, onClick }) => {
 
     return (
-        <a href="#" title={name}>
-            <LazyLoadImage effect="opacity" className={className} src={src} onClick={onClick} alt={name} />
-        </a>
+        <LazyLoadImage title={name} effect="opacity" className={className} src={src} onClick={onClick} alt={name} />
     )
 }
 

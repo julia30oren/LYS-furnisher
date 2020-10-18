@@ -13,46 +13,50 @@ export const Images = (props) => {
     const [bigPicture, setBigPicture] = useState(null);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <p className="portfolio-tit">{translate('portfolio-2-text')}</p>
+        <div className="Portfolio">
+            <p>{translate('portfolio-2-text')}</p>
             <div className="row">
-
+                {/* -------------------------------------------------------- */}
                 {!bigPicture ? null :
-                    <div className="big-img-div row" style={{ width: '100%' }} >
-
-                        <div className="big-pic">
-                            <button className="close-b" type="button" onClick={() => setBigPicture(null)}>
-                                <i className="fas fa-times  fa-3x"></i>
-                            </button>
-                            <img src={bigPicture} alt="" className="big-img" />
-                            <p className="thumbnail-text">{translate('portfolio-2-text')}</p>
+                    <div className="big-img-div row">
+                        <div className="img-div">
+                            <img src={bigPicture} alt="LYS" />
                         </div>
-                        <div className="column thumbnail-col">
+
+                        <div className="button-div">
+                            <button type="button" onClick={() => setBigPicture(null)}>
+                                <i className="fas fa-times fa-2x"></i>
+                            </button>
+                            <p>{translate('portfolio-2-text')}</p>
+                        </div>
+                        <div className="thumbnail-col">
                             {picturesArr.map(({ pic }) => {
                                 return <BigImg className="thumbnail" src={pic} onClick={() => { setBigPicture(pic) }} />
                             })}
                         </div>
                     </div>
                 }
-                {/* -------------------------------------------------------- */}
-                <div className="porfolio-col-2">
-                    {picturesArrCol_1.map(({ pic }) => {
-                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
-                    })}
-                </div>
+                {/* ------------------------------------PORTFOLIO-------------------------- */}
+                {bigPicture ? <div style={{ height: '700px' }}></div> :
+                    <div className="row">
+                        <div className="porfolio-col">
+                            {picturesArrCol_1.map(({ pic }) => {
+                                return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                            })}
+                        </div>
 
-                <div className="porfolio-col-2">
-                    {picturesArrCol_2.map(({ pic }) => {
-                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
-                    })}
-                </div>
-                <div className="porfolio-col-2">
-                    {picturesArrCol_3.map(({ pic }) => {
-                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
-                    })}
-                </div>
-                {/* --------------------------------------------------- */}
-
+                        <div className="porfolio-col">
+                            {picturesArrCol_2.map(({ pic }) => {
+                                return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                            })}
+                        </div>
+                        <div className="porfolio-col">
+                            {picturesArrCol_3.map(({ pic }) => {
+                                return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                            })}
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     )

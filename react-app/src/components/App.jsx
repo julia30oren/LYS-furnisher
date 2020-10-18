@@ -106,7 +106,8 @@ function App() {
                 {/* -------------------RIGHT NAVIGATION------------- LANGUEGES + MESEGER  ---------------------------- */}
                 <div className="right-side-bottom">
                     {/* <img style={{ width: '200px' }} src="https://i.pinimg.com/originals/1a/76/c2/1a76c279cec0c64425bf977eeafeccf1.png" /> */}
-                    <img src="https://i.pinimg.com/originals/aa/bd/f3/aabdf3d89c7449946d5ddea47f8a01af.png " />
+                    <img src="https://i.pinimg.com/originals/aa/bd/f3/aabdf3d89c7449946d5ddea47f8a01af.png" alt="Blue paint" />
+
                     <div style={{ position: 'fixed', zIndex: '5', right: '50px', top: '400px' }}>
                         <ul>
                             <li>
@@ -125,7 +126,7 @@ function App() {
                             </li>
                         </ul>
                     </div>
-                    <img style={{ marginTop: '-100px' }} src="https://i.pinimg.com/originals/cd/22/1f/cd221f9df05fda9bd84693f7739c736a.png" />
+                    <img style={{ marginTop: '-100px' }} src="https://i.pinimg.com/originals/cd/22/1f/cd221f9df05fda9bd84693f7739c736a.png" alt="Green paint" />
                 </div>
                 {/*  --------------------------------------CONTACT FORM------------------------- */}
                 {(!contactForm) ? null :

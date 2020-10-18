@@ -1,152 +1,151 @@
-        .Creation-component {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .vid-row {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            margin: 20px;
-        }
-        
-        .video-div-left {
-            width: 40%;
-            border-radius: 150px 0 0 150px;
-            margin-left: 20%;
-        }
-        
-        .text-bl-left {
-            width: 50%;
-            font-size: x-large;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            color: #000000;
-            font-weight: normal;
-            text-decoration: none;
-            font-style: italic;
-            font-variant: normal;
-            text-transform: none;
-        }
-        
-        .videos {
-            border: solid rgb(53, 52, 52) 1px;
-            border-radius: 50%;
-            -webkit-box-shadow: 0px 0px 40px -9px #000000;
-            box-shadow: 0px 0px 40px -9px #000000;
-        }
-        
-        .video-div-right {
-            width: 50%;
-            border-radius: 0 150px 150px 0;
-            margin-right: 10%;
-        }
-        
-        .text-bl-right {
-            width: 60%;
-            padding-right: 5%;
-            padding-left: 2%;
-            font-size: x-large;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            color: #000000;
-            font-weight: normal;
-            text-decoration: none;
-            font-style: italic;
-            font-variant: normal;
-            text-transform: none;
-        }
-        
-        #video1 {
-            width: 55%;
-        }
-        
-        #video2 {
-            width: 70%;
-            margin-left: 5%;
-        }
-        
-        #video3 {
-            width: 65%;
-        }
-        
-        #video4 {
-            width: 50%;
-            margin-left: 25%;
-        }
-        
-        #video4-2 {
-            width: 70%;
-            margin-left: 45%;
-            margin-top: -20%;
-        }
-        
-        #video5 {
-            width: 75%;
-        }
-        
-        #video6 {
-            width: 45%;
-            margin-left: 15%;
-        }
-        
-        .big-text {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            font-style: normal;
-            font-variant: normal;
-            text-transform: uppercase;
-        }
-        
-        .text-3 {
-            margin-top: 50px;
-            font-size: 210%;
-            font-family: Noto;
-            color: rgba(128, 128, 128, 0.3);
-            width: 100%;
-            text-align: center;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            letter-spacing: 2px;
-            word-spacing: 2px;
-            font-weight: 700;
-            text-decoration: none;
-            font-style: normal;
-            font-variant: normal;
-            text-transform: uppercase;
-        }
-        
-        .img-row {
-            display: flex;
-            flex-direction: row;
-            margin-top: 5%;
-            width: 100%;
-        }
-        
-        .img-row1 {
-            width: 53.8%;
-            margin: auto;
-        }
-        
-        .img-row2 {
-            width: 42%;
-            margin: auto;
-            /* padding-left: 2%; */
-        }
-        
-        .img-row3 {
-            width: 42%;
-            margin: auto;
-        }
-        
-        .img-row4 {
-            width: 54%;
-            margin: auto;
-        }
+.Creation {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.creation-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-left-side>video,
+.video-right-side>video {
+    border: solid rgba(53, 52, 52, 0.233) 1px;
+    border-radius: 50%;
+}
+
+.text-blok {
+    margin: auto;
+}
+
+.text-blok>h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.text-blok>p {
+    font-size: x-large;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+
+/* ----------------------------------LEFT SIDE VIDEOS--------------- */
+
+.video-left-side {
+    width: 40%;
+    border-radius: 150px 0 0 150px;
+    margin-left: 20%;
+}
+
+.left {
+    width: 45%;
+    margin-left: 100x;
+}
+
+.left>h5 {
+    text-align: right;
+}
+
+#video1 {
+    width: 55%;
+}
+
+#video3 {
+    width: 65%;
+}
+
+#video5 {
+    width: 75%;
+}
+
+
+/* ----------------------------------RIGHT SIDE VIDEOS--------------- */
+
+.video-right-side {
+    width: 50%;
+    border-radius: 150px 0 0 150px;
+}
+
+.right {
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+
+#video2 {
+    width: 70%;
+    margin-left: 5%;
+}
+
+#video4-1 {
+    width: 40%;
+    margin-left: 20%;
+}
+
+#video4-2 {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+#video6 {
+    width: 45%;
+    margin-left: 15%;
+}
+
+
+/* ----------------------------------------LOZUNG----------- */
+
+.creation-lozung {
+    margin-top: 50px;
+    font-size: 210%;
+    font-family: Noto;
+    color: rgba(128, 128, 128, 0.3);
+    width: 100%;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+
+/* ----------------------------------------------------------COMPARING IMAGES---------------- */
+
+.comparing-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.img-row1 {
+    width: 53.8%;
+    margin: auto;
+}
+
+.img-row2 {
+    width: 42%;
+    margin: auto;
+}

@@ -1,9 +1,7 @@
-.About-component-forComp {
+.About {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
     justify-content: center;
 }
 
@@ -17,18 +15,12 @@
     width: 100%;
 }
 
-.par-1 {
+.par-img {
     background-image: url('https://i.pinimg.com/originals/a5/51/6c/a5516ca3d37d02573005231ff3864632.jpg');
     background-size: 1000px 800px;
 }
 
-.alternative {
-    width: 100%;
-}
-
 .aboutTextDiv {
-    width: 100%;
-    padding: 2%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -40,27 +32,5 @@
     text-transform: none;
     text-align: center;
     font-size: x-large;
-}
-
-.About-component-forphone {
-    padding-top: 10%;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.aboutTextPhone {
-    text-align: center;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: normal;
-    text-transform: none;
-    text-align: center;
-    font-size: larger;
+    margin: 35px;
 }

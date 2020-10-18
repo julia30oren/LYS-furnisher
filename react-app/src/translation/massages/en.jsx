@@ -53,7 +53,7 @@ export default {
         "creation-3-text": "We take into account the thickness of the materials, the features of the selected fittings and fastening system. Our knowledge and practical experience help to make furniture not only beautiful, but also comfortable and functional.",
         "creation-4-title": "Production",
         "creation-4-text": "We are responsible for the quality of even those details that you do not see. All materials are carefully controlled - we choose the boards of optimal humidity, select wood fibers and use safe quality glue for product reliability.",
-        "creation-5-title": "Dyeing",
+        "creation-5-title": "Coloring",
         "creation-5-text": "We know the properties of materials, the correct technique of their application and take into account the features of the room: whether it is a bathroom where you need moisture-resistant materials, or a children's room that requires natural oil and water-based enamel.",
         "creation-6-title": "Packaging",
         "creation-6-text": "We carefully pack all the furniture we make so that it reaches its owner successfully: we immobilize drawers and doors, use double packaging for the ends of countertops and all protruding parts. And if necessary - we make a box for transportation.",

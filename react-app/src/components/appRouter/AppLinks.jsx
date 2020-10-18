@@ -9,11 +9,9 @@ export default class AppLinks extends React.Component {
 
         return routes.filter(route => route).map(route =>
 
-            <div>
-                <Link className={route.className} key={route.key} to={route.path}>
-                    {route.title}
-                </Link>
-            </div>
+            <Link className={route.className} key={route.key} to={route.path}>
+                {route.title}
+            </Link>
         )
     }
 }

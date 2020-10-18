@@ -11,32 +11,33 @@ export const AboutUs = (props) => {
 
     return (
         <div>
-            <div className="About-component-forComp">
-                <div className="parallax par-1"></div>
+            <div className="About">
+                {/* ----------------------------------------------------------1------------------ */}
+                {/* -----------------------------------PHOTO----------- */}
+                <div className="parallax par-img"></div>
+                {/* -----------------------------------TEXT BLOK------- */}
                 <div className="aboutTextDiv">
-                    <br></br>
                     <p>{translate('about-1-text')}</p>
                     <p>{translate('about-2-text')}</p>
                     <p>{translate('about-3-text')}</p>
-                    <br></br>
                 </div>
-
-                <div className="parallax par-1"></div>
+                {/* ----------------------------------------------------------2------------------ */}
+                {/* -----------------------------------PHOTO----------- */}
+                <div className="parallax par-img"></div>
+                {/* -----------------------------------TEXT BLOK------- */}
                 <div className="aboutTextDiv">
-                    <br></br>
                     <p>{translate('about-4-text')}</p>
                     <p>{translate('about-5-text')}</p>
-                    <br></br>
                 </div>
-
-                <div className="parallax par-1"></div>
+                {/* ----------------------------------------------------------3------------------ */}
+                {/* -----------------------------------PHOTO----------- */}
+                <div className="parallax par-img"></div>
+                {/* -----------------------------------TEXT BLOK------- */}
                 <div className="aboutTextDiv">
-                    <br></br>
                     <p>{translate('about-6-text')} {translate('about-7-text')}</p>
                     <p>{translate('about-8-text')}</p>
                     <br></br>
                     <p>{translate('about-9-text')}</p>
-                    <br></br>
                 </div>
             </div >
         </div>
