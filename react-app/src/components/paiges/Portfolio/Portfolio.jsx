@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
 import translate from '../../../translation/do-translate';
-import picturesArr, { picturesArrCol_1, picturesArrCol_2 } from "../../picImports/picImporter"
+import picturesArr, { picturesArrCol_1, picturesArrCol_2, picturesArrCol_3 } from "../../picImports/picImporter"
 import BigImg from "./BigImg";
 
 export const Images = (props) => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [bigPicture, setBigPicture] = useState(null);
 
@@ -34,18 +34,24 @@ export const Images = (props) => {
                         </div>
                     </div>
                 }
-
-                <div className="porfolio-col">
+                {/* -------------------------------------------------------- */}
+                <div className="porfolio-col-2">
                     {picturesArrCol_1.map(({ pic }) => {
-                        return <BigImg name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
                     })}
                 </div>
 
-                <div className="porfolio-col">
+                <div className="porfolio-col-2">
                     {picturesArrCol_2.map(({ pic }) => {
-                        return <BigImg className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
                     })}
                 </div>
+                <div className="porfolio-col-2">
+                    {picturesArrCol_3.map(({ pic }) => {
+                        return <BigImg key={Math.random() * 10000} name='LYS furniture' className="portfolio-img" src={pic} onClick={() => { setBigPicture(pic) }} />
+                    })}
+                </div>
+                {/* --------------------------------------------------- */}
 
             </div>
         </div>

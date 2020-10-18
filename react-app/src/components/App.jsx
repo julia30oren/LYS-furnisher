@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
-import AppLinks from './appRouter/AppLinks';
 import Form from './Form';
+import NavBar from './Nav/NavBar';
+
 import { MyProvider, LOCALES } from '../translation';
 
 
@@ -56,116 +57,82 @@ function App() {
 
     useEffect(() => {
         checkLocation();
-        // checkBrowserLang();
+        checkBrowserLang();
     }, []);
 
 
     const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
     const [contactForm, setContactForm] = useState(false);
-    const [navbar, setNavbarOpen] = useState(false);
+    // const [navbar, setNavbarOpen] = useState(false);
 
 
     return (
 
         <MyProvider locale={locale}>
             <BrowserRouter>
-                <div className="App" style={{ display: 'flex' }}>
+                <NavBar></NavBar>
 
-                    <div className="Navigation-left-side">
 
-                        <div className="Nuv-div">
-                            <ul className="Nuv-lu">
-                                <li className="Nav-item">
-                                    <div className="Nav-lang">
-                                        <button onClick={() => { setLocale(LOCALES.UKRAINIAN) }} className="lang-button">
-                                            <p className="lang-title">Укр.</p></button>
-                                        <button onClick={() => { setLocale(LOCALES.RUSSIAN) }} className="lang-button">
-                                            <p className="lang-title">Рус.</p></button>
-                                        <button onClick={() => { setLocale(LOCALES.ENGLISH) }} className="lang-button">
-                                            <p className="lang-title">Eng.</p></button>
-                                    </div>
-                                </li>
-                                <AppLinks />
-                            </ul>
-                        </div>
-
-                        {/* <div className="Nuv-logo">
-                            <img className="logo" src="https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png" alt="family-logo" />
-
-                            <div className='icon-link-div'>
-                                <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
-                                    <i className="fas fa-map-marker-alt fa-3x"></i>
-                                </a>
-                                <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-instagram fa-3x"></i>
-                                </a>
-                                <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-facebook-f fa-3x"></i>
-                                </a>
-                            </div>
-                        </div> */}
+                <div className="Main-Component">
+                    {/* ----------------------------------------------------- MAIN -------------------- */}
+                    <Switch>
+                        <AppRoutes />
+                    </Switch>
+                    {/* ------------------------------------------------- FOOTER------------------------  */}
+                    <br></br>
+                    <div style={{ width: '100%', textAlign: 'center' }}>
+                        <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
+                            <i className="fas fa-map-marker-alt fa-2x"></i>
+                        </a>
+                        <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="viber://chat?number=+380934864811">
+                            <i className="fab fa-viber fa-2x"></i>
+                        </a>
+                        <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://telegram.me/<Crdemon>">
+                            <i className="fab fa-telegram fa-2x"></i>
+                        </a>
+                        <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=380986007136">
+                            <i className="fab fa-whatsapp-square fa-2x"></i>
+                        </a>
                     </div>
 
-                    {/* <div className="Navigation-top">
-                        <div className="Nav-burger">
-                            <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                <button className="burger-button" type="button" onClick={() => setNavbarOpen(!navbar)}>
-                                    {navbar ? <i className="fas fa-times  fa-2x"></i> : <i className="fas fa-bars fa-3x"></i>}
-                                </button>
-                                <img className="top-logo" src="https://i.pinimg.com/originals/30/11/d0/3011d0882f8e3efdb6402b6e381c1753.png" alt="family-logo" />
-                                <div className='Icos-top-div'>
-                                    <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
-                                        <i className="fas fa-map-marker-alt fa-2x"></i>
-                                    </a>
-                                    <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-instagram fa-2x"></i>
-                                    </a>
-                                    <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
-                                        <i className="fab fa-facebook-f fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            {!navbar ? null :
-                                <div className="Nav-Top">
-                                    <ul className="Nuv-lu" onClick={() => setNavbarOpen(!navbar)}>
-
-                                        <li className="Nav-item">
-                                            <div className="Nav-lang">
-                                                <button onClick={() => { setLocale(LOCALES.UKRAINIAN) }} className="lang-button">
-                                                    <p className="lang-title">Укр.</p></button>
-                                                <button onClick={() => { setLocale(LOCALES.RUSSIAN) }} className="lang-button">
-                                                    <p className="lang-title">Рус.</p></button>
-                                                <button onClick={() => { setLocale(LOCALES.ENGLISH) }} className="lang-button">
-                                                    <p className="lang-title">Eng.</p></button>
-                                            </div>
-                                        </li>
-                                        <AppLinks />
-                                    </ul>
-                                </div>
-                            }
-                        </div>
-                    </div> */}
-
-                    <div className="Main-Component">
-                        <Switch>
-                            <AppRoutes />
-                        </Switch>
-
-                        <div style={{ width: '100%', textAlign: 'center' }}>This site was designed and created by <a href="https://www.linkedin.com/in/julia-orendovskyi-026a30b6/">Julia Oren</a> & <a href="https://www.linkedin.com/in/iyar-nitzan-576184110/">Iyar Nitzan</a></div>
-                    </div>
-
-                    <div className="right-side-bottom">
-                        <button id='contuct-button' onClick={() => { setContactForm(!contactForm) }}>
-                            {!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}
-                        </button>
-                    </div>
-                    {(!contactForm) ? null :
-                        <div className="contact-form"> <Form></Form> </div>}
+                    <div style={{ width: '100%', textAlign: 'center', marginTop: '25px' }}>This site was designed and created by <a href="https://www.linkedin.com/in/julia-orendovskyi-026a30b6/">Julia Oren</a> & <a href="https://www.linkedin.com/in/iyar-nitzan-576184110/">Iyar Nitzan</a></div>
                 </div>
+                {/* -------------------RIGHT NAVIGATION------------- LANGUEGES + MESEGER  ---------------------------- */}
+                <div className="right-side-bottom">
+                    {/* <img style={{ width: '200px' }} src="https://i.pinimg.com/originals/1a/76/c2/1a76c279cec0c64425bf977eeafeccf1.png" /> */}
+                    <img src="https://i.pinimg.com/originals/aa/bd/f3/aabdf3d89c7449946d5ddea47f8a01af.png " />
+                    <div style={{ position: 'fixed', zIndex: '5', right: '50px', top: '400px' }}>
+                        <ul>
+                            <li>
+                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}><p> Укр. </p></button>
+                            </li>
+                            <li>
+                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.RUSSIAN) }}><p> Рус. </p></button>
+                            </li>
+                            <li>
+                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.ENGLISH) }}><p> Eng. </p></button>
+                            </li>
+                            <li>
+                                <button className="right-nav-button" id='contuct-button-2' onClick={() => { setContactForm(!contactForm) }}>
+                                    <p>{!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}</p>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <img style={{ marginTop: '-100px' }} src="https://i.pinimg.com/originals/cd/22/1f/cd221f9df05fda9bd84693f7739c736a.png" />
+                </div>
+                {/*  --------------------------------------CONTACT FORM------------------------- */}
+                {(!contactForm) ? null :
+                    <div className="contact-form"> <Form></Form> </div>}
 
             </BrowserRouter >
-        </MyProvider>
+        </MyProvider >
     );
 }
 

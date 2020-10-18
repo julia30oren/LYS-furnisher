@@ -106,8 +106,10 @@ export const Creation = (props) => {
             </div>
 
             <p className="text-3">{translate('creation-8-text')}</p>
-            <RenderImages2></RenderImages2>
+
             <RenderImages1></RenderImages1>
+            <RenderImages2></RenderImages2>
+
         </div>
     )
 }

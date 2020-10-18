@@ -1,0 +1,120 @@
+#NavBar {
+    position: fixed;
+    z-index: 2;
+    width: 250px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+/* ---------------------------------LOGO-------------------------- */
+
+.logo-div {
+    width: 250px;
+    height: 250px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/10/13/04/wood-2735496_960_720.jpg');
+    background-size: cover;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png');
+    background-size: cover;
+}
+
+
+/* -------------------------------------LINKS---------------------------------- */
+
+#navbar {
+    background-color: rgba(51, 51, 51, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wood-1 {
+    height: 50px;
+    width: 210px;
+    background-image: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.wood-2 {
+    height: 30px;
+    width: 200px;
+    background-image: url('https://i.pinimg.com/originals/cb/d0/4a/cbd04a83f7a2c42876474e40aecfff3a.jpg');
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.wood-3 {
+    height: 70px;
+    width: 160px;
+    background-image: url('https://inspirationfeed.com/wp-content/uploads/2019/12/wooden.jpg');
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.wood-4 {
+    height: 70px;
+    width: 230px;
+    background-image: url('https://bhf-cdn.azureedge.net/bhf-blob-prod/0012264_tanice-grey-faux-wood-texture_600.jpeg');
+    margin-top: 20px;
+    font-size: 48px;
+}
+
+.wood-5 {
+    height: 50px;
+    width: 200px;
+    background-image: url('https://image.shutterstock.com/image-photo/old-rural-wooden-wall-green-260nw-537327499.jpg');
+    margin-top: 15px;
+    font-size: 33px;
+}
+
+.wood-6 {
+    height: 25px;
+    width: 160px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg&ga=GA1.2.1435448447.1600819200');
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.nav-title {
+    text-shadow: #000000c4 3px 3px 2px;
+    background-size: cover;
+}
+
+.wood-1:hover,
+.wood-2:hover,
+.wood-3:hover,
+.wood-4:hover,
+.wood-5:hover,
+.wood-6:hover {
+    background-image: none;
+    text-shadow: none;
+}
+
+.wood {
+    width: 250px;
+    height: 300px;
+    background-image: url('https://image.freepik.com/free-photo/blue-wooden-planks-old-grunge-blue-colored-wood-texture_88281-2411.jpg');
+    background-size: cover;
+    margin-top: 20px;
+}
+
+#navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: rgba(221, 221, 221, 0);
+    color: black;
+}
