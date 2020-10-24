@@ -50,8 +50,8 @@ const pic60 = 'https://i.pinimg.com/originals/cf/c2/d0/cfc2d0a7de39482c13bfcb39b
 const pic61 = 'https://i.pinimg.com/originals/15/17/ae/1517ae2f62356dfc7944145fe44ffb7a.jpg';
 const pic62 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/101415664_131608348544461_3717393739145019392_o.jpg?_nc_cat=106&_nc_sid=a26aad&_nc_ohc=mxsA1jxjBgoAX96WmUc&_nc_ht=scontent.fhfa2-2.fna&oh=a6e73aa4503d8f61981a0e5c41b4a8fe&oe=5F9F4EA7';
 const pic64 = 'https://i.pinimg.com/564x/f8/38/2c/f8382c2e102983211dbcc4767ab3dcbb.jpg';
-const pic65 = 'https://i.pinimg.com/originals/cf/4c/a7/cf4ca7657a0783f3a47a050991d37176.jpg';
-const pic66 = 'https://i.pinimg.com/originals/49/c6/79/49c679b8f33d4d7c00d16b7d5bd6052a.jpg';
+const pic65 = 'https://i.pinimg.com/originals/4a/c2/39/4ac2399f20f1ae5fdf4aa7a3eb7520e4.jpg';
+const pic66 = 'https://i.pinimg.com/originals/f3/f0/73/f3f073cb9a9504eebeea7740a1fe6c2a.jpg';
 const pic67 = 'https://i.pinimg.com/originals/b1/37/57/b1375741d22229d6260b673aeb1de06e.jpg';
 const pic68 = 'https://i.pinimg.com/originals/c5/32/b7/c532b7cb3e7a8ec9938703c8a810f56c.jpg';
 const pic69 = 'https://scontent.fhfa2-2.fna.fbcdn.net/v/t1.0-9/96288199_108023214236308_4393473513395060736_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=6uaUF9QqcgIAX_75enu&_nc_ht=scontent.fhfa2-2.fna&oh=474dc021fa48a320990193612afefe61&oe=5F9D947C';
@@ -62,7 +62,7 @@ const pic73 = 'https://i.pinimg.com/originals/35/a5/a0/35a5a0576a860cf6e514500bc
 const pic74 = 'https://i.pinimg.com/originals/dc/a4/2a/dca42a078c04477f093a49dc5426d3f1.jpg';
 const pic77 = 'https://i.pinimg.com/originals/f5/45/42/f54542092563332be7391bfc7311b1dc.jpg';
 const pic78 = 'https://i.pinimg.com/564x/8f/f9/00/8ff9000fb9f0cae50c3421e488b2c8be.jpg';
-const pic79 = 'https://i.pinimg.com/originals/c1/1a/2c/c11a2cb0c1b4999e30612fe648c61f04.jpg';
+const pic79 = 'https://i.pinimg.com/originals/d4/81/16/d481161147c8343bdb869403133d758b.jpg';
 const pic80 = 'https://i.pinimg.com/originals/c5/30/4e/c5304e3a3c534a71fbf455b0abdf1d53.jpg';
 const pic82 = 'https://i.pinimg.com/originals/1e/05/ab/1e05ab38df96d29c578da114938ee81b.jpg';
 const pic83 = 'https://i.pinimg.com/originals/b4/d4/1d/b4d41d9ba6b2bb99f497962702aaad09.jpg';

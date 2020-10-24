@@ -4,12 +4,10 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
 import Form from './Form';
 import NavBar from './Nav/NavBar';
-
 import { MyProvider, LOCALES } from '../translation';
 
 
 function App() {
-
     function checkLocation() {
         setInterval(() => {
             let loc = window.location.href;
@@ -19,41 +17,27 @@ function App() {
         }, 1000)
     };
 
+
     const checkBrowserLang = () => {
-        const defLang = localStorage.getItem("Lys-Lang")
-        if (defLang === "ru-RU") {
-            setLocale(LOCALES.RUSSIAN)
-        }
-        if (defLang === "uk-UA") {
-            setLocale(LOCALES.UKRAINIAN)
-        }
-        if (defLang === "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA") {
-            localStorage.setItem("Lys-Lang", "en-US")
-            setLocale(LOCALES.ENGLISH)
-        } else {
-            localStorage.setItem("Lys-Lang", "uk-UA")
-            setLocale(LOCALES.ENGLISH)
-        }
+        // ----------------------------------------------browser language----------------
         const userDefaultLanguage = navigator.language
-        // console.log(userDefaultLanguage)
-        if (!defLang) {
-            if (userDefaultLanguage === "ru-RU") {
-                localStorage.setItem("Lys-Lang", "ru-RU")
-                setLocale(LOCALES.RUSSIAN)
+        switch (userDefaultLanguage) {
+            case "ru-RU": {
+                setLocale(LOCALES.RUSSIAN);
+                break;
             }
-            if (userDefaultLanguage === "uk-UA") {
-                localStorage.setItem("Lys-Lang", "uk-UA")
-                setLocale(LOCALES.UKRAINIAN)
+            case "uk-UA": {
+                setLocale(LOCALES.UKRAINIAN);
+                break;
             }
-            if (userDefaultLanguage === "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA") {
-                localStorage.setItem("Lys-Lang", "en-US")
-                setLocale(LOCALES.ENGLISH)
-            } else {
-                localStorage.setItem("Lys-Lang", "uk-UA")
-                setLocale(LOCALES.ENGLISH)
+            case "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA": {
+                setLocale(LOCALES.ENGLISH);
+                break;
             }
+            default: return setLocale(LOCALES.UKRAINIAN);
         }
-    };
+    }
+
 
     useEffect(() => {
         checkLocation();
@@ -65,13 +49,10 @@ function App() {
     const [contactForm, setContactForm] = useState(false);
     // const [navbar, setNavbarOpen] = useState(false);
 
-
     return (
-
         <MyProvider locale={locale}>
             <BrowserRouter>
                 <NavBar></NavBar>
-
 
                 <div className="Main-Component">
                     {/* ----------------------------------------------------- MAIN -------------------- */}
@@ -105,24 +86,22 @@ function App() {
                 </div>
                 {/* -------------------RIGHT NAVIGATION------------- LANGUEGES + MESEGER  ---------------------------- */}
                 <div className="right-side-bottom">
-                    {/* <img style={{ width: '200px' }} src="https://i.pinimg.com/originals/1a/76/c2/1a76c279cec0c64425bf977eeafeccf1.png" /> */}
                     <img src="https://i.pinimg.com/originals/aa/bd/f3/aabdf3d89c7449946d5ddea47f8a01af.png" alt="Blue paint" />
-
                     <div style={{ position: 'fixed', zIndex: '5', right: '50px', top: '400px' }}>
                         <ul>
-                            <li>
-                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}><p> Укр. </p></button>
+                            <li className="right-nav-button">
+                                <a href="#ukr" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
                             </li>
-                            <li>
-                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.RUSSIAN) }}><p> Рус. </p></button>
+                            <li className="right-nav-button">
+                                <a href="#rus" onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
                             </li>
-                            <li>
-                                <button className="right-nav-button" onClick={() => { setLocale(LOCALES.ENGLISH) }}><p> Eng. </p></button>
+                            <li className="right-nav-button">
+                                <a href="#eng" onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
                             </li>
-                            <li>
-                                <button className="right-nav-button" id='contuct-button-2' onClick={() => { setContactForm(!contactForm) }}>
-                                    <p>{!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}</p>
-                                </button>
+                            <li className="right-nav-button">
+                                <a id='contuct-button-2' href="#message" onClick={() => { setContactForm(!contactForm) }}>
+                                    {!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -131,7 +110,6 @@ function App() {
                 {/*  --------------------------------------CONTACT FORM------------------------- */}
                 {(!contactForm) ? null :
                     <div className="contact-form"> <Form></Form> </div>}
-
             </BrowserRouter >
         </MyProvider >
     );

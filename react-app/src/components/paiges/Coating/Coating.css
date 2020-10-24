@@ -92,7 +92,7 @@
 /* -----------------------------------------------IMAGES--------------------------------- */
 
 .texture-img {
-    background-size: 400px 400px;
+    background-size: cover;
 }
 
 .img-1 {
@@ -103,7 +103,6 @@
 
 .img-1:hover {
     background-image: url('https://i.pinimg.com/originals/0b/67/ca/0b67ca6ce53a80d432a173a3a14bf9ad.jpg');
-    background-size: 300px 300px;
 }
 
 .img-2 {
@@ -113,8 +112,7 @@
 }
 
 .img-2:hover {
-    background-image: url('https://i.pinimg.com/originals/7f/bc/e1/7fbce1497719dbc2861436463cb7edff.jpg');
-    background-size: 600px 600px;
+    background-image: url('https://i.pinimg.com/originals/a4/43/1d/a4431d553a858a36f820c9adf27ae2ac.jpg');
 }
 
 .img-3 {
@@ -124,8 +122,7 @@
 }
 
 .img-3:hover {
-    background-image: url('https://i.pinimg.com/originals/64/b2/59/64b25972c870383a1e7d510819abfc63.jpg');
-    background-size: 400px 400px;
+    background-image: url('https://i.pinimg.com/originals/8a/29/e9/8a29e9b602946c9a0ee09b64268bcdb0.jpg');
 }
 
 .img-4 {
@@ -135,8 +132,7 @@
 }
 
 .img-4:hover {
-    background-image: url('https://i.pinimg.com/originals/b4/d4/1d/b4d41d9ba6b2bb99f497962702aaad09.jpg');
-    background-size: 400px 400px;
+    background-image: url('https://i.pinimg.com/originals/83/93/21/8393219bcd1ead2845dc2b5241ce951d.jpg');
 }
 
 .img-5 {
@@ -146,8 +142,7 @@
 }
 
 .img-5:hover {
-    background-image: url('https://i.pinimg.com/originals/f2/71/df/f271dfea9a4de7c46c006063a9bca755.jpg');
-    background-size: 300px 300px;
+    background-image: url('https://i.pinimg.com/originals/dc/03/56/dc03567ca453ea2dbca3bd98fcc18ea0.jpg');
 }
 
 .img-6 {
@@ -158,7 +153,6 @@
 
 .img-6:hover {
     background-image: url('https://i.pinimg.com/originals/86/f5/aa/86f5aa8da14cee36434498903d4a7f39.jpg');
-    background-size: 500px 500px;
 }
 
 .img-7 {
@@ -169,17 +163,14 @@
 
 .img-7:hover {
     background-image: url('https://i.pinimg.com/originals/14/bc/d2/14bcd2f3bf5a7f9ff4abd22d8e65ca9f.jpg');
-    background-size: 250px 250px;
 }
 
 .img-8 {
     height: 350px;
     width: 350px;
     background-image: url('https://i.pinimg.com/originals/39/60/01/3960010461dca1592be6a3f0db67fdcd.jpg');
-    background-size: 350px 550px;
 }
 
 .img-8:hover {
     background-image: url('https://i.pinimg.com/564x/40/b6/f5/40b6f52f735ed818ee187f6a01404224.jpg');
-    background-size: 350px 350px;
 }

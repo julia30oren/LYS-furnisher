@@ -49,13 +49,13 @@ export const Coating = (props) => {
                             <h6>{translate('coating-3-row-4')}</h6>
                         </div>
                         <div className="texture-img img-2"
-                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/af/ac/43/afac43761d97d62cb0ff3572f36b8fc7.jpg", img_2: "https://i.pinimg.com/originals/7f/bc/e1/7fbce1497719dbc2861436463cb7edff.jpg" })}>
+                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/af/ac/43/afac43761d97d62cb0ff3572f36b8fc7.jpg", img_2: "https://i.pinimg.com/originals/a4/43/1d/a4431d553a858a36f820c9adf27ae2ac.jpg" })}>
                         </div>
                     </div>
                     {/* ---------------------------------Oil coating------------------------------------------------ */}
                     <div className="coating-row">
                         <div className="texture-img img-3"
-                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/93/0d/f2/930df29396a511381a1f56a520c5a3ea.jpg", img_2: "https://i.pinimg.com/originals/64/b2/59/64b25972c870383a1e7d510819abfc63.jpg" })}>
+                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/93/0d/f2/930df29396a511381a1f56a520c5a3ea.jpg", img_2: "https://i.pinimg.com/originals/8a/29/e9/8a29e9b602946c9a0ee09b64268bcdb0.jpg" })}>
                         </div>
                         <div className="texture-txt">
                             <h5>{translate('coating-4-row-1')}</h5>
@@ -76,13 +76,13 @@ export const Coating = (props) => {
                             <h6>{translate('coating-5-row-5')}</h6>
                         </div>
                         <div className="texture-img img-4"
-                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/03/e2/d6/03e2d6db4959d9c831b089211410cc0e.jpg", img_2: "https://i.pinimg.com/originals/b4/d4/1d/b4d41d9ba6b2bb99f497962702aaad09.jpg" })}>
+                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/03/e2/d6/03e2d6db4959d9c831b089211410cc0e.jpg", img_2: "https://i.pinimg.com/originals/83/93/21/8393219bcd1ead2845dc2b5241ce951d.jpg" })}>
                         </div>
                     </div>
                     {/* ------------------------------Painting with the effect of antiquity------------------------------------------------ */}
                     <div className="coating-row">
                         <div className="texture-img img-5"
-                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/c2/9e/94/c29e949764a48b945ce4839396509997.jpg", img_2: "https://i.pinimg.com/originals/f2/71/df/f271dfea9a4de7c46c006063a9bca755.jpg" })}>
+                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/c2/9e/94/c29e949764a48b945ce4839396509997.jpg", img_2: "https://i.pinimg.com/originals/dc/03/56/dc03567ca453ea2dbca3bd98fcc18ea0.jpg" })}>
                         </div>
                         <div className="texture-txt">
                             <h5>{translate('coating-6-row-1')}</h5>

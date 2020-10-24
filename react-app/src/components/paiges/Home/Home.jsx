@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import openingVid from '../../../videos/fox_welcome_vid3.mp4';
 import './Home.css';
-
+import ImgSlider from './ImgSlider';
 import translate from '../../../translation/do-translate';
+
 
 export const Home = (props) => {
 
@@ -19,8 +20,9 @@ export const Home = (props) => {
             </video>
             {/* ------------------------------------------LOZUNG------------------------------------ */}
             <div>
-                <p className="big-grey-font smaller">{translate('home-1-text')}</p>
-                <p className="big-grey-font" style={{ marginTop: '0' }}>{translate('home-2-text')}</p>
+                <p className="big-grey-font" style={{ marginTop: '20px' }}>&laquo;{translate('home-1-text')}&raquo;</p>
+                <p className="big-grey-font smaller" style={{ marginTop: '0' }}>{translate('home-2-text')}</p>
+                <p className="big-grey-font smaller" style={{ marginTop: '0' }}>{translate('home-02-text')}</p>
             </div>
             {/* ------------------------------------------FIRST BLOK ----------- WITH FAMILY PHOTO------------------------------------ */}
             <div className="blok HomeFirst">
@@ -86,59 +88,82 @@ export const Home = (props) => {
             {/* ----------------------------------------------------CAROUSEL------------------------------------ */}
             <div className="HomeFourth">
 
-                <div id="myCarousel" className="carousel slide" data-ride="carousel">
-                    {/* <!-- Indicators --> */}
-                    <ol className="carousel-indicators" >
-                        <li data-target="#myCarousel" data-slide-to="0" className="active">
-                        </li>
-                        <li data-target="#myCarousel" data-slide-to="1">
-                        </li>
-                        <li data-target="#myCarousel" data-slide-to="2">
-                        </li>
-                        <li data-target="#myCarousel" data-slide-to="3">
-                        </li>
-                        <li data-target="#myCarousel" data-slide-to="4">
-                        </li>
-                    </ol>
-
-                    {/* <!-- Wrapper for slides --> */}
-                    <div className="carousel-inner">
-                        <div className="item active">
-                            <img className='carousel-img' src="https://i.pinimg.com/originals/cf/4c/a7/cf4ca7657a0783f3a47a050991d37176.jpg" alt="pictcher1" />
-                        </div>
-
-                        <div className="item">
-                            <img className='carousel-img' src="https://i.pinimg.com/originals/49/c6/79/49c679b8f33d4d7c00d16b7d5bd6052a.jpg" alt="pictcher2" />
-                        </div>
-
-                        <div className="item">
-                            <img className='carousel-img' src="https://i.pinimg.com/originals/7e/2e/d6/7e2ed693e94373a3c79d548e7401cf60.jpg" alt="pictcher3" />
-                        </div>
-
-                        <div className="item">
-                            <img className='carousel-img' src="https://i.pinimg.com/originals/50/8b/23/508b238618e927ec42955690d7f4dd60.jpg" alt="pictcher5" />
-                        </div>
-
-                        <div className="item">
-                            <img className='carousel-img' src="https://i.pinimg.com/originals/c1/1a/2c/c11a2cb0c1b4999e30612fe648c61f04.jpg" alt="pictcher4" />
-                        </div>
-                    </div>
-                    {/* <!-- Left and right controls --> */}
-                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span className="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a className="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span className="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
+                <Slider></Slider>
             </div>
         </div>
     )
 }
 
 
-export default function HomeComp(props) {
+export const Slider = (props) => {
 
+    let sliderArray = [
+        <ImgSlider src='https://i.pinimg.com/originals/4a/c2/39/4ac2399f20f1ae5fdf4aa7a3eb7520e4.jpg' title={translate('slider-1-titile')} text={translate('slider-1-text')}></ImgSlider>,
+        <ImgSlider src='https://i.pinimg.com/originals/f3/f0/73/f3f073cb9a9504eebeea7740a1fe6c2a.jpg' title={translate('slider-2-titile')} text={translate('slider-2-text')}></ImgSlider>,
+        <ImgSlider src='https://i.pinimg.com/originals/58/79/b1/5879b1d77c1e62832e9e155596327775.jpg' title={translate('slider-3-titile')} text={translate('slider-3-text')}></ImgSlider>,
+        <ImgSlider src='https://i.pinimg.com/originals/d4/81/16/d481161147c8343bdb869403133d758b.jpg' title={translate('slider-4-titile')} text={translate('slider-4-text')}></ImgSlider>,
+        <ImgSlider src='https://i.pinimg.com/originals/ab/c4/8c/abc48c985a9d2ebcace8fea4767ec2a2.jpg' title={translate('slider-5-titile')} text={translate('slider-5-text')}></ImgSlider>,
+    ];
+
+    const [x, setX] = useState(0);
+    const [pos, setPos] = useState(1);
+    const xRef = useRef(x);
+    xRef.current = x;
+
+    useEffect(() => {
+        setInterval(() => {
+            let newX = xRef.current - 100;
+            if (newX === -500) {
+                setX(0);
+                newX = 0;
+            } else {
+                setX(newX);
+            }
+        }, 4000);
+    }, []);
+
+
+    const goLeft = () => {
+        if (x === 0) {
+            setX(-100 * (sliderArray.length - 1));
+            setPos(5);
+        } else {
+            setX(x + 100);
+            setPos(pos - 1);
+        }
+    };
+
+    const goRight = () => {
+        if (x === -100 * (sliderArray.length - 1)) {
+            setX(0);
+            setPos(1);
+        } else {
+            setX(x - 100);
+            setPos(pos + 1);
+        }
+    };
+
+    return (
+        <div className="slider carousel-inner" >
+            {sliderArray.map((item, index) => {
+                return (
+                    <div key={index} className="slide " style={{ transform: `translateX(${x}%)` }}>
+                        {item}
+                    </div>
+                )
+            })}
+            {/* slider buttons */}
+            <a className="sliderButtons" id="goLeft" href="#demo" onClick={goLeft}>
+                <i className="fas fa-angle-left fa-3x"></i>
+            </a>
+            <a className="sliderButtons" id="goRight" href="#demo" onClick={goRight}>
+                <i className="fas fa-angle-right  fa-3x"></i>
+            </a>
+        </div>
+    )
+}
+
+export default function HomeComp(props) {
     return (
         <Home></Home>
     )

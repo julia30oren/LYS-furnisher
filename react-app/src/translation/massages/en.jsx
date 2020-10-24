@@ -11,8 +11,9 @@ export default {
         "painting-nuv": "Coating",
         "contacts-nuv": "Contacts",
 
-        "home-1-text": "Family workshop of author's furniture",
-        "home-2-text": " - LYS - ",
+        "home-1-text": " LYS ",
+        "home-2-text": "original furniture",
+        "home-02-text": "in order.",
         "home-3-text": "WHO ARE WE?",
         "home-4-text": "We are a family furniture workshop «LYS», which personally develops and manufactures items of both classical style and unique author's products.",
         "home-5-text": "WHAT DO WE OFFER?",
@@ -33,6 +34,18 @@ export default {
         "home-20-text": "TRUST AND HONESTY",
         "home-21-text": "At any stage of production you can come to the workshop and make adjustments if necessary.",
         "home-22-text": "WE ORGANIZE DELIVERY AND INSTALLATION THROUGHOUT UKRAINE",
+        // --------------------------------------------
+        "slider-1-titile": "КЛАСИКА В ЯСКРАВИХ КОЛЬОРАХ",
+        "slider-1-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        "slider-2-titile": "ВІНТАЖНІ МЕБЛІ З ІСТОРІЄЮ",
+        "slider-2-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        "slider-3-titile": "ВІДОБРАЖЕННЯ ХАРАКТЕРУ ВЛАСНИКА",
+        "slider-3-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        "slider-4-titile": "СУЧАСНІСТЬ В ТРАДИЦІЯХ",
+        "slider-4-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        "slider-5-titile": "СПРАВЖНІЙ ФРАНЦУЗЬКИЙ ПРОВАНС",
+        "slider-5-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        // --------------------------------------------
 
 
         "about-1-text": "«The impossible does not exist» - our motto in life and at work. We realized that our vocation is to create an atmosphere of comfort and harmony, filling the space with their furniture.",
