@@ -119,7 +119,7 @@ export const Slider = (props) => {
             } else {
                 setX(newX);
             }
-        }, 4000);
+        }, 5000);
     }, []);
 
 

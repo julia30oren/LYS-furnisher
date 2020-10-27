@@ -10,16 +10,17 @@
 .logo-div {
     width: 250px;
     height: 250px;
-    background-image: url('https://cdn.pixabay.com/photo/2017/09/10/13/04/wood-2735496_960_720.jpg');
+    background-image: url('https://i.pinimg.com/originals/2b/db/8d/2bdb8dd9c9b9c48482394ebdf419e88b.jpg');
     background-size: cover;
 }
 
-.logo {
+
+/* .logo {
     width: 200px;
     height: 200px;
     background-image: url('https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png');
     background-size: cover;
-}
+} */
 
 
 /* -------------------------------------LINKS---------------------------------- */

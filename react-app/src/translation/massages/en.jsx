@@ -35,16 +35,16 @@ export default {
         "home-21-text": "At any stage of production you can come to the workshop and make adjustments if necessary.",
         "home-22-text": "WE ORGANIZE DELIVERY AND INSTALLATION THROUGHOUT UKRAINE",
         // --------------------------------------------
-        "slider-1-titile": "КЛАСИКА В ЯСКРАВИХ КОЛЬОРАХ",
-        "slider-1-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
-        "slider-2-titile": "ВІНТАЖНІ МЕБЛІ З ІСТОРІЄЮ",
-        "slider-2-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
-        "slider-3-titile": "ВІДОБРАЖЕННЯ ХАРАКТЕРУ ВЛАСНИКА",
-        "slider-3-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
-        "slider-4-titile": "СУЧАСНІСТЬ В ТРАДИЦІЯХ",
-        "slider-4-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
-        "slider-5-titile": "СПРАВЖНІЙ ФРАНЦУЗЬКИЙ ПРОВАНС",
-        "slider-5-text": "Благородний дуба в поєднанні з розкішним італійським велюром.",
+        "slider-1-titile": "CLASSICS IN BRIGHT COLORS",
+        "slider-1-text": "For bold fans of classic styles.",
+        "slider-2-titile": "FURNITURE WITH ITS HISTORY",
+        "slider-2-text": "For those who see beauty in antiques.",
+        "slider-3-titile": "FURNITURE WITH CHARACTER",
+        "slider-3-text": "A reflection of your dreams, inner world, fantasies.",
+        "slider-4-titile": "DESIGNER FURNITURE",
+        "slider-4-text": "Sophistication and style in every detail.",
+        "slider-5-titile": "FRENCH PROVENCE",
+        "slider-5-text": "For romantics in love with real traditions.",
         // --------------------------------------------
 
 
