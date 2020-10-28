@@ -7,20 +7,20 @@
 
 /* ---------------------------------LOGO-------------------------- */
 
-.logo-div {
+
+/* .logo-div {
     width: 250px;
-    height: 250px;
-    background-image: url('https://i.pinimg.com/originals/2b/db/8d/2bdb8dd9c9b9c48482394ebdf419e88b.jpg');
-    background-size: cover;
-}
-
-
-/* .logo {
-    width: 200px;
-    height: 200px;
-    background-image: url('https://i.pinimg.com/originals/ea/5b/db/ea5bdb33212032fbc202d3bdc6869a33.png');
+    height: 100px;
+    background-image: url('https://images.pexels.com/photos/129733/pexels-photo-129733.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-size: cover;
 } */
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png');
+    background-size: cover;
+}
 
 
 /* -------------------------------------LINKS---------------------------------- */
@@ -98,7 +98,7 @@
 
 .wood {
     width: 250px;
-    height: 300px;
+    height: 400px;
     background-image: url('https://image.freepik.com/free-photo/blue-wooden-planks-old-grunge-blue-colored-wood-texture_88281-2411.jpg');
     background-size: cover;
     margin-top: 20px;

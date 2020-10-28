@@ -8,9 +8,9 @@ function NavBar() {
     return (
         <div id="NavBar">
 
-            <div className="logo-div">
-                <div className="logo"></div>
-            </div>
+            <div className="logo-div"></div>
+            <div className="logo"></div>
+
 
             <div id="navbar">
                 <AppLinks />
