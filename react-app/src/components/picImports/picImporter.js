@@ -78,126 +78,54 @@ const pic93 = "https://i.pinimg.com/originals/f2/af/be/f2afbe248f053fd09fcea4d74
 const pic94 = "https://i.pinimg.com/originals/2e/70/c5/2e70c5ae6e2dd599a1b6eff5ab9cad26.jpg";
 const pic95 = "https://i.pinimg.com/originals/54/8f/fa/548ffa300f01015fe5d241c8212c60bd.jpg";
 const pic96 = "https://i.pinimg.com/originals/a2/da/63/a2da63367fa322259d74aad6da4e4aa6.jpg";
-const pic97 = "https://i.pinimg.com/originals/e4/7f/6e/e47f6e7071f8579d528c350aa3aa8e4b.jpg";
 const pic98 = "https://i.pinimg.com/originals/fa/b0/75/fab075d86e10fcd46df9328c202f35c4.jpg";
 const pic99 = "https://i.pinimg.com/originals/43/19/3e/43193e690755130d5da8c3a8a7681fd1.jpg";
 const pic100 = "https://i.pinimg.com/originals/e4/7f/6e/e47f6e7071f8579d528c350aa3aa8e4b.jpg";
 const pic101 = "https://i.pinimg.com/originals/0c/ad/51/0cad51f6c5d1dc3ecb8b7a94f8e25f92.jpg";
 const pic102 = "https://i.pinimg.com/originals/dd/21/2a/dd212ab264f48be4f0257373bd900957.jpg";
 const pic103 = "https://i.pinimg.com/originals/21/17/07/211707ccef0072e3ecbbda2fb510a60a.jpg";
-//84
+//83 pictures
+
 export const picturesArrCol_1 = [
-    { pic: pic11 },
-    { pic: pic9 },
-    { pic: pic7 },
-    { pic: pic8 },
-    { pic: pic18 },
-    { pic: pic21 },
-    { pic: pic26 },
-    { pic: pic28 },
-    { pic: pic30 },
-    { pic: pic33 },
-
-    { pic: pic34 },
-    { pic: pic100 },
-    { pic: pic38 },
-    { pic: pic102 },
-    { pic: pic39 },
-    { pic: pic45 },
-    { pic: pic43 },
-    { pic: pic103 },
-    { pic: pic51 },
-    { pic: pic52 },
-
-    { pic: pic54 },
-    { pic: pic55 },
-    { pic: pic62 },
-    { pic: pic64 },
-    { pic: pic65 },
-    { pic: pic69 },
-    { pic: pic14 },
-    { pic: pic79 },
-    { pic: pic78 },
-    { pic: pic77 },
-
-    { pic: pic74 },
+    { pic: pic11, h: 280 }, { pic: pic9, h: 400 }, { pic: pic7, h: 310 }, { pic: pic8, h: 310 }, { pic: pic18, h: 250 },
+    { pic: pic21, h: 280 }, { pic: pic26, h: 280 }, { pic: pic28, h: 280 }, { pic: pic30, h: 490 }, { pic: pic33, h: 310 },
+    { pic: pic34, h: 310 }, { pic: pic100, h: 280 }, { pic: pic38, h: 280 }, { pic: pic102, h: 280 }, { pic: pic39, h: 280 },
+    { pic: pic45, h: 480 }, { pic: pic43, h: 580 }, { pic: pic103, h: 280 }, { pic: pic51, h: 520 }, { pic: pic52, h: 400 },
+    { pic: pic54, h: 580 }, { pic: pic55, h: 280 }, { pic: pic62, h: 380 }, { pic: pic64, h: 580 }, { pic: pic65, h: 220 },
+    { pic: pic69, h: 520 }, { pic: pic14, h: 280 }, { pic: pic79, h: 220 }, { pic: pic78, h: 580 }, { pic: pic77, h: 280 },
+    { pic: pic74, h: 280 }
 ];
 export const picturesArrCol_2 = [
-    { pic: pic2 },
-    { pic: pic87 },
-    { pic: pic10 },
-    { pic: pic12 },
-    { pic: pic20 },
-    { pic: pic25 },
-    { pic: pic32 },
-    { pic: pic35 },
-    { pic: pic101 },
-    { pic: pic98 },
-
-    { pic: pic42 },
-    { pic: pic47 },
-    { pic: pic84 },
-    { pic: pic16 },
-    { pic: pic56 },
-    { pic: pic60 },
-    { pic: pic61 },
-    { pic: pic23 },
-    { pic: pic70 },
-    { pic: pic68 },
-
-    { pic: pic91 },
-    { pic: pic71 },
-    { pic: pic96 },
-    { pic: pic94 },
-    { pic: pic82 },
-    { pic: pic83 }
+    { pic: pic2, h: 400 }, { pic: pic87, h: 280 }, { pic: pic10, h: 480 }, { pic: pic12, h: 580 }, { pic: pic20, h: 580 },
+    { pic: pic25, h: 280 }, { pic: pic32, h: 490 }, { pic: pic35, h: 490 }, { pic: pic101, h: 280 }, { pic: pic98, h: 280 },
+    { pic: pic42, h: 580 }, { pic: pic47, h: 520 }, { pic: pic84, h: 580 }, { pic: pic16, h: 280 }, { pic: pic56, h: 580 },
+    { pic: pic60, h: 580 }, { pic: pic61, h: 580 }, { pic: pic23, h: 580 }, { pic: pic70, h: 520 }, { pic: pic68, h: 280 },
+    { pic: pic91, h: 580 }, { pic: pic71, h: 520 }, { pic: pic96, h: 280 }, { pic: pic94, h: 280 }, { pic: pic82, h: 280 },
+    { pic: pic83, h: 400 }
 ];
 export const picturesArrCol_3 = [
-    { pic: pic3 },
-    { pic: pic4 },
-    { pic: pic5 },
-    { pic: pic17 },
-    { pic: pic15 },
-    { pic: pic19 },
-    { pic: pic31 },
-    { pic: pic36 },
-    { pic: pic86 },
-    { pic: pic40 },
-
-    { pic: pic46 },
-    { pic: pic44 },
-    { pic: pic48 },
-    { pic: pic49 },
-    { pic: pic57 },
-    { pic: pic58 },
-    { pic: pic59 },
-    { pic: pic89 },
-    { pic: pic90 },
-    { pic: pic66 },
-
-    { pic: pic67 },
-    { pic: pic72 },
-    { pic: pic80 },
-    { pic: pic99 },
-    { pic: pic95 },
-    { pic: pic92 },
-    { pic: pic93 },
+    { pic: pic3, h: 580 }, { pic: pic4, h: 280 }, { pic: pic5, h: 280 }, { pic: pic17, h: 400 }, { pic: pic15, h: 580 },
+    { pic: pic19, h: 490 }, { pic: pic31, h: 280 }, { pic: pic36, h: 480 }, { pic: pic86, h: 580 }, { pic: pic40, h: 580 },
+    { pic: pic46, h: 680 }, { pic: pic44, h: 580 }, { pic: pic48, h: 280 }, { pic: pic49, h: 400 }, { pic: pic57, h: 240 },
+    { pic: pic58, h: 400 }, { pic: pic59, h: 400 }, { pic: pic89, h: 280 }, { pic: pic90, h: 580 }, { pic: pic66, h: 220 },
+    { pic: pic67, h: 280 }, { pic: pic72, h: 580 }, { pic: pic80, h: 580 }, { pic: pic99, h: 310 }, { pic: pic95, h: 310 },
+    { pic: pic92, h: 280 }, { pic: pic93, h: 580 }
 ];
 
 
-// --------------------------------------- 
+// -------------------------------THUMBNAILS-------- 
+// h => height
 const picturesArr = [
-    { pic: pic2 }, { pic: pic3 }, { pic: pic4 }, { pic: pic5 }, { pic: pic7 }, { pic: pic8 }, { pic: pic9 }, { pic: pic10 },
-    { pic: pic11 }, { pic: pic12 }, { pic: pic14 }, { pic: pic15 }, { pic: pic16 }, { pic: pic17 }, { pic: pic18 }, { pic: pic19 }, { pic: pic20 },
-    { pic: pic21 }, { pic: pic23 }, { pic: pic25 }, { pic: pic26 }, { pic: pic28 }, { pic: pic30 },
-    { pic: pic31 }, { pic: pic32 }, { pic: pic33 }, { pic: pic34 }, { pic: pic35 }, { pic: pic36 }, { pic: pic38 }, { pic: pic39 }, { pic: pic40 },
-    { pic: pic42 }, { pic: pic43 }, { pic: pic44 }, { pic: pic45 }, { pic: pic46 }, { pic: pic47 }, { pic: pic48 }, { pic: pic49 },
-    { pic: pic51 }, { pic: pic52 }, { pic: pic54 }, { pic: pic55 }, { pic: pic56 }, { pic: pic57 }, { pic: pic58 }, { pic: pic59 }, { pic: pic60 },
-    { pic: pic61 }, { pic: pic62 }, { pic: pic64 }, { pic: pic65 }, { pic: pic66 }, { pic: pic67 }, { pic: pic68 }, { pic: pic69 }, { pic: pic70 },
-    { pic: pic71 }, { pic: pic72 }, { pic: pic73 }, { pic: pic74 }, { pic: pic77 }, { pic: pic78 }, { pic: pic79 }, { pic: pic80 },
-    { pic: pic82 }, { pic: pic83 }, { pic: pic84 }, { pic: pic86 }, { pic: pic87 }, { pic: pic88 }, { pic: pic89 }, { pic: pic90 },
-    { pic: pic91 }, { pic: pic92 }, { pic: pic93 }, { pic: pic94 }, { pic: pic95 }, { pic: pic96 }, { pic: pic97 }, { pic: pic98 }, { pic: pic99 }, { pic: pic100 },
-    { pic: pic101 }, { pic: pic102 }, { pic: pic103 }
+    { pic: pic2, h: 300 }, { pic: pic3, h: 450 }, { pic: pic4, h: 200 }, { pic: pic5, h: 200 }, { pic: pic7, h: 230 }, { pic: pic8, h: 230 }, { pic: pic9, h: 300 }, { pic: pic10, h: 400 }, { pic: pic11, h: 200 }, { pic: pic12, h: 450 },
+    { pic: pic14, h: 200 }, { pic: pic15, h: 450 }, { pic: pic16, h: 200 }, { pic: pic17, h: 300 }, { pic: pic18, h: 180 }, { pic: pic19, h: 380 }, { pic: pic20, h: 400 }, { pic: pic21, h: 200 }, { pic: pic23, h: 450 },
+    { pic: pic25, h: 200 }, { pic: pic26, h: 200 }, { pic: pic28, h: 200 }, { pic: pic30, h: 380 }, { pic: pic31, h: 200 }, { pic: pic32, h: 380 }, { pic: pic33, h: 230 }, { pic: pic34, h: 230 }, { pic: pic35, h: 380 },
+    { pic: pic36, h: 380 }, { pic: pic38, h: 200 }, { pic: pic39, h: 200 }, { pic: pic40, h: 450 }, { pic: pic42, h: 450 }, { pic: pic43, h: 450 }, { pic: pic44, h: 450 }, { pic: pic45, h: 370 }, { pic: pic46, h: 500 },
+    { pic: pic47, h: 400 }, { pic: pic48, h: 200 }, { pic: pic49, h: 300 }, { pic: pic51, h: 400 }, { pic: pic52, h: 300 }, { pic: pic54, h: 450 }, { pic: pic55, h: 200 }, { pic: pic56, h: 450 }, { pic: pic57, h: 170 },
+    { pic: pic58, h: 300 }, { pic: pic59, h: 300 }, { pic: pic60, h: 450 }, { pic: pic61, h: 450 }, { pic: pic62, h: 290 }, { pic: pic64, h: 450 }, { pic: pic65, h: 160 }, { pic: pic66, h: 160 }, { pic: pic67, h: 200 },
+    { pic: pic68, h: 200 }, { pic: pic69, h: 400 }, { pic: pic70, h: 400 }, { pic: pic71, h: 400 }, { pic: pic72, h: 450 }, { pic: pic73, h: 500 }, { pic: pic74, h: 200 }, { pic: pic77, h: 200 }, { pic: pic78, h: 450 },
+    { pic: pic79, h: 160 }, { pic: pic80, h: 450 }, { pic: pic82, h: 200 }, { pic: pic83, h: 300 }, { pic: pic84, h: 450 }, { pic: pic86, h: 450 }, { pic: pic87, h: 200 }, { pic: pic88, h: 200 }, { pic: pic89, h: 200 },
+    { pic: pic90, h: 450 }, { pic: pic91, h: 450 }, { pic: pic92, h: 200 }, { pic: pic93, h: 450 }, { pic: pic94, h: 200 }, { pic: pic95, h: 230 }, { pic: pic96, h: 200 }, { pic: pic98, h: 200 }, { pic: pic99, h: 230 },
+    { pic: pic100, h: 200 }, { pic: pic101, h: 200 }, { pic: pic102, h: 200 }, { pic: pic103, h: 200 }
 ]
 
 export default picturesArr;

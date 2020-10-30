@@ -15,6 +15,16 @@
     border-radius: 50%;
 }
 
+.vid-cover {
+    width: 100%;
+    min-height: 60%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
 .text-blok {
     margin: auto;
 }

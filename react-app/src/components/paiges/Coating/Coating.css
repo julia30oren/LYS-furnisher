@@ -17,7 +17,7 @@
     justify-content: center;
 }
 
-.texture-open>img {
+.texture-open>div {
     width: 800px;
     height: 800px;
     margin: 5px;
@@ -152,7 +152,7 @@
 }
 
 .img-6:hover {
-    background-image: url('https://i.pinimg.com/originals/86/f5/aa/86f5aa8da14cee36434498903d4a7f39.jpg');
+    background-image: url('https://i.pinimg.com/564x/d9/82/84/d98284e086b1b46eb25e29000512d235.jpg');
 }
 
 .img-7 {

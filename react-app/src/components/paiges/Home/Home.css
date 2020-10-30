@@ -3,10 +3,23 @@
      margin-top: 100px;
      margin-bottom: 100px;
  }
+ 
+ #logo-w {
+     height: 200px;
+     width: 200px;
+ }
  /*------------------------ VIDIO --------------------------- */
  
  .openingVid {
      width: 100%;
+ }
+ 
+ #video-cover {
+     width: 100%;
+     height: 750px;
+     position: absolute;
+     background-image: url('https://i.pinimg.com/originals/c6/2e/95/c62e95b1eebb5a3286741fb673e2e139.png');
+     background-size: cover;
  }
  /* --------------------------1 ----------------------*/
  
@@ -22,7 +35,7 @@
      margin-left: 5%;
  }
  
- .first-right-col {
+ #fenix {
      width: 45%;
      margin-left: 2%;
      height: 90%;
@@ -30,7 +43,7 @@
      background-size: cover;
  }
  
- .family-portrait {
+ #family-portrait {
      background-image: url('https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg');
      background-size: cover;
  }
@@ -109,7 +122,7 @@
  .first-photo {
      width: 55%;
      height: 700px;
-     background-image: url('https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg');
+     background-image: url('https://i.pinimg.com/564x/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg');
      background-size: cover;
  }
  
@@ -120,7 +133,7 @@
  .second-photo {
      width: 55%;
      height: 700px;
-     background-image: url('https://i.pinimg.com/564x/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg');
+     background-image: url('https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg');
      background-size: cover;
  }
  
@@ -193,6 +206,16 @@
      overflow: hidden;
  }
  
+ #slider-cover {
+     width: 100%;
+     height: 600px;
+     position: absolute;
+     margin-top: 0;
+     z-index: 2;
+     background-image: url('https://i.pinimg.com/originals/9b/f3/90/9bf39026e89aa35e1583cc91852cf35c.png');
+     background-size: cover;
+ }
+ 
  .slide {
      position: relative;
      min-width: 100%;
@@ -203,6 +226,7 @@
  
  .sliderButtons {
      position: absolute;
+     z-index: 3;
      top: 50%;
      transform: translateY(-50%);
      width: 10%;
@@ -273,6 +297,4 @@
      width: 650px;
      text-align: center;
      padding: 15px;
-     /* padding-left: 70px;
-     padding-right: 70px; */
  }

@@ -16,8 +16,8 @@ export const Coating = (props) => {
                 // ----------------------------------------------2 BIG TEXTURE OPEN----------------------------------
                 <div className="black-background">
                     <div className="texture-open">
-                        <img src={bigPicture.img_1} alt="texture1" />
-                        <img src={bigPicture.img_2} alt="texture2" />
+                        <div style={{ backgroundSize: 'cover', backgroundImage: `url(${bigPicture.img_1})` }}></div>
+                        <div style={{ backgroundSize: 'cover', backgroundImage: `url(${bigPicture.img_2})` }}></div>
                         <button type="button" onClick={() => setBigPicture(null)}>
                             <i className="fas fa-times fa-2x"></i>
                         </button>
@@ -106,7 +106,7 @@ export const Coating = (props) => {
                             <h6>{translate('coating-7-row-6')}</h6>
                         </div>
                         <div className="texture-img img-6"
-                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/dd/b4/e2/ddb4e24cc691b2a712f52e9cc2293acf.jpg", img_2: "https://i.pinimg.com/originals/86/f5/aa/86f5aa8da14cee36434498903d4a7f39.jpg" })}>
+                            onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/dd/b4/e2/ddb4e24cc691b2a712f52e9cc2293acf.jpg", img_2: "https://i.pinimg.com/564x/d9/82/84/d98284e086b1b46eb25e29000512d235.jpg" })}>
                         </div>
                     </div>
                     {/* -------------------------------------------------texture «brush»------------------------------------------------ */}

@@ -20,17 +20,46 @@ function App() {
 
     const checkBrowserLang = () => {
         // ----------------------------------------------browser language----------------
-        const userDefaultLanguage = navigator.language
+        const userDefaultLanguage = navigator.language;
+        // console.log(userDefaultLanguage);
         switch (userDefaultLanguage) {
+            case "ru": {
+                setLocale(LOCALES.RUSSIAN);
+                break;
+            }
             case "ru-RU": {
                 setLocale(LOCALES.RUSSIAN);
+                break;
+            }
+            case "uk": {
+                setLocale(LOCALES.UKRAINIAN);
                 break;
             }
             case "uk-UA": {
                 setLocale(LOCALES.UKRAINIAN);
                 break;
             }
-            case "en-US" || "en-AU" || "en-GB" || "en-IE" || "en-ZA": {
+            case "en": {
+                setLocale(LOCALES.ENGLISH);
+                break;
+            }
+            case "en-US": {
+                setLocale(LOCALES.ENGLISH);
+                break;
+            }
+            case "en-AU": {
+                setLocale(LOCALES.ENGLISH);
+                break;
+            }
+            case "en-GB": {
+                setLocale(LOCALES.ENGLISH);
+                break;
+            }
+            case "en-IE": {
+                setLocale(LOCALES.ENGLISH);
+                break;
+            }
+            case "en-ZA": {
                 setLocale(LOCALES.ENGLISH);
                 break;
             }

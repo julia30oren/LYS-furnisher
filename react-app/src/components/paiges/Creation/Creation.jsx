@@ -26,6 +26,7 @@ export const Creation = (props) => {
                     <video id="video1" autoPlay loop muted>
                         <source src={sketch_vid} type="video/mp4" />
                     </video>
+                    <div className="vid-cover"></div>
                 </div>
                 <div className="text-blok right">
                     <h5>{translate('creation-2-title')}</h5>

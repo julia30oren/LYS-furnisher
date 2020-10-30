@@ -18,6 +18,7 @@ export const Home = (props) => {
             <video autoPlay loop muted className="openingVid" >
                 <source src={openingVid} type="video/mp4" />
             </video>
+            <div id="video-cover"></div>
             {/* ------------------------------------------LOZUNG------------------------------------ */}
             <div>
                 <p className="big-grey-font" style={{ marginTop: '20px' }}>&laquo;{translate('home-1-text')}&raquo;</p>
@@ -27,12 +28,12 @@ export const Home = (props) => {
             {/* ------------------------------------------FIRST BLOK ----------- WITH FAMILY PHOTO------------------------------------ */}
             <div className="blok HomeFirst">
                 <div className="first-left-col">
-                    <p className="text-on-photo family-portrait"> - {translate('home-3-text')}</p>
+                    <p className="text-on-photo" id="family-portrait"> - {translate('home-3-text')}</p>
                     <p className="handwrite">{translate('home-4-text')}</p>
                     <div className="wood-texture"></div>
                 </div>
-                <div className="first-right-col" >
-                    {/* <img src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="Fenix" /> */}
+                <div id="fenix">
+                    <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
                 </div>
             </div>
             {/* ---------------------------------------------WHAT DO WE OFFER?--------------------------- */}
@@ -41,7 +42,9 @@ export const Home = (props) => {
             <div className="blok HomeSecond">
 
                 <div className="row">
-                    <div className="first-photo"></div>
+                    <div className="first-photo">
+                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    </div>
                     <div className="column" style={{ width: '45%' }}>
                         <p className="handwrite">{translate('home-6-text')}</p>
                         <p className="text-on-background bg-wood1">{translate('home-7-text')}</p>
@@ -57,13 +60,19 @@ export const Home = (props) => {
                         <p className="text-on-background bg-wood2">{translate('home-12-text')}</p>
                         <p className="handwrite">{translate('home-13-text')}</p>
                     </div>
-                    <div className="second-photo"></div>
+                    <div className="second-photo">
+                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    </div>
                 </div>
 
                 <div className="row">
                     <div className="column" style={{ width: '55%' }}>
-                        <div className="fourth-photo"></div>
-                        <div className="fifth-photo"></div>
+                        <div className="fourth-photo">
+                            <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                        </div>
+                        <div className="fifth-photo">
+                            <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                        </div>
                     </div>
                     <div className="column" style={{ width: '45%' }}>
                         <p className="handwrite">{translate('home-14-text')}</p>
@@ -80,7 +89,9 @@ export const Home = (props) => {
                         <p className="text-on-background bg-wood4">{translate('home-20-text')}</p>
                         <p className="handwrite">{translate('home-21-text')}</p>
                     </div>
-                    <div className="sixth-photo"></div>
+                    <div className="sixth-photo">
+                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    </div>
                 </div>
             </div>
             {/* ---------------------------------------------DELIVERY AND INSTALLATION-------------------------------------------------- */}
@@ -152,6 +163,8 @@ export const Slider = (props) => {
                     </div>
                 )
             })}
+            {/* slider cover */}
+            <div id="slider-cover"></div>
             {/* slider buttons */}
             <a className="sliderButtons" id="goLeft" href="#demo" onClick={goLeft}>
                 <i className="fas fa-angle-left fa-3x"></i>

@@ -1,3 +1,14 @@
+.showme {
+    display: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.portfolio-img:hover .showme {
+    display: block;
+}
+
+
 /* ---------------------------------OPEN BIG--------------------------------- */
 
 .big-img-div {
@@ -12,6 +23,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.big-img-cover {
+    width: 65%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('https://i.pinimg.com/originals/55/d1/6d/55d16d78cb337bc394207691a42665d8.png');
+    background-size: cover;
 }
 
 .img-div {
@@ -75,6 +96,11 @@
     width: 80%;
     max-height: 500px;
     cursor: pointer;
+}
+
+.thumbnail-2 {
+    cursor: pointer;
+    border: white 2px solid;
 }
 
 
