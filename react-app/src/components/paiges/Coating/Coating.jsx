@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import translate from '../../../translation/do-translate';
 import './Coating.css';
+import './CoatingFit.css';
+
 
 export const Coating = (props) => {
 
@@ -14,13 +16,10 @@ export const Coating = (props) => {
         <div>
             {bigPicture ?
                 // ----------------------------------------------2 BIG TEXTURE OPEN----------------------------------
-                <div className="black-background">
+                <div className="black-background" onClick={() => setBigPicture(null)}>
                     <div className="texture-open">
-                        <div style={{ backgroundSize: 'cover', backgroundImage: `url(${bigPicture.img_1})` }}></div>
-                        <div style={{ backgroundSize: 'cover', backgroundImage: `url(${bigPicture.img_2})` }}></div>
-                        <button type="button" onClick={() => setBigPicture(null)}>
-                            <i className="fas fa-times fa-2x"></i>
-                        </button>
+                        <img src={bigPicture.img_1} alt="LYS texture" className="texture" onMouseDown={(e) => { e.preventDefault(); setBigPicture(null) }} />
+                        <img src={bigPicture.img_2} alt="LYS texture" className="photo" nMouseDown={(e) => { e.preventDefault(); setBigPicture(null) }} />
                     </div>
                 </div> :
                 // ----------------------------------------------2 BIG TEXTURE CLOSED----------------------------------

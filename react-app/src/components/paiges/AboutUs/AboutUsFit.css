@@ -1,0 +1,28 @@
+/* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 1195px) {
+    .parallax {
+        height: 500px;
+        width: 100%;
+    }
+    .par-img {
+        background-size: cover;
+    }
+    .aboutTextDiv {
+        font-size: medium;
+        margin: 25px;
+    }
+}
+
+
+/* -------------------------------------------PHONE----------- */
+
+@media screen and (max-width: 700px) {
+    .parallax {
+        height: 300px;
+        width: 100%;
+    }
+    .aboutTextDiv {
+        font-size: smaller;
+    }
+}

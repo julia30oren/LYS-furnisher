@@ -1,39 +1,48 @@
 import React, { useEffect, useState, useRef } from 'react';
-import openingVid from '../../../videos/fox_welcome_vid3.mp4';
+import openingVid from '../../../videos/home-video-LYS.mp4';
 import './Home.css';
+import './HomeFit.css';
 import ImgSlider from './ImgSlider';
 import translate from '../../../translation/do-translate';
 
 
 export const Home = (props) => {
 
+    const [message, setMessage] = useState('');
+
     useEffect(() => {
         window.scrollTo(0, 0);
+        // changing message to user depending on browser language
+        if (navigator.language === 'ru' || navigator.language === 'ru-RU') {
+            setMessage('Вы не можете сохранять изображения или видео с этого сайта! Все права на изображения пренадлежать владельцам сайта.');
+        } else if (navigator.language === 'uk' || navigator.language === 'uk-UA') {
+            setMessage('Ви не можете зберігати зображення або відео з цього сайту! Всі права на зображення належати власникам сайту.');
+        } else setMessage('You cannot save images or videos from this site! All rights to images belong to the site owners.');
     }, []);
-
 
     return (
         <div className="column" style={{ width: '100%' }}>
             {/* ------------------------------------------OPENING VIDEO------------------------------------ */}
-            <video autoPlay loop muted className="openingVid" >
+            <video autoPlay loop muted className="openingVid" onMouseDown={(e) => { e.preventDefault(); alert(message) }}>
                 <source src={openingVid} type="video/mp4" />
             </video>
-            <div id="video-cover"></div>
+            {/* <div id="video-cover"></div> */}
             {/* ------------------------------------------LOZUNG------------------------------------ */}
-            <div>
-                <p className="big-grey-font" style={{ marginTop: '20px' }}>&laquo;{translate('home-1-text')}&raquo;</p>
-                <p className="big-grey-font smaller" style={{ marginTop: '0' }}>{translate('home-2-text')}</p>
-                <p className="big-grey-font smaller" style={{ marginTop: '0' }}>{translate('home-02-text')}</p>
+            <div className="big-grey-font" >
+                <p style={{ marginTop: '20px' }}>&laquo;{translate('home-1-text')}&raquo;</p>
+                <p className="smaller">{translate('home-2-text')}</p>
+                <p className="smaller">{translate('home-02-text')}</p>
             </div>
             {/* ------------------------------------------FIRST BLOK ----------- WITH FAMILY PHOTO------------------------------------ */}
             <div className="blok HomeFirst">
                 <div className="first-left-col">
-                    <p className="text-on-photo" id="family-portrait"> - {translate('home-3-text')}</p>
+                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg" alt="Family portret" />
+                    <p className="text-on-photo"> - {translate('home-3-text')}</p>
                     <p className="handwrite">{translate('home-4-text')}</p>
-                    <div className="wood-texture"></div>
+                    {/* <div className="wood-texture"></div> */}
                 </div>
                 <div id="fenix">
-                    <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/16/66/76/1666760e87d850519932a94c21209b5e.jpg" alt="LYS fenix" />
                 </div>
             </div>
             {/* ---------------------------------------------WHAT DO WE OFFER?--------------------------- */}
@@ -41,11 +50,11 @@ export const Home = (props) => {
             {/* ---------------------------------------------SECOND BLOK---------------------------- */}
             <div className="blok HomeSecond">
 
-                <div className="row">
-                    <div className="first-photo">
-                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                <div className="row col">
+                    <div className="column photo-side">
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/72/4b/ea/724bea4ee81f09f84b270ad9a07652da.jpg" alt="LYS" />
                     </div>
-                    <div className="column" style={{ width: '45%' }}>
+                    <div className="column info-side">
                         <p className="handwrite">{translate('home-6-text')}</p>
                         <p className="text-on-background bg-wood1">{translate('home-7-text')}</p>
                         <p className="big-grey-font smaller">{translate('home-8-text')}</p>
@@ -53,28 +62,24 @@ export const Home = (props) => {
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="column" style={{ width: '45%' }}>
+                <div className="row col" id="m-t">
+                    <div className="column info-side">
                         <p className="big-grey-font smaller">{translate('home-10-text')}</p>
                         <p className="handwrite">{translate('home-11-text')}</p>
                         <p className="text-on-background bg-wood2">{translate('home-12-text')}</p>
                         <p className="handwrite">{translate('home-13-text')}</p>
                     </div>
-                    <div className="second-photo">
-                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    <div className="column photo-side">
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/ef/f6/b4/eff6b44d1eff0bf4814e1ced76196773.jpg" alt="LYS" />
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="column" style={{ width: '55%' }}>
-                        <div className="fourth-photo">
-                            <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
-                        </div>
-                        <div className="fifth-photo">
-                            <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
-                        </div>
+                <div className="row col">
+                    <div className="column photo-side">
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/7e/37/ed/7e37ed6709343ef7c619530ebbdcd36d.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/08/d6/1f/08d61f26c66148e2374b4a22ca1f16f4.jpg" alt="LYS" />
                     </div>
-                    <div className="column" style={{ width: '45%' }}>
+                    <div className="column info-side">
                         <p className="handwrite">{translate('home-14-text')}</p>
                         <p className="text-on-background bg-wood3">{translate('home-15-text')}</p>
                         <p className="big-grey-font smaller">{translate('home-16-text')}</p>
@@ -82,15 +87,15 @@ export const Home = (props) => {
                     </div>
                 </div>
 
-                <div className="row" style={{ marginTop: '50px' }}>
-                    <div className="column" style={{ width: '45%' }}>
-                        <p className="big-grey-font smaller">{translate('home-18-text')}</p>
+                <div className="row col">
+                    <div className="column info-side">
+                        <p className="big-grey-font smaller" id="sec">{translate('home-18-text')}</p>
                         <p className="handwrite">{translate('home-19-text')}</p>
                         <p className="text-on-background bg-wood4">{translate('home-20-text')}</p>
                         <p className="handwrite">{translate('home-21-text')}</p>
                     </div>
-                    <div className="sixth-photo">
-                        <img id="logo-w" src="https://i.pinimg.com/originals/7e/33/27/7e33272a4c67fdcad702e70208846943.png" alt="logoLYS" />
+                    <div className="photo-side">
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/cb/57/46/cb574680f2e5a9a8fe7eda950a90d000.jpg" alt="LYS" />
                     </div>
                 </div>
             </div>
@@ -98,7 +103,6 @@ export const Home = (props) => {
             <p className="big-grey-font x-smaller"> {translate('home-22-text')}</p>
             {/* ----------------------------------------------------CAROUSEL------------------------------------ */}
             <div className="HomeFourth">
-
                 <Slider></Slider>
             </div>
         </div>
@@ -155,10 +159,10 @@ export const Slider = (props) => {
     };
 
     return (
-        <div className="slider carousel-inner" >
+        <div className="carousel-inner" >
             {sliderArray.map((item, index) => {
                 return (
-                    <div key={index} className="slide " style={{ transform: `translateX(${x}%)` }}>
+                    <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
                         {item}
                     </div>
                 )

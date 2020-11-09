@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import translate from '../../../translation/do-translate';
 import Form from '../../Form';
 import './Contacts.css';
+import './ContactsFit.css';
 
 
 export const ContactUs = (props) => {

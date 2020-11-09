@@ -1,0 +1,67 @@
+/* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 1195px) {
+    .Creation {
+        margin-top: 20px;
+    }
+    .text-blok>p {
+        font-size: medium;
+    }
+    .creation-lozung {
+        margin-top: 50px;
+        font-size: 140%;
+    }
+    #video4-2 {
+        margin-top: -10%;
+        margin-left: 30%;
+    }
+}
+
+
+/* -------------------------------------------PHONE----------- */
+
+@media screen and (max-width: 700px) {
+    .creation-row {
+        flex-direction: column;
+    }
+    .text-blok,
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .text-blok>h5,
+    .left>h5,
+    .right>h5 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .video-left-side {
+        width: 70%;
+    }
+    .video-left-side>video {
+        margin: auto;
+    }
+    .video-right-side {
+        width: 100%;
+    }
+    .video-right-side>video {
+        margin: auto;
+    }
+    .creation-lozung {
+        margin-top: 30px;
+        font-size: 100%;
+    }
+    .comparing-row {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .img-row1,
+    .img-row2 {
+        width: 100%;
+        margin-top: 20px;
+        padding: 1%;
+    }
+}

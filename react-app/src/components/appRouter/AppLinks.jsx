@@ -7,7 +7,7 @@ export default class AppLinks extends React.Component {
 
     render() {
 
-        return routes.filter(route => route).map(route =>
+        return routes.filter(route => route.className !== 'smal-nav-link').map(route =>
 
             <Link className={route.className} key={route.key} to={route.path}>
                 {route.title}

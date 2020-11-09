@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
+import './PortfolioFit.css';
+
 import translate from '../../../translation/do-translate';
-import picturesArr, { picturesArrCol_1, picturesArrCol_2, picturesArrCol_3 } from "../../picImports/picImporter"
-// import BigImg from "./BigImg";
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-// import 'react-lazy-load-image-component/src/effects/opacity.css';
+import picturesArr, { picturesArrCol_1, picturesArrCol_2, picturesArrCol_3 } from "../../picImports/picImporter";
+import BigImg from "./BigImg";
 
 // const dotenv = require('dotenv');
 // const env = dotenv.config().parsed;
@@ -14,14 +14,28 @@ import picturesArr, { picturesArrCol_1, picturesArrCol_2, picturesArrCol_3 } fro
 
 export const Images = (props) => {
 
+    const [bigPicture, setBigPicture] = useState(null);
+
     useEffect(() => {
         window.scrollTo(0, 0);
+        // changing message to user depending on browser language
+        // and disable right click
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            let message;
+            if (navigator.language === 'ru' || navigator.language === 'ru-RU') {
+                message = 'Вы не можете сохранять изображения или видео с этого сайта! Все права на изображения пренадлежать владельцам сайта.';
+            } else if (navigator.language === 'uk' || navigator.language === 'uk-UA') {
+                message = 'Ви не можете зберігати зображення або відео з цього сайту! Всі права на зображення належати власникам сайту.';
+            } else message = 'You cannot save images or videos from this site! All rights to images belong to the site owners.';
+            alert(message);
+        });
     }, []);
 
-    const [bigPicture, setBigPicture] = useState(null);
 
     return (
         <div className="Portfolio">
+            {/* { console.log(window.innerWidth) } */}
             <p>{translate('portfolio-2-text')}</p>
             <div className="row">
                 {/* ----------------------------------BIG IMAGE---------------------- */}
@@ -55,36 +69,24 @@ export const Images = (props) => {
                     <div className="row">
                         <div className="porfolio-col">
                             {picturesArrCol_1.map((Picture) => {
-                                return (
-                                    <div className="portfolio-img" key={Picture.pic}
-                                        style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `400px` }}
-                                        onClick={() => { setBigPicture(Picture.pic) }}>
-                                        <div className="showme"> &copy; LYS furniture</div>
-                                    </div>
-                                )
+                                return <BigImg name='LYS furniture' className="portfolio-img"
+                                    key={Picture.pic} src={Picture.pic}
+                                    onClick={() => { if (window.innerWidth > 1195) { setBigPicture(Picture.pic) } }} />
                             })}
                         </div>
 
                         <div className="porfolio-col">
                             {picturesArrCol_2.map((Picture) => {
-                                return (
-                                    <div className="portfolio-img" key={Picture.pic}
-                                        style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `400px` }}
-                                        onClick={() => { setBigPicture(Picture.pic) }}>
-                                        <div className="showme"> &copy; LYS furniture</div>
-                                    </div>
-                                )
+                                return <BigImg
+                                    key={Picture.pic} name='LYS furniture' className="portfolio-img" src={Picture.pic}
+                                    onClick={() => { if (window.innerWidth > 1195) { setBigPicture(Picture.pic) } }} />
                             })}
                         </div>
                         <div className="porfolio-col">
                             {picturesArrCol_3.map((Picture) => {
-                                return (
-                                    <div className="portfolio-img" key={Picture.pic}
-                                        style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `400px` }}
-                                        onClick={() => { setBigPicture(Picture.pic) }}>
-                                        <div className="showme"> &copy; LYS furniture</div>
-                                    </div>
-                                )
+                                return <BigImg
+                                    key={Picture.pic} name='LYS furniture' className="portfolio-img" src={Picture.pic}
+                                    onClick={() => { if (window.innerWidth > 1195) { setBigPicture(Picture.pic) } }} />
                             })}
                         </div>
                     </div>

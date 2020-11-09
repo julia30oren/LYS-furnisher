@@ -4,7 +4,7 @@ function ImgSlider({ src, title, text }) {
     return (
 
         <div className="slider-img">
-            <img src={src} alt="img" />
+            <img src={src} alt="img" style={{ width: '100%' }} />
             <div>
                 <h6>{title}</h6>
                 <p>{text}</p>

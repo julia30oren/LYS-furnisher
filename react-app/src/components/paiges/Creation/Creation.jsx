@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import translate from '../../../translation/do-translate';
 import ReactCompareImage from 'react-compare-image';
 import './Creation.css';
+import './CreationFit.css';
 
 import sketch_vid from '../../../videos/scatch_fox_2.mp4';
 import drawing_vid from '../../../videos/cr_fox.mp4';

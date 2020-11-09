@@ -7,7 +7,7 @@ export default {
         "home-nuv": "Главная",
         "about-nuv": "О нас",
         "portfolio-nuv": "Портфолио",
-        "creation-nuv": "Процесс создания",
+        "creation-nuv": "Cозданиe",
         "painting-nuv": "Покрытие",
         "contacts-nuv": "Контакты",
 

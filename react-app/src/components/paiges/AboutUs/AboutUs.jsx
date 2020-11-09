@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import translate from '../../../translation/do-translate';
 import './AboutUs.css';
+import './AboutUsFit.css';
 
 
 export const AboutUs = (props) => {

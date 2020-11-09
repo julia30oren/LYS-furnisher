@@ -1,0 +1,59 @@
+/* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 1195px) {
+    .texture-open {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+    }
+    .texture {
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .photo {
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+
+/* -------------------------------------------PHONE----------- */
+
+@media screen and (max-width: 700px) {
+    .texture-txt>h6 {
+        font-size: small;
+    }
+    .coating-row {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .texture-txt {
+        margin: auto;
+        width: 90%;
+    }
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6,
+    .img-7,
+    .img-8 {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .texture {
+        width: 100%;
+    }
+    .photo {
+        width: 100%;
+        ;
+    }
+}

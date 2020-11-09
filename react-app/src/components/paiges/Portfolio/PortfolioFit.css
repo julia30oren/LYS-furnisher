@@ -1,0 +1,32 @@
+/* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 1195px) {
+    /* ----------PORTFOLIO---------- */
+    .Portfolio {
+        margin-top: 50px;
+    }
+    .Portfolio>p {
+        font-size: 25px;
+    }
+    .porfolio-col {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .portfolio-img {
+        border: solid white 10px;
+    }
+}
+
+
+/* -------------------------------------------PHONE----------- */
+
+@media screen and (max-width: 700px) {
+    /* ----------PORTFOLIO---------- */
+    .Portfolio>p {
+        font-size: 20px;
+    }
+    .portfolio-img {
+        border: solid white 8px;
+    }
+}

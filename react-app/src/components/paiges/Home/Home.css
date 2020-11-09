@@ -3,11 +3,6 @@
      margin-top: 100px;
      margin-bottom: 100px;
  }
- 
- #logo-w {
-     height: 200px;
-     width: 200px;
- }
  /*------------------------ VIDIO --------------------------- */
  
  .openingVid {
@@ -15,8 +10,8 @@
  }
  
  #video-cover {
-     width: 100%;
-     height: 750px;
+     width: 1200px;
+     height: 650px;
      position: absolute;
      background-image: url('https://i.pinimg.com/originals/c6/2e/95/c62e95b1eebb5a3286741fb673e2e139.png');
      background-size: cover;
@@ -26,26 +21,16 @@
  .HomeFirst {
      display: flex;
      flex-direction: row;
-     height: 1000px;
+     justify-content: center;
  }
  
  .first-left-col {
-     font-size: 140%;
      width: 45%;
-     margin-left: 5%;
  }
  
  #fenix {
-     width: 45%;
-     margin-left: 2%;
-     height: 90%;
-     background-image: url('https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg');
-     background-size: cover;
- }
- 
- #family-portrait {
-     background-image: url('https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg');
-     background-size: cover;
+     width: 50%;
+     margin-left: 1%;
  }
  
  .text-on-photo {
@@ -53,7 +38,10 @@
      height: 50%;
      font-size: 25px;
      text-shadow: #000000c4 3px 3px 2px;
-     padding: 12%;
+     padding-left: 2%;
+     position: absolute;
+     margin-top: -30%;
+     z-index: 2;
  }
  
  .handwrite {
@@ -71,8 +59,7 @@
      font-variant: normal;
      text-transform: none;
  }
- 
- .wood-texture {
+ /* .wood-texture {
      background-image: url('https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045380_960_720.jpg');
      background-size: cover;
      height: 220px;
@@ -80,7 +67,7 @@
      margin-left: 50px;
      position: absolute;
      z-index: 1;
- }
+ } */
  /* -----------------------------WHAT DO WE OFFER?---------------------------- */
  
  .big-grey-font {
@@ -106,7 +93,6 @@
  
  .smaller {
      font-size: 40px;
-     margin-top: 30px;
  }
  
  .text-on-background {
@@ -119,33 +105,24 @@
      text-align: center;
  }
  
- .first-photo {
+ .photo-side {
      width: 55%;
-     height: 700px;
-     background-image: url('https://i.pinimg.com/564x/2f/ef/3e/2fef3e8f8fb581b6e37849054ad060ce.jpg');
-     background-size: cover;
+ }
+ 
+ .info-side {
+     width: 45%;
+ }
+ 
+ #m-t {
+     margin-top: 100px;
  }
  
  .bg-wood1 {
      background-image: url('https://cdn.pixabay.com/photo/2016/02/16/10/40/background-1203084_960_720.jpg');
  }
  
- .second-photo {
-     width: 55%;
-     height: 700px;
-     background-image: url('https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg');
-     background-size: cover;
- }
- 
  .bg-wood2 {
      background-image: url('https://www.wallpaperboulevard.com/Images/product/0019826_faux-wood-panel-l.jpeg');
- }
- 
- .third-photo {
-     width: 55%;
-     height: 700px;
-     background-image: url('https://i.pinimg.com/564x/c0/19/cf/c019cfd94992f40c9e46129e156040ef.jpg');
-     background-size: cover;
  }
  
  .bg-wood3 {
@@ -153,30 +130,9 @@
      background-image: url('https://cdn8.dissolve.com/p/D2115_208_992/D2115_208_992_1200.jpg');
  }
  
- .fourth-photo {
-     width: 100%;
-     height: 700px;
-     background-image: url('https://i.pinimg.com/originals/10/52/4b/10524b2431ffaa750fb9b3757d39d963.jpg');
-     background-size: cover;
- }
- 
- .fifth-photo {
-     width: 100%;
-     height: 500px;
-     background-image: url('https://i.pinimg.com/originals/e5/44/cc/e544cc9a6253ab2a04f4368337baf253.jpg');
-     background-size: cover;
- }
- 
  .bg-wood4 {
      height: 200px;
      background-image: url('https://cdn.pixabay.com/photo/2014/06/11/15/24/wood-366792_960_720.jpg');
- }
- 
- .sixth-photo {
-     width: 55%;
-     height: 1000px;
-     background-image: url('https://i.pinimg.com/564x/c0/19/cf/c019cfd94992f40c9e46129e156040ef.jpg');
-     background-size: cover;
  }
  
  .x-smaller {
@@ -185,25 +141,16 @@
  /* ------------------------------ 4 -------- CAROUSEL -------------------------------*/
  
  .HomeFourth {
-     padding: 5%;
+     margin-top: 50px;
  }
  
- #myCarousel,
- .carousel-img {
-     height: 600px;
- }
- /*                                              */
- 
- .slider {
+ .carousel-inner {
      position: relative;
-     width: 100%;
-     height: 600px;
      box-sizing: border-box;
-     margin: 0;
-     padding: 0;
      display: flex;
      align-items: center;
      overflow: hidden;
+     max-height: 600px;
  }
  
  #slider-cover {
@@ -211,6 +158,7 @@
      height: 600px;
      position: absolute;
      margin-top: 0;
+     max-height: 600px;
      z-index: 2;
      background-image: url('https://i.pinimg.com/originals/9b/f3/90/9bf39026e89aa35e1583cc91852cf35c.png');
      background-size: cover;
@@ -219,7 +167,6 @@
  .slide {
      position: relative;
      min-width: 100%;
-     height: 100%;
      transition: 0.7s;
      overflow: hidden;
  }
