@@ -71,16 +71,17 @@ function App() {
     useEffect(() => {
         checkLocation();
         checkBrowserLang();
-
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("vvvvv").style.top = "0";
-            } else {
-                document.getElementById("vvvvv").style.top = "-80px";
+        if (window.innerWidth < 1000) {
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("vvvvv").style.top = "0";
+                } else {
+                    document.getElementById("vvvvv").style.top = "-80px";
+                }
+                prevScrollpos = currentScrollPos;
             }
-            prevScrollpos = currentScrollPos;
         }
     }, []);
     // const myFunction = () => {
