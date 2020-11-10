@@ -10,6 +10,11 @@ import translate from '../translation/do-translate';
 
 
 function App() {
+
+    const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
+    const [contactForm, setContactForm] = useState(false);
+    const [navbar, setNavbarOpen] = useState(false);
+
     function checkLocation() {
         setInterval(() => {
             let loc = window.location.href;
@@ -76,44 +81,37 @@ function App() {
             window.onscroll = function () {
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("vvvvv").style.top = "0";
+                    document.getElementById("phone-navBar").style.top = "0";
                 } else {
-                    document.getElementById("vvvvv").style.top = "-80px";
+                    document.getElementById("phone-navBar").style.top = "-70px";
                 }
                 prevScrollpos = currentScrollPos;
             }
         }
     }, []);
-    // const myFunction = () => {
-    //     // var x = document.getElementById("myLinks");
-    //     if (document.getElementById("myLinks").style.display === "block") {
-    //         // x.style.display = "none";
-    //         document.getElementById("myLinks").style.display = "none";
-    //     } else {
-    //         document.getElementById("myLinks").style.display = "block";
-    //         // x.style.display = "block";
-    //     }
-    // }
 
-    const [locale, setLocale] = useState(LOCALES.UKRAINIAN);
-    const [contactForm, setContactForm] = useState(false);
-    const [navbar, setNavbarOpen] = useState(false);
+
 
     return (
         <MyProvider locale={locale}>
             <BrowserRouter>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     {window.innerWidth > 1000 ? <NavBar></NavBar> :
-                        <div id="vvvvv">
+                        <div id="phone-navBar">
                             <div className="topnav">
                                 <a href="/" className="active"><img style={{ marginTop: '-10px', marginLeft: "-10px", height: '50px', width: '50px' }} src="https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png" alt="logo" /></a>
                                 <a href="#" className="icon" onClick={() => { setNavbarOpen(!navbar) }}>
-                                    {navbar ? <i className="fas fa-times  fa-2x"></i> : <i className="fa fa-bars fa-2x"></i>}
+                                    {navbar ? <i className="fas fa-times  fa-2x" style={{ color: 'black' }}></i> : <i className="fa fa-bars fa-2x" style={{ color: 'black' }}></i>}
                                 </a>
                             </div>
                             {
                                 !navbar ? null :
-                                    <div className="nnn" style={{ width: '100%', position: 'absolute', zIndex: '10', display: 'flex', flexDirection: 'column' }}>
+                                    <div className="openNav" style={{ width: '100%', position: 'absolute', zIndex: '10', display: 'flex', flexDirection: 'column' }}>
+                                        <div style={{ width: '100%', textAlign: 'center' }}>
+                                            <a href="#ukr" style={{ color: 'wheat', paddingLeft: '10px', paddingRight: '10px' }} onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
+                                            <a href="#rus" style={{ color: 'wheat', paddingLeft: '10px', paddingRight: '10px' }} onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
+                                            <a href="#eng" style={{ color: 'wheat', paddingLeft: '10px', paddingRight: '10px' }} onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
+                                        </div>
                                         <a href="/" className="nav-link" id="home-link" onClick={() => { setNavbarOpen(!navbar) }}>{translate('home-nuv')}</a>
                                         <a href="/about" className="nav-link" id="about-link" onClick={() => { setNavbarOpen(!navbar) }}>{translate('about-nuv')}</a>
                                         <a href="/creation" className="nav-link" id="creation-link" onClick={() => { setNavbarOpen(!navbar) }}>{translate('creation-nuv')}</a>
@@ -142,7 +140,7 @@ function App() {
                             <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-f fa-2x"></i>
                             </a>
-                            <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="viber://chat?number=+380934864811">
+                            <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B380934864811" >
                                 <i className="fab fa-viber fa-2x"></i>
                             </a>
                             <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://telegram.me/<Crdemon>">
@@ -185,11 +183,11 @@ function App() {
                             <a href="#ukr" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
                             <a href="#rus" onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
                             <a href="#eng" onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
-                            {/* {window.innerWidth < 500 ? null : */}
-                            <a id='contuct-button-2' href="#message" onClick={() => { setContactForm(!contactForm) }}>
-                                {!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}
-                            </a>
-                            {/* } */}
+                            {window.innerWidth < 500 ? null :
+                                <a id='contuct-button-2' href="#message" onClick={() => { setContactForm(!contactForm) }}>
+                                    {!contactForm ? <i className="far fa-comment-dots fa-2x"></i> : <i className="fas fa-times  fa-3x"></i>}
+                                </a>
+                            }
                         </div>
                         : null}
                     {/*  --------------------------------------CONTACT FORM------------------------- */}

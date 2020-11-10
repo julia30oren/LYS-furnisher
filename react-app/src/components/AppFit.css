@@ -29,7 +29,7 @@
      }
  }
  
- #vvvvv {
+ #phone-navBar {
      position: fixed;
      /* Make it stick/fixed */
      top: 0;
@@ -45,10 +45,9 @@
      overflow: hidden;
      background-color: #333;
      position: relative;
+     -webkit-box-shadow: 0px 0px 23px 4px #000000;
+     box-shadow: 0px 0px 23px 4px #000000;
  }
- /* .topnav #myLinks {
-     display: none;
- } */
  
  .topnav a {
      color: white;
@@ -77,9 +76,11 @@
      color: white;
  }
  
- .nnn {
+ .openNav {
      background-image: url('https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045380_960_720.jpg');
-     /* color: hite; */
+     border-bottom: black solid 2px;
+     -webkit-box-shadow: 0px 0px 23px 4px #000000;
+     box-shadow: 0px 0px 23px 4px #000000;
  }
  
  #home-link,
