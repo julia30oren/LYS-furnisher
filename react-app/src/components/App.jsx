@@ -143,7 +143,10 @@ function App() {
                             <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B380934864811" >
                                 <i className="fab fa-viber fa-2x"></i>
                             </a>
-                            <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://telegram.me/+380(98)6007136">
+                            <a className="footer-icon" target="_blank" rel="noopener noreferrer"
+                                // href="https://telegram.me/+380(98)6007136"
+                                href="https://t.me/CrDemon"
+                            >
                                 <i className="fab fa-telegram fa-2x"></i>
                             </a>
                             <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=380986007136">
