@@ -145,7 +145,7 @@ function App() {
                             </a>
                             <a className="footer-icon" target="_blank" rel="noopener noreferrer"
                                 // href="https://telegram.me/+380(98)6007136"
-                                href="https://t.me/CrDemon"
+                                href="https://t.me/LYS_FAMILY_furniture"
                             >
                                 <i className="fab fa-telegram fa-2x"></i>
                             </a>
