@@ -3,7 +3,8 @@
 @media screen and (max-width: 1195px) {
     .Contact-content {
         padding: 5%;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 50px;
     }
     .form-div {
         width: 100%;

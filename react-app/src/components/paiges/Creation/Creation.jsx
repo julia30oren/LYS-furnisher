@@ -59,7 +59,7 @@ export const Creation = (props) => {
                 </div>
             </div>
             {/* --------------------------------------------------------------COLORING------------------ */}
-            <div className="creation-row">
+            <div className="creation-row vid-2">
                 <div className="text-blok left">
                     <h5>{translate('creation-5-title')}</h5>
                     <p>{translate('creation-5-text')}</p>

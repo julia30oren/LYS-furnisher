@@ -39,13 +39,14 @@ export const Coating = (props) => {
                         </div>
                     </div>
                     {/* ---------------------------------Painting with enamels------------------------------------------------ */}
-                    <div className="coating-row">
+                    <div className="coating-row reverse">
                         <div className="texture-txt">
                             <h5>{translate('coating-3-row-1')}</h5>
                             <p>{translate('coating-2-text')}</p>
                             <li>{translate('coating-3-row-2')}</li>
                             <li>{translate('coating-3-row-3')}</li>
-                            <h6>{translate('coating-3-row-4')}</h6>
+                            <li>{translate('coating-3-row-4')}</li>
+                            <h6>{translate('coating-3-row-5')}</h6>
                         </div>
                         <div className="texture-img img-2"
                             onClick={() => setBigPicture({ img_1: "https://i.pinimg.com/originals/af/ac/43/afac43761d97d62cb0ff3572f36b8fc7.jpg", img_2: "https://i.pinimg.com/originals/a4/43/1d/a4431d553a858a36f820c9adf27ae2ac.jpg" })}>
@@ -65,7 +66,7 @@ export const Coating = (props) => {
                         </div>
                     </div>
                     {/* ------------------------------Toning with the effect of aging------------------------------------------------ */}
-                    <div className="coating-row">
+                    <div className="coating-row reverse">
                         <div className="texture-txt">
                             <h5>{translate('coating-5-row-1')}</h5>
                             <p>{translate('coating-2-text')}</p>
@@ -94,7 +95,7 @@ export const Coating = (props) => {
                         </div>
                     </div>
                     {/* -------------------------------------------------texture  «flax»------------------------------------------------ */}
-                    <div className="coating-row">
+                    <div className="coating-row reverse">
                         <div className="texture-txt">
                             <h5>{translate('coating-7-row-1')}</h5>
                             <p>{translate('coating-2-text')}</p>
@@ -124,7 +125,7 @@ export const Coating = (props) => {
                         </div>
                     </div>
                     {/* -----------------------------------------------Brushing------------------------------------------ */}
-                    <div className="coating-row">
+                    <div className="coating-row reverse">
                         <div className="texture-txt">
                             <h5>{translate('coating-9-row-1')}</h5>
                             <h6>{translate('coating-9-row-2')}</h6>

@@ -29,9 +29,9 @@ export const Home = (props) => {
             {/* <div id="video-cover"></div> */}
             {/* ------------------------------------------LOZUNG------------------------------------ */}
             <div className="big-grey-font" >
-                <p style={{ marginTop: '20px' }}>&laquo;{translate('home-1-text')}&raquo;</p>
+                <p style={{ marginTop: '20px' }}>{translate('home-1-text')}</p>
                 <p className="smaller">{translate('home-2-text')}</p>
-                <p className="smaller">{translate('home-02-text')}</p>
+                {/* <p className="smaller">{translate('home-02-text')}</p> */}
             </div>
             {/* ------------------------------------------FIRST BLOK ----------- WITH FAMILY PHOTO------------------------------------ */}
             <div className="blok HomeFirst">
@@ -42,7 +42,7 @@ export const Home = (props) => {
                     {/* <div className="wood-texture"></div> */}
                 </div>
                 <div id="fenix">
-                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/16/66/76/1666760e87d850519932a94c21209b5e.jpg" alt="LYS fenix" />
+                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="LYS fenix" />
                 </div>
             </div>
             {/* ---------------------------------------------WHAT DO WE OFFER?--------------------------- */}
@@ -50,9 +50,9 @@ export const Home = (props) => {
             {/* ---------------------------------------------SECOND BLOK---------------------------- */}
             <div className="blok HomeSecond">
 
-                <div className="row col">
+                <div className="row col snake">
                     <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/72/4b/ea/724bea4ee81f09f84b270ad9a07652da.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/79/75/8c/79758c6017a10a7ba714638372e506fc.jpg" alt="LYS" />
                     </div>
                     <div className="column info-side">
                         <p className="handwrite">{translate('home-6-text')}</p>
@@ -70,14 +70,14 @@ export const Home = (props) => {
                         <p className="handwrite">{translate('home-13-text')}</p>
                     </div>
                     <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/ef/f6/b4/eff6b44d1eff0bf4814e1ced76196773.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg" alt="LYS" />
                     </div>
                 </div>
 
-                <div className="row col">
+                <div className="row col cone">
                     <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/7e/37/ed/7e37ed6709343ef7c619530ebbdcd36d.jpg" alt="LYS" />
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/08/d6/1f/08d61f26c66148e2374b4a22ca1f16f4.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/e5/44/cc/e544cc9a6253ab2a04f4368337baf253.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/b1/37/57/b1375741d22229d6260b673aeb1de06e.jpg" alt="LYS" />
                     </div>
                     <div className="column info-side">
                         <p className="handwrite">{translate('home-14-text')}</p>
@@ -95,7 +95,7 @@ export const Home = (props) => {
                         <p className="handwrite">{translate('home-21-text')}</p>
                     </div>
                     <div className="photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/cb/57/46/cb574680f2e5a9a8fe7eda950a90d000.jpg" alt="LYS" />
+                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/37/2e/8b372e8cac4c20a1480bc648060f5cf5.jpg" alt="LYS" />
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@ export const Slider = (props) => {
                 )
             })}
             {/* slider cover */}
-            <div id="slider-cover"></div>
+            {/* <div id="slider-cover"></div> */}
             {/* slider buttons */}
             <a className="sliderButtons" id="goLeft" href="#demo" onClick={goLeft}>
                 <i className="fas fa-angle-left fa-3x"></i>

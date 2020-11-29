@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
 }
 
 .parallax {
@@ -11,16 +10,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    height: 700px;
-    width: 100%;
 }
 
 .par-img {
+    height: 700px;
     background-image: url('https://i.pinimg.com/originals/a5/51/6c/a5516ca3d37d02573005231ff3864632.jpg');
-    background-size: 1000px 800px;
+    background-size: 1200px 900px;
 }
 
 .aboutTextDiv {
+    width: 93%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -32,5 +31,5 @@
     text-transform: none;
     text-align: center;
     font-size: x-large;
-    margin: 35px;
+    padding: 35px;
 }

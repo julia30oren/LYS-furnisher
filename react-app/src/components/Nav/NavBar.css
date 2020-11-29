@@ -9,8 +9,8 @@
 /* ---------------------------------LOGO-------------------------- */
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 255px;
+    height: 255px;
     background-image: url('https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png');
     background-size: cover;
 }
@@ -28,7 +28,7 @@
 
 .wood-1 {
     height: 50px;
-    width: 210px;
+    width: 215px;
     background-image: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
     margin-top: 10px;
     font-size: 35px;
@@ -43,17 +43,17 @@
 }
 
 .wood-3 {
-    height: 70px;
+    height: 45px;
     width: 160px;
     background-image: url('https://inspirationfeed.com/wp-content/uploads/2019/12/wooden.jpg');
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 27px;
 }
 
 .wood-4 {
     height: 70px;
     width: 230px;
-    background-image: url('https://bhf-cdn.azureedge.net/bhf-blob-prod/0012264_tanice-grey-faux-wood-texture_600.jpeg');
+    background-image: url('https://images.all-free-download.com/images/graphiclarge/vector_wooden_backgrounds_530760.jpg');
     margin-top: 20px;
     font-size: 48px;
 }
@@ -91,10 +91,21 @@
 
 .wood {
     width: 250px;
-    height: 400px;
-    background-image: url('https://image.freepik.com/free-photo/blue-wooden-planks-old-grunge-blue-colored-wood-texture_88281-2411.jpg');
-    background-size: cover;
+    /* background-image: url('https://image.freepik.com/free-photo/blue-wooden-planks-old-grunge-blue-colored-wood-texture_88281-2411.jpg');
+    background-size: cover; */
     margin-top: 20px;
+    text-align: center;
+    padding: 12%;
+    font-size: xx-large;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
 }
 
 #navbar a {
@@ -107,4 +118,54 @@
 #navbar a:hover {
     background-color: rgba(221, 221, 221, 0);
     color: black;
+}
+
+@media screen and (max-width: 1550px) {
+    #NavBar {
+        width: 200px;
+    }
+    .logo {
+        width: 205px;
+        height: 205px;
+    }
+    .wood-1 {
+        height: 40px;
+        width: 180px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .wood-2 {
+        height: 25px;
+        width: 160px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .wood-3 {
+        height: 35px;
+        width: 140px;
+        margin-top: 18px;
+        font-size: 22px;
+    }
+    .wood-4 {
+        height: 60px;
+        width: 190px;
+        margin-top: 20px;
+        font-size: 38px;
+    }
+    .wood-5 {
+        height: 40px;
+        width: 170px;
+        margin-top: 15px;
+        font-size: 26px;
+    }
+    .wood-6 {
+        height: 25px;
+        width: 130px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .wood {
+        width: 200px;
+        font-size: x-large;
+    }
 }

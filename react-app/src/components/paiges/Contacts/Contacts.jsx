@@ -30,8 +30,8 @@ export const ContactUs = (props) => {
                     <p>{translate('contacts-7-text')}</p>
                     <p>{translate('contacts-8-text')}</p>
                     <p>{translate('contacts-9-text')}</p>
-                    <a className="messangers" target="_blank" rel="noopener noreferrer" href="viber://chat?number=+380934864811"><i className="fab fa-viber fa-2x" style={{ color: 'rgb(136,77,255)' }}></i></a>
-                    <a className="messangers" target="_blank" rel="noopener noreferrer" href="https://telegram.me/<Crdemon>"><i className="fab fa-telegram fa-2x" style={{ color: 'rgb(25,178,255)' }}></i></a>
+                    <a className="messangers" target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B380934864811"><i className="fab fa-viber fa-2x" style={{ color: 'rgb(136,77,255)' }}></i></a>
+                    <a className="messangers" target="_blank" rel="noopener noreferrer" href="https://t.me/LYS_FAMILY_furniture"><i className="fab fa-telegram fa-2x" style={{ color: 'rgb(25,178,255)' }}></i></a>
                     <a className="messangers" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=380986007136"><i className="fab fa-whatsapp-square fa-2x" style={{ color: 'rgb(0,204,34)' }}></i></a>
                 </div>
 

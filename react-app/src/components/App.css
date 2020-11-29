@@ -12,6 +12,10 @@
             display: flex;
             flex-direction: column;
         }
+        
+        #jmdncskjn {
+            margin: auto;
+        }
         /* -------------------RIGHT NAVIGATION------------- LANGUEGES + MESEGER  ----------------------------*/
         /* .right-side-bottom {
             width: 200px;
@@ -75,6 +79,7 @@
         .Main-Component {
             position: absolute;
             width: 1200px;
+            right: 250px;
         }
         
         #creators {
@@ -137,4 +142,177 @@
         
         .display-none1 {
             display: none;
+        }
+        /* ------------------------------------NAVBAR----------- */
+        
+        #NavBar {
+            position: fixed;
+            left: 0;
+            z-index: 2;
+            width: 250px;
+        }
+        /* ---------------------------------LOGO-------------------------- */
+        
+        .logo {
+            width: 255px;
+            height: 255px;
+            background-image: url('https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png');
+            background-size: cover;
+        }
+        /* -------------------------------------LINKS---------------------------------- */
+        
+        #navbar {
+            background-color: rgba(51, 51, 51, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .wood-1 {
+            height: 50px;
+            width: 215px;
+            background-image: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            margin-top: 10px;
+            font-size: 35px;
+        }
+        
+        .wood-2 {
+            height: 30px;
+            width: 200px;
+            background-image: url('https://i.pinimg.com/originals/cb/d0/4a/cbd04a83f7a2c42876474e40aecfff3a.jpg');
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        
+        .wood-3 {
+            height: 45px;
+            width: 160px;
+            background-image: url('https://inspirationfeed.com/wp-content/uploads/2019/12/wooden.jpg');
+            margin-top: 10px;
+            font-size: 27px;
+        }
+        
+        .wood-4 {
+            height: 70px;
+            width: 230px;
+            background-image: url('https://images.all-free-download.com/images/graphiclarge/vector_wooden_backgrounds_530760.jpg');
+            margin-top: 20px;
+            font-size: 48px;
+        }
+        
+        .wood-5 {
+            height: 50px;
+            width: 200px;
+            background-image: url('https://image.shutterstock.com/image-photo/old-rural-wooden-wall-green-260nw-537327499.jpg');
+            margin-top: 15px;
+            font-size: 33px;
+        }
+        
+        .wood-6 {
+            height: 25px;
+            width: 160px;
+            background-image: url('https://img.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg?size=626&ext=jpg&ga=GA1.2.1435448447.1600819200');
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        .nav-title {
+            text-shadow: #000000c4 3px 3px 2px;
+            background-size: cover;
+        }
+        
+        .wood-1:hover,
+        .wood-2:hover,
+        .wood-3:hover,
+        .wood-4:hover,
+        .wood-5:hover,
+        .wood-6:hover {
+            background-image: none;
+            text-shadow: none;
+        }
+        
+        .wood {
+            border: solid black 3px;
+            width: 220px;
+            height: 210px;
+            margin-top: 30px;
+            margin-left: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-size: 28px;
+            text-align: center;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: uppercase;
+        }
+        
+        #navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        #navbar a:hover {
+            background-color: rgba(221, 221, 221, 0);
+            color: black;
+        }
+        
+        @media screen and (max-width: 1550px) {
+            #NavBar {
+                width: 200px;
+            }
+            .logo {
+                width: 205px;
+                height: 205px;
+            }
+            .wood-1 {
+                height: 40px;
+                width: 180px;
+                margin-top: 10px;
+                font-size: 25px;
+            }
+            .wood-2 {
+                height: 25px;
+                width: 160px;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .wood-3 {
+                height: 35px;
+                width: 140px;
+                margin-top: 18px;
+                font-size: 22px;
+            }
+            .wood-4 {
+                height: 60px;
+                width: 190px;
+                margin-top: 20px;
+                font-size: 38px;
+            }
+            .wood-5 {
+                height: 40px;
+                width: 170px;
+                margin-top: 15px;
+                font-size: 26px;
+            }
+            .wood-6 {
+                height: 25px;
+                width: 130px;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .wood {
+                width: 170px;
+                height: 140px;
+                font-size: large;
+            }
         }

@@ -1,53 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import './SmallNavBar.css';
-import AppLinks from '../appRouter/AppLinks';
+import { Link } from "react-router-dom";
+import { routes } from '../appRouter/routers.config';
 import translate from '../../translation/do-translate';
+
 
 function NavBar() {
 
+    const [navbar, setNavbarOpen] = useState(false);
+
     useEffect(() => {
-        console.log('ljuhf');
-        // --------------------------
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-
+        if (window.innerWidth < 1250) {
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function () {
-                if (window.innerWidth < 1700) {
-                    var currentScrollPos = window.pageYOffset;
-                    if (prevScrollpos > currentScrollPos) {
-                        document.getElementById("smallNavBar").style.top = "0";
-                    } else {
-                        document.getElementById("smallNavBar").style.top = "-150px";
-                    }
-                    prevScrollpos = currentScrollPos;
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("phone-navBar").style.top = "0";
+                } else {
+                    document.getElementById("phone-navBar").style.top = "-70px";
                 }
+                prevScrollpos = currentScrollPos;
             }
         }
-        // ---------------------------------
     }, []);
 
 
     return (
         <div>
             {
-                window.innerWidth < 1700 ?
-                    <div id="smallNavBar">
-                        <div id="sm-nav-left">
-                            <a href="/"><img style={{ height: '100px', width: '100px' }} src="https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png" alt="logo" /></a>
+                window.innerWidth < 1250 ?
+                    <div id="phone-navBar">
+                        <div className="topnav">
+                            <a href="/" className="active"><img style={{ marginTop: '-10px', marginLeft: "-10px", height: '50px', width: '50px' }} src="https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png" alt="logo" /></a>
+                            <a href="#" className="icon" onClick={() => { setNavbarOpen(!navbar) }}>
+                                {navbar ? <i className="fas fa-times  fa-2x" style={{ color: 'black' }}></i> : <i className="fa fa-bars fa-2x" style={{ color: 'black' }}></i>}
+                            </a>
                         </div>
-                        <div id="sm-nav-mid">
-                            <a href="/" className="nav-link" id="home-link">{translate('home-nuv')}</a>
-                            <a href="/about" className="nav-link" id="about-link">{translate('about-nuv')}</a>
-                            <a href="/creation" className="nav-link" id="creation-link">{translate('creation-nuv')}</a>
-                            <a href="/coating" className="nav-link" id="coating-link">{translate('painting-nuv')}</a>
-                            <a href="/portfolio" className="nav-link" id="portfolio-link">{translate('portfolio-nuv')}</a>
-                            <a href="/contacts" className="nav-link" id="contacts-link">{translate('contacts-nuv')}</a>
-                        </div>
-                        <div id="sm-nav-right">
-                        </div>
+                        {
+                            !navbar ? null :
+                                <div className="openNav">
+                                    {routes.filter(route => route).map(route =>
+                                        <Link className={route.className} key={route.key} to={route.path} onClick={() => { setNavbarOpen(!navbar) }}>
+                                            {route.title}
+                                        </Link>
+                                    )}
+                                </div>
+                        }
                     </div>
                     :
                     <div id="NavBar">
@@ -55,10 +54,16 @@ function NavBar() {
                         <div className="logo"></div>
 
                         <div id="navbar">
-                            <AppLinks />
+                            {routes.filter(route => route).map(route =>
+                                <Link className={route.className} key={route.key} to={route.path}>
+                                    {route.title}
+                                </Link>
+                            )}
                         </div>
 
-                        <div className="wood"></div>
+                        <div className="wood">
+                            {translate('loz')}
+                        </div>
                     </div>
             }
         </div >

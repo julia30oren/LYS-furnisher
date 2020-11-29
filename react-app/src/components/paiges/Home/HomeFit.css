@@ -1,6 +1,6 @@
 /* -------------------------------------------tablet----------- */
 
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 1250px) {
     .blok {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -71,6 +71,9 @@
         margin: 0%;
         padding: 0%;
     }
+    .snake {
+        flex-direction: column-reverse;
+    }
     #fenix,
     .photo-side {
         width: 80%;
@@ -114,5 +117,9 @@
     }
     .slider-img>div>h6 {
         font-size: 10px;
+    }
+    .snakeб,
+    .cone {
+        flex-direction: column-reverse;
     }
 }

@@ -153,17 +153,6 @@
      max-height: 600px;
  }
  
- #slider-cover {
-     width: 100%;
-     height: 600px;
-     position: absolute;
-     margin-top: 0;
-     max-height: 600px;
-     z-index: 2;
-     background-image: url('https://i.pinimg.com/originals/9b/f3/90/9bf39026e89aa35e1583cc91852cf35c.png');
-     background-size: cover;
- }
- 
  .slide {
      position: relative;
      min-width: 100%;
