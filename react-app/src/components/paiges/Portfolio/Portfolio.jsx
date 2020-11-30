@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
 import './PortfolioFit.css';
-
 import translate from '../../../translation/do-translate';
 import picturesArr, { picturesArrCol_1, picturesArrCol_2, picturesArrCol_3 } from "../../picImports/picImporter";
 import BigImg from "./BigImg";
-
-// const dotenv = require('dotenv');
-// const env = dotenv.config().parsed;
-// require('dotenv').config()
-// console.log(env)
-
 
 export const Images = (props) => {
 
@@ -35,8 +28,9 @@ export const Images = (props) => {
 
     return (
         <div className="Portfolio">
-            {/* { console.log(window.innerWidth) } */}
             <p>{translate('portfolio-2-text')}</p>
+            <p>{translate('portfolio-3-text')}</p>
+
             <div className="row">
                 {/* ----------------------------------BIG IMAGE---------------------- */}
                 {!bigPicture ? null :

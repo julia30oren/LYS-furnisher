@@ -128,7 +128,8 @@ export default {
 
 
         "portfolio-1-text": "Portfolio",
-        "portfolio-2-text": "Each item is made by hand. All works are unique.",
+        "portfolio-2-text": "Each item is made by hand.",
+        "portfolio-3-text": "All works are unique.",
 
 
         "contacts-1-text": "Contacts",
