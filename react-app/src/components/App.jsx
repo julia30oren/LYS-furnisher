@@ -138,7 +138,7 @@ function App() {
                             </div>
 
                             <div className="wood">
-                                {translate('loz')}
+                                <p>{translate('loz')}</p>
                             </div>
                         </div>
                 }
@@ -150,7 +150,7 @@ function App() {
                     </Switch>
                     {/* ------------------------------------------------- FOOTER------------------------  */}
                     <br></br>
-                    <div style={{ width: '100%', textAlign: 'center' }}>
+                    <div className="Footer">
                         <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
                             <i className="fas fa-map-marker-alt fa-2x"></i>
                         </a>

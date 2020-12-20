@@ -21,84 +21,97 @@ export const Home = (props) => {
     }, []);
 
     return (
-        <div className="column" style={{ width: '100%' }}>
+        <div style={{ width: '1200px', marginBottom: '80px' }}>
+
             {/* ------------------------------------------OPENING VIDEO------------------------------------ */}
             <video autoPlay loop muted className="openingVid" onMouseDown={(e) => { e.preventDefault(); alert(message) }}>
                 <source src={openingVid} type="video/mp4" />
             </video>
-            {/* <div id="video-cover"></div> */}
+
             {/* ------------------------------------------LOZUNG------------------------------------ */}
             <div className="big-grey-font" >
-                <p style={{ marginTop: '20px' }}>{translate('home-1-text')}</p>
-                <p className="smaller">{translate('home-2-text')}</p>
-                {/* <p className="smaller">{translate('home-02-text')}</p> */}
+                <p style={{ marginTop: '20px', fontSize: 'xxx-large', textShadow: '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.3)', fontFamily: '"Times New Roman", Times, serif' }}>LYS</p>
+                <p style={{ textShadow: '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.3)', fontSize: 'xx-large' }}>{translate('home-2-text')}</p>
             </div>
+
             {/* ------------------------------------------FIRST BLOK ----------- WITH FAMILY PHOTO------------------------------------ */}
-            <div className="blok HomeFirst">
-                <div className="first-left-col">
-                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg" alt="Family portret" />
-                    <p className="text-on-photo"> - {translate('home-3-text')}</p>
-                    <p className="handwrite">{translate('home-4-text')}</p>
-                    {/* <div className="wood-texture"></div> */}
-                </div>
-                <div id="fenix">
-                    <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="LYS fenix" />
-                </div>
+            <div id="family-portret">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/67/10/8b6710ba83e38508a4885c16aadbaeaf.jpg" alt="Family portret" />
+                <p className="text-on-photo"> - {translate('home-3-text')}</p>
+                <p className="handwrite">{translate('home-4-text')}</p>
             </div>
+
+            <div id="fenix">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/f4/8b/1a/f48b1ae363b08c52613c4a1ff5a7305a.jpg" alt="LYS fenix" />
+            </div>
+
             {/* ---------------------------------------------WHAT DO WE OFFER?--------------------------- */}
-            <p className="big-grey-font"> {translate('home-5-text')} </p>
+            <div style={{ marginTop: '70px', marginBottom: '20px' }}>
+                <p className="big-grey-font">{translate('home-5-text')}</p>
+            </div>
+
             {/* ---------------------------------------------SECOND BLOK---------------------------- */}
-            <div className="blok HomeSecond">
+            <div id="tx-blok-1">
+                <p className="handwrite">{translate('home-6-text')}</p>
+                <p className="text-on-background bg-wood1">{translate('home-7-text')}</p>
+            </div>
 
-                <div className="row col snake">
-                    <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/79/75/8c/79758c6017a10a7ba714638372e506fc.jpg" alt="LYS" />
-                    </div>
-                    <div className="column info-side">
-                        <p className="handwrite">{translate('home-6-text')}</p>
-                        <p className="text-on-background bg-wood1">{translate('home-7-text')}</p>
-                        <p className="big-grey-font smaller">{translate('home-8-text')}</p>
-                        <p className="handwrite">{translate('home-9-text')}</p>
-                    </div>
-                </div>
+            <div className="img-blok" id="table-img">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/e5/44/cc/e544cc9a6253ab2a04f4368337baf253.jpg" alt="LYS" />
+            </div>
 
-                <div className="row col" id="m-t">
-                    <div className="column info-side">
-                        <p className="big-grey-font smaller">{translate('home-10-text')}</p>
-                        <p className="handwrite">{translate('home-11-text')}</p>
-                        <p className="text-on-background bg-wood2">{translate('home-12-text')}</p>
-                        <p className="handwrite">{translate('home-13-text')}</p>
-                    </div>
-                    <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg" alt="LYS" />
-                    </div>
-                </div>
+            {/* ----------------------------- */}
+            <div id="tx-blok-2">
+                <p className="big-grey-font smaller">{translate('home-8-text')}</p>
+                <p className="handwrite">{translate('home-9-text')}</p>
+            </div>
 
-                <div className="row col cone">
-                    <div className="column photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/e5/44/cc/e544cc9a6253ab2a04f4368337baf253.jpg" alt="LYS" />
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/b1/37/57/b1375741d22229d6260b673aeb1de06e.jpg" alt="LYS" />
-                    </div>
-                    <div className="column info-side">
-                        <p className="handwrite">{translate('home-14-text')}</p>
-                        <p className="text-on-background bg-wood3">{translate('home-15-text')}</p>
-                        <p className="big-grey-font smaller">{translate('home-16-text')}</p>
-                        <p className="handwrite">{translate('home-17-text')}</p>
-                    </div>
-                </div>
+            <div className="img-blok" id="elements-img">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/b1/37/57/b1375741d22229d6260b673aeb1de06e.jpg" alt="LYS" />
+            </div>
 
-                <div className="row col">
-                    <div className="column info-side">
-                        <p className="big-grey-font smaller" id="sec">{translate('home-18-text')}</p>
-                        <p className="handwrite">{translate('home-19-text')}</p>
-                        <p className="text-on-background bg-wood4">{translate('home-20-text')}</p>
-                        <p className="handwrite">{translate('home-21-text')}</p>
-                    </div>
-                    <div className="photo-side">
-                        <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/37/2e/8b372e8cac4c20a1480bc648060f5cf5.jpg" alt="LYS" />
-                    </div>
+            {/* ------------------------------- */}
+            <div id="tx-blok-3">
+                <p className="big-grey-font smaller">{translate('home-10-text')}</p>
+                <p className="handwrite">{translate('home-11-text')}</p>
+                <p className="text-on-background bg-wood2">{translate('home-12-text')}</p>
+                <div className="handwrite">
+                    <p>{translate('home-13-1-text')}</p>
+                    <p>{translate('home-13-2-text')}</p>
                 </div>
             </div>
+
+            <div className="img-blok" id="snake-img">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/79/75/8c/79758c6017a10a7ba714638372e506fc.jpg" alt="LYS" />
+            </div>
+
+            {/* ------------------------------ */}
+            <div id="tx-blok-4">
+                <p className="handwrite">{translate('home-14-text')}</p>
+                <div className="text-on-background bg-wood3">
+                    <p>{translate('home-15-1-text')}</p>
+                    <p>{translate('home-15-2-text')}</p>
+                </div>
+                <p className="big-grey-font smaller">{translate('home-16-text')}</p>
+                <p className="handwrite">{translate('home-17-text')}</p>
+            </div>
+
+            <div className="img-blok" id="handle-img">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/43/1d/af/431daf462a15169f8b6be4c71da6c885.jpg" alt="LYS" />
+            </div>
+
+            {/* --------------------- */}
+            <div id="tx-blok-5">
+                <p className="big-grey-font smaller" id="sec">{translate('home-18-text')}</p>
+                <p className="handwrite">{translate('home-19-text')}</p>
+                <p className="text-on-background bg-wood4">{translate('home-20-text')}</p>
+                <p className="handwrite">{translate('home-21-text')}</p>
+            </div>
+
+            <div className="img-blok" id="cabinets-img">
+                <img style={{ width: '100%' }} onMouseDown={(e) => { e.preventDefault(); alert(message) }} src="https://i.pinimg.com/originals/8b/37/2e/8b372e8cac4c20a1480bc648060f5cf5.jpg" alt="LYS" />
+            </div>
+
             {/* ---------------------------------------------DELIVERY AND INSTALLATION-------------------------------------------------- */}
             <p className="big-grey-font x-smaller"> {translate('home-22-text')}</p>
             {/* ----------------------------------------------------CAROUSEL------------------------------------ */}

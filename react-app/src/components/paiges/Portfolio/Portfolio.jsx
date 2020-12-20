@@ -34,28 +34,34 @@ export const Images = (props) => {
             <div className="row">
                 {/* ----------------------------------BIG IMAGE---------------------- */}
                 {!bigPicture ? null :
-                    <div className="big-img-div row">
+                    <div className="big-img-div">
+
                         <div className="img-div">
                             <img src={bigPicture} alt="LYS" />
                             <div className="big-img-cover"></div>
                         </div>
-                        <div className="button-div">
-                            <button type="button" onClick={() => setBigPicture(null)}>
-                                <i className="fas fa-times fa-2x"></i>
-                            </button>
-                            <p>{translate('portfolio-2-text')}</p>
+
+                        <div className="right-div">
+                            <div className="button-div">
+                                <button type="button" onClick={() => setBigPicture(null)}>
+                                    <i className="fas fa-times fa-2x"></i>
+                                </button>
+                                <p>{translate('portfolio-2-text')}</p>
+                                <p>{translate('portfolio-3-text')}</p>
+                            </div>
+                            {/* ----------------------------------THUMBNAILS---------------------- */}
+                            <div className="thumbnail-col">
+                                {picturesArr.map((Picture) => {
+                                    return (
+                                        <div className="thumbnail-2" key={Picture.pic}
+                                            style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `100%` }}
+                                            onClick={() => { setBigPicture(Picture.pic) }}>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
-                        {/* ----------------------------------THUMBNAILS---------------------- */}
-                        <div className="thumbnail-col">
-                            {picturesArr.map((Picture) => {
-                                return (
-                                    <div className="thumbnail-2" key={Picture.pic}
-                                        style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `300px` }}
-                                        onClick={() => { setBigPicture(Picture.pic) }}>
-                                    </div>
-                                )
-                            })}
-                        </div>
+
                     </div>
                 }
                 {/* ------------------------------------PORTFOLIO-------------------------- */}

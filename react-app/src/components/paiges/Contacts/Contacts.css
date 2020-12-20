@@ -1,14 +1,13 @@
 .Contact-content {
-    height: 100%;
+    min-height: 900px;
     width: 100%;
     padding: 5%;
-    display: flex;
-    flex-direction: row;
 }
 
 .form-div {
     width: 50%;
     padding: 4%;
+    float: left;
 }
 
 .contact-div {
@@ -25,6 +24,7 @@
     font-variant: normal;
     text-transform: none;
     font-size: larger;
+    float: right;
 }
 
 .messangers {

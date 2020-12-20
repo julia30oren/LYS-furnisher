@@ -14,10 +14,6 @@ export const ContactUs = (props) => {
     return (
         <div className="Contact-content">
 
-            <div className="form-div">
-                <Form prop={props}></Form>
-            </div>
-
             <div className="contact-div">
                 <div style={{
                     paddingLeft: '10%'
@@ -44,7 +40,10 @@ export const ContactUs = (props) => {
                         margin: '3%'
                     }}>
                 </iframe>
+            </div>
 
+            <div className="form-div">
+                <Form prop={props}></Form>
             </div>
         </div>
     )

@@ -1,48 +1,127 @@
-/* -------------------------------------------tablet----------- */
+/* @media screen and (min-width: 1250px) {
+    #tx-blok-4 {
+        width: 45%;
+        float: right;
+        height: 1100px;
+    }
+    #handle-img {
+        width: 55%;
+        float: left;
+        height: 1100px;
+    }
+} */
 
-@media screen and (max-width: 1250px) {
-    .blok {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .big-grey-font {
-        font-size: 52px;
-    }
-    .smaller {
-        font-size: 28px;
-    }
-    .HomeFirst {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .first-left-col {
-        width: 100%;
-        margin: 0;
+@media screen and (min-width: 950px) {
+    #family-portret {
+        width: 48%;
+        float: left;
+        height: 900px;
     }
     #fenix {
         width: 50%;
+        float: right;
+        height: 900px;
+    }
+    #tx-blok-1 {
+        width: 45%;
+        float: right;
+        height: 550px;
+    }
+    #table-img {
+        width: 55%;
+        float: left;
+        height: 550px;
+    }
+    #tx-blok-2 {
+        width: 45%;
+        float: right;
+        height: 500px;
+    }
+    #elements-img {
+        width: 55%;
+        float: left;
+        height: 500px;
+    }
+    #tx-blok-3 {
+        width: 45%;
+        float: left;
+        height: 900px;
+    }
+    #snake-img {
+        width: 55%;
+        float: right;
+        height: 900px;
+    }
+    #tx-blok-4 {
+        width: 45%;
+        float: right;
+        height: 1050px;
+    }
+    #handle-img {
+        width: 55%;
+        float: left;
+        height: 1050px;
+    }
+    #tx-blok-5 {
+        width: 45%;
+        float: left;
+        height: 1050px;
+    }
+    #cabinets-img {
+        width: 55%;
+        float: right;
+        height: 1050px;
+    }
+    .big-grey-font {
+        padding: 3%;
+    }
+}
+
+
+/* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 950px) {
+    #family-portret {
+        width: 100%;
+    }
+    #fenix {
+        width: 80%;
+        float: none;
+    }
+    .img-blok,
+    #fenix {
+        width: 80%;
         margin: auto;
     }
+    .big-grey-font {
+        font-size: 40px;
+    }
     .text-on-photo {
-        height: 50%;
-        font-size: 45px;
+        font-size: 35px;
         margin-top: -70%;
     }
-    .x-smaller {
-        font-size: 25px;
+    .handwrite {
+        width: 70%;
+        margin: auto;
+        padding: 7%;
+        font-size: x-large;
+    }
+    .smaller {
+        margin-top: 50px;
+        font-size: 40px;
     }
     .text-on-background {
-        padding: 12%;
-        height: auto;
-        font-size: 20px;
+        padding: 7%;
+        font-size: 40px;
     }
-    .handwrite {
-        padding: 5%;
-        font-size: large;
+    .bg-wood3 {
+        max-height: 500px;
+        background-image: url('https://cdn8.dissolve.com/p/D2115_208_992/D2115_208_992_1200.jpg');
     }
-    .openingVid,
-    .HomeFourth {
-        padding: 1%;
+    .x-smaller {
+        margin-top: 50px;
+        padding: 3%;
+        font-size: 25px;
     }
 }
 
@@ -50,62 +129,35 @@
 /* -------------------------------------------PHONE----------- */
 
 @media screen and (max-width: 700px) {
-    .openingVid {
-        width: 100%;
-        padding: 0%;
-    }
-    .blok {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
     .big-grey-font {
-        font-size: 25px;
-    }
-    .smaller {
-        font-size: 18px;
-        margin-top: 30px;
-    }
-    .col,
-    .info-side {
-        width: 100%;
-        margin: 0%;
-        padding: 0%;
-    }
-    .snake {
-        flex-direction: column-reverse;
-    }
-    #fenix,
-    .photo-side {
-        width: 80%;
-        margin: auto;
+        font-size: 30px;
+        padding: 3%;
     }
     .text-on-photo {
-        font-size: 20px;
+        font-size: 25px;
         margin-top: -70%;
     }
-    .x-smaller {
-        font-size: 15px;
-    }
-    .text-on-background {
-        margin: 0%;
-        font-size: 20px;
-    }
     .handwrite {
+        width: 80%;
+        margin: auto;
         padding: 5%;
         font-size: large;
     }
-    .openingVid,
-    .HomeFourth {
-        padding: 0%;
+    .smaller {
+        margin-top: 50px;
+        font-size: 30px;
     }
-    #m-t {
-        margin-top: 0px;
+    .text-on-background {
+        padding: 7%;
+        font-size: 25px;
     }
-    .margin-phone {
-        margin-top: 20%;
+    .x-smaller {
+        margin-top: 50px;
+        padding: 3%;
+        font-size: 20px;
     }
-    .HomeFourth {
-        margin-top: 20px;
+    .img-blok {
+        width: 90%;
     }
     .slider-img>div {
         color: white;
@@ -117,9 +169,5 @@
     }
     .slider-img>div>h6 {
         font-size: 10px;
-    }
-    .snakeб,
-    .cone {
-        flex-direction: column-reverse;
     }
 }

@@ -1,236 +1,202 @@
- .blok {
-     width: 100%;
-     margin-top: 100px;
-     margin-bottom: 100px;
- }
- /*------------------------ VIDIO --------------------------- */
- 
- .openingVid {
-     width: 100%;
- }
- 
- #video-cover {
-     width: 1200px;
-     height: 650px;
-     position: absolute;
-     background-image: url('https://i.pinimg.com/originals/c6/2e/95/c62e95b1eebb5a3286741fb673e2e139.png');
-     background-size: cover;
- }
- /* --------------------------1 ----------------------*/
- 
- .HomeFirst {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
- 
- .first-left-col {
-     width: 45%;
- }
- 
- #fenix {
-     width: 50%;
-     margin-left: 1%;
- }
- 
- .text-on-photo {
-     color: white;
-     height: 50%;
-     font-size: 25px;
-     text-shadow: #000000c4 3px 3px 2px;
-     padding-left: 2%;
-     position: absolute;
-     margin-top: -30%;
-     z-index: 2;
- }
- 
- .handwrite {
-     width: 100%;
-     text-align: center;
-     padding: 12%;
-     font-size: x-large;
-     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-     letter-spacing: 2px;
-     word-spacing: 2px;
-     color: #000000;
-     font-weight: normal;
-     text-decoration: none;
-     font-style: italic;
-     font-variant: normal;
-     text-transform: none;
- }
- /* .wood-texture {
-     background-image: url('https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045380_960_720.jpg');
-     background-size: cover;
-     height: 220px;
-     width: 750px;
-     margin-left: 50px;
-     position: absolute;
-     z-index: 1;
- } */
- /* -----------------------------WHAT DO WE OFFER?---------------------------- */
- 
- .big-grey-font {
-     font-size: 70px;
-     color: rgba(128, 128, 128, 0.3);
-     width: 100%;
-     text-align: center;
-     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-     letter-spacing: 2px;
-     word-spacing: 2px;
-     font-weight: 700;
-     text-decoration: none;
-     font-style: normal;
-     font-variant: normal;
-     text-transform: uppercase;
- }
- /* ------------------------------2--------------------------- */
- 
- .HomeSecond {
-     display: flex;
-     flex-direction: column;
- }
- 
- .smaller {
-     font-size: 40px;
- }
- 
- .text-on-background {
-     color: white;
-     height: 50%;
-     text-shadow: #000000c4 3px 3px 2px;
-     padding: 12%;
-     font-size: 30px;
-     width: 100%;
-     text-align: center;
- }
- 
- .photo-side {
-     width: 55%;
- }
- 
- .info-side {
-     width: 45%;
- }
- 
- #m-t {
-     margin-top: 100px;
- }
- 
- .bg-wood1 {
-     background-image: url('https://cdn.pixabay.com/photo/2016/02/16/10/40/background-1203084_960_720.jpg');
- }
- 
- .bg-wood2 {
-     background-image: url('https://www.wallpaperboulevard.com/Images/product/0019826_faux-wood-panel-l.jpeg');
- }
- 
- .bg-wood3 {
-     max-height: 350px;
-     background-image: url('https://cdn8.dissolve.com/p/D2115_208_992/D2115_208_992_1200.jpg');
- }
- 
- .bg-wood4 {
-     height: 200px;
-     background-image: url('https://cdn.pixabay.com/photo/2014/06/11/15/24/wood-366792_960_720.jpg');
- }
- 
- .x-smaller {
-     font-size: 30px;
- }
- /* ------------------------------ 4 -------- CAROUSEL -------------------------------*/
- 
- .HomeFourth {
-     margin-top: 50px;
- }
- 
- .carousel-inner {
-     position: relative;
-     box-sizing: border-box;
-     display: flex;
-     align-items: center;
-     overflow: hidden;
-     max-height: 600px;
- }
- 
- .slide {
-     position: relative;
-     min-width: 100%;
-     transition: 0.7s;
-     overflow: hidden;
- }
- 
- .sliderButtons {
-     position: absolute;
-     z-index: 3;
-     top: 50%;
-     transform: translateY(-50%);
-     width: 10%;
-     height: 100%;
-     border: none;
-     color: rgba(255, 255, 255, 0.555);
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- 
- .sliderButtons:visited,
- .sliderButtons:active,
- .sliderButtons:link {
-     text-decoration: none;
-     color: rgba(255, 255, 255, 0.555);
- }
- 
- .sliderButtons:hover {
-     color: rgb(255, 255, 255);
-     text-decoration: none;
- }
- 
- #goLeft {
-     left: 0;
-     background: #00000083;
-     background: -moz-linear-gradient(left, #00000083 0%, #00000000 100%, #00000000 100%);
-     background: -webkit-linear-gradient(left, #00000083 0%, #00000000 100%, #00000000 100%);
-     background: linear-gradient(to right, #00000083 0%, #00000000 100%, #00000000 100%);
- }
- 
- #goLeft:hover {
-     background: #000000a6;
-     background: -moz-linear-gradient(left, #000000a6 0%, #00000000 100%, #00000000 100%);
-     background: -webkit-linear-gradient(left, #000000a6 0%, #00000000 100%, #00000000 100%);
-     background: linear-gradient(to right, #000000a6 0%, #00000000 100%, #00000000 100%);
- }
- 
- #goRight {
-     right: 0;
-     background: #00000083;
-     background: -moz-linear-gradient(left, #00000000 0%, #00000083 100%, #00000083 100%);
-     background: -webkit-linear-gradient(left, #00000000 0%, #00000083 100%, #00000083 100%);
-     background: linear-gradient(to right, #00000000 0%, #00000083 100%, #00000083 100%);
- }
- 
- #goRight:hover {
-     background: #00000083;
-     background: -moz-linear-gradient(left, #00000000 0%, #000000a6 100%, #000000a6 100%);
-     background: -webkit-linear-gradient(left, #00000000 0%, #000000a6 100%, #000000a6 100%);
-     background: linear-gradient(to right, #00000000 0%, #000000a6 100%, #000000a6 100%);
- }
- 
- .slider-img {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- 
- .slider-img>div {
-     background: #00000000;
-     background: -moz-linear-gradient(left, #00000000 0%, #00000098 50%, #00000000 100%);
-     background: -webkit-linear-gradient(left, #00000000 0%, #00000098 50%, #00000000 100%);
-     background: linear-gradient(to right, #00000000 0%, #00000098 50%, #00000000 100%);
-     position: absolute;
-     bottom: 0;
-     color: white;
-     width: 650px;
-     text-align: center;
-     padding: 15px;
- }
+/*------------------------ VIDIO --------------------------- */
+
+.openingVid {
+    width: 100%;
+}
+
+
+/* --------------------------1 ----------------------*/
+
+.HomeFirst {
+    height: 800px;
+}
+
+.first-left-col {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+.text-on-photo {
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    text-shadow: #000000c4 3px 3px 2px;
+    padding-left: 2%;
+    position: absolute;
+    margin-top: -30%;
+    z-index: 2;
+}
+
+.handwrite {
+    width: 100%;
+    text-align: center;
+    padding: 12%;
+    font-size: x-large;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+#family-portret,
+#fenix {
+    margin-top: 50px;
+}
+
+
+/* -----------------------------WHAT DO WE OFFER?---------------------------- */
+
+.big-grey-font {
+    font-size: 70px;
+    color: rgba(128, 128, 128, 0.3);
+    width: 100%;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.smaller {
+    font-size: 40px;
+}
+
+.text-on-background {
+    color: white;
+    text-shadow: #000000c4 3px 3px 2px;
+    padding: 12%;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.bg-wood1 {
+    background-image: url('https://cdn.pixabay.com/photo/2016/02/16/10/40/background-1203084_960_720.jpg');
+}
+
+.bg-wood2 {
+    background-image: url('https://www.wallpaperboulevard.com/Images/product/0019826_faux-wood-panel-l.jpeg');
+}
+
+.bg-wood3 {
+    /* max-height: 350px; */
+    background-image: url('https://cdn8.dissolve.com/p/D2115_208_992/D2115_208_992_1200.jpg');
+}
+
+.bg-wood4 {
+    /* max-height: 170px; */
+    background-image: url('https://cdn.pixabay.com/photo/2014/06/11/15/24/wood-366792_960_720.jpg');
+}
+
+.x-smaller {
+    font-size: 30px;
+}
+
+
+/* ------------------------------ 4 -------- CAROUSEL -------------------------------*/
+
+.HomeFourth {
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.sliderButtons {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 100%;
+    border: none;
+    color: rgba(255, 255, 255, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderButtons:visited,
+.sliderButtons:active,
+.sliderButtons:link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.sliderButtons:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#goLeft {
+    left: 0;
+    background: #00000083;
+    background: -moz-linear-gradient(left, #00000083 0%, #00000000 100%, #00000000 100%);
+    background: -webkit-linear-gradient(left, #00000083 0%, #00000000 100%, #00000000 100%);
+    background: linear-gradient(to right, #00000083 0%, #00000000 100%, #00000000 100%);
+}
+
+#goLeft:hover {
+    background: #000000a6;
+    background: -moz-linear-gradient(left, #000000a6 0%, #00000000 100%, #00000000 100%);
+    background: -webkit-linear-gradient(left, #000000a6 0%, #00000000 100%, #00000000 100%);
+    background: linear-gradient(to right, #000000a6 0%, #00000000 100%, #00000000 100%);
+}
+
+#goRight {
+    right: 0;
+    background: #00000083;
+    background: -moz-linear-gradient(left, #00000000 0%, #00000083 100%, #00000083 100%);
+    background: -webkit-linear-gradient(left, #00000000 0%, #00000083 100%, #00000083 100%);
+    background: linear-gradient(to right, #00000000 0%, #00000083 100%, #00000083 100%);
+}
+
+#goRight:hover {
+    background: #00000083;
+    background: -moz-linear-gradient(left, #00000000 0%, #000000a6 100%, #000000a6 100%);
+    background: -webkit-linear-gradient(left, #00000000 0%, #000000a6 100%, #000000a6 100%);
+    background: linear-gradient(to right, #00000000 0%, #000000a6 100%, #000000a6 100%);
+}
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img>div {
+    background: #00000000;
+    background: -moz-linear-gradient(left, #00000000 0%, #00000098 50%, #00000000 100%);
+    background: -webkit-linear-gradient(left, #00000000 0%, #00000098 50%, #00000000 100%);
+    background: linear-gradient(to right, #00000000 0%, #00000098 50%, #00000000 100%);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 650px;
+    text-align: center;
+    padding: 15px;
+}
