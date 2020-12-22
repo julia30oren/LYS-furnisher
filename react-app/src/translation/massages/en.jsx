@@ -15,7 +15,7 @@ export default {
         "home-1-text": " LYS ",
         "home-2-text": "FAMILY FURNITURE WORKSHOP",
 
-        "home-3-text": "WHO ARE WE?",
+        "home-3-text": "WHO WE ARE?",
         "home-4-text": "We are a family furniture workshop «LYS», which personally develops and manufactures items of both classical style and unique author's products.",
         "home-5-text": "WHAT DO WE OFFER?",
         "home-6-text": "INDIVIDUALITY",

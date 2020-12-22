@@ -1,33 +1,10 @@
-.Creation {
-    width: 100%;
-    margin-top: 70px;
-}
-
-.creation-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-.video-left-side>video,
-.video-right-side>video {
+video {
     border: solid rgba(53, 52, 52, 0.233) 1px;
     border-radius: 50%;
 }
 
-.vid-cover {
-    width: 100%;
-    min-height: 60%;
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-}
-
 .text-blok {
-    margin: auto;
+    width: 55%;
 }
 
 .text-blok>h5 {
@@ -56,76 +33,89 @@
     text-transform: none;
 }
 
-
-/* ----------------------------------LEFT SIDE VIDEOS--------------- */
-
-.video-left-side {
-    width: 40%;
-    border-radius: 150px 0 0 150px;
-    margin-left: 20%;
+.left {
+    width: 48%;
+    margin-top: 20px;
 }
 
-.left {
-    width: 45%;
-    margin-left: 100px;
+.right {
+    width: 52%;
+    margin-top: 20px;
 }
 
 .left>h5 {
     text-align: right;
 }
 
+.blok-1,
 #video1 {
-    width: 55%;
+    height: 200px;
 }
 
-#video3 {
-    width: 65%;
+#video1 {
+    float: left;
+    margin-left: 200px;
 }
 
-#video5 {
-    width: 75%;
-}
-
-
-/* ----------------------------------RIGHT SIDE VIDEOS--------------- */
-
-.video-right-side {
-    width: 50%;
-    border-radius: 150px 0 0 150px;
-}
-
-.right {
-    width: 50%;
-    padding-right: 5%;
-    padding-left: 2%;
+.blok-2,
+#video2 {
+    height: 250px;
 }
 
 #video2 {
-    width: 70%;
-    margin-left: 5%;
+    float: right;
+    margin-right: 150px;
+}
+
+.blok-3,
+#video3 {
+    height: 250px;
+}
+
+#video3 {
+    float: left;
+    margin-left: 130px;
+}
+
+.blok-4 {
+    height: 550px;
 }
 
 #video4-1 {
-    width: 40%;
-    margin-left: 20%;
+    width: 250px;
+    margin-left: 100px;
 }
 
 #video4-2 {
-    width: 60%;
-    margin-left: 40%;
-    margin-top: -20%;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+.blok-5,
+#video5 {
+    height: 300px;
+}
+
+#video5 {
+    float: left;
+    margin-left: 30px;
+}
+
+.blok-6 {
+    height: 300px;
 }
 
 #video6 {
-    width: 45%;
-    margin-left: 15%;
+    height: 200px;
+    float: right;
+    margin-right: 300px;
 }
 
 
 /* ----------------------------------------LOZUNG----------- */
 
 .creation-lozung {
-    margin-top: 50px;
     font-size: 210%;
     font-family: Noto;
     color: rgba(128, 128, 128, 0.3);
@@ -144,19 +134,42 @@
 
 /* ----------------------------------------------------------COMPARING IMAGES---------------- */
 
-.comparing-row {
+.comparing-row-1,
+.comparing-row-2 {
     width: 100%;
-    display: flex;
-    flex-direction: row;
     margin-top: 50px;
 }
 
+.comparing-row-1 {
+    height: 550px;
+}
+
+.comparing-row-2 {
+    height: 700px;
+}
+
 .img-row1 {
-    width: 53.8%;
-    margin: auto;
+    width: 49%;
+    float: left;
+}
+
+#bench {
+    width: 55%;
+}
+
+#woolf {
+    width: 55.3%;
 }
 
 .img-row2 {
-    width: 42%;
-    margin: auto;
+    width: 49%;
+    float: right;
+}
+
+#chair {
+    width: 43%;
+}
+
+#cupboard {
+    width: 42.8%;
 }

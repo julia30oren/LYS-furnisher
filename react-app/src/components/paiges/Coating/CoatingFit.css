@@ -2,20 +2,16 @@
 
 @media screen and (max-width: 1195px) {
     .texture-open {
-        flex-direction: column;
         width: 100%;
         height: 100%;
         overflow-x: auto;
     }
-    .texture {
-        width: 70%;
-        margin: auto;
-        margin-top: 10px;
-    }
+    .texture,
     .photo {
-        width: 70%;
+        float: none;
+        width: 90%;
         margin: auto;
-        margin-top: 10px;
+        margin: 5%;
     }
 }
 
@@ -23,19 +19,19 @@
 /* -------------------------------------------PHONE----------- */
 
 @media screen and (max-width: 700px) {
+    .left,
+    .right {
+        float: none;
+        margin-top: 10px;
+        width: 100%;
+    }
     .texture-txt>h6 {
         font-size: small;
     }
-    .coating-row {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        margin-top: 20px;
-    }
     .texture-txt {
-        margin: auto;
-        width: 90%;
+        padding: 5%;
+        width: 100%;
+        height: auto;
     }
     .img-1,
     .img-2,
@@ -45,17 +41,36 @@
     .img-6,
     .img-7,
     .img-8 {
-        width: 100%;
+        width: 300px;
         height: 300px;
-        margin-top: 20px;
+        background-size: 300px 300px;
+        margin: auto;
+        float: none;
+        margin-top: 10px;
     }
-    .texture {
-        width: 100%;
+    .img-1,
+    .img-3,
+    .img-5,
+    .img-7 {
+        margin-left: 15%;
     }
-    .photo {
-        width: 100%;
+    .img-2,
+    .img-4,
+    .img-6,
+    .img-8 {
+        margin-right: 15%;
     }
-    .reverse {
-        flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 400px) {
+    .img-1,
+    .img-3,
+    .img-5,
+    .img-7,
+    .img-2,
+    .img-4,
+    .img-6,
+    .img-8 {
+        margin: auto;
     }
 }

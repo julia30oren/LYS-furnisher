@@ -46,6 +46,26 @@
      #creators {
          font-size: 60%;
      }
+     #footer {
+         width: 35%;
+         margin: auto;
+     }
+     .footer-icon>i {
+         width: 35px;
+         height: 30px;
+     }
+ }
+ 
+ @media screen and (max-width: 600px) {
+     #footer {
+         width: 70%;
+     }
+ }
+ 
+ @media screen and (max-width: 500px) {
+     #footer {
+         width: 80%;
+     }
  }
  
  #phone-navBar {
@@ -104,8 +124,8 @@
      width: 100%;
      position: absolute;
      z-index: 10;
-     display: flex;
-     flex-direction: column;
+     /* display: flex;
+     flex-direction: column; */
  }
  
  #home-link,

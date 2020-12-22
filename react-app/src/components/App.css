@@ -43,12 +43,18 @@
         /* --------------------------------------------- */
         /*------------------------------------------------- FOOTER------------------------ */
         
-        .footer-icon {
-            color: black;
-            margin: 10px;
+        #footer {
+            width: 25%;
+            margin: auto;
+            margin-top: 50px;
         }
         
-        .footer-icon:hover {
+        .footer-icon>i {
+            color: black;
+            width: 16.66%;
+        }
+        
+        .footer-icon>i:hover {
             color: white;
             text-shadow: #474747 3px 5px 2px;
         }

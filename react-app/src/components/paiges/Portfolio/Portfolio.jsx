@@ -53,7 +53,7 @@ export const Images = (props) => {
                             <div className="thumbnail-col">
                                 {picturesArr.map((Picture) => {
                                     return (
-                                        <div className="thumbnail-2" key={Picture.pic}
+                                        <div className="thumbnail" key={Picture.pic}
                                             style={{ backgroundImage: `url(${Picture.pic})`, backgroundSize: 'cover', height: `${Picture.h}px`, width: `100%` }}
                                             onClick={() => { setBigPicture(Picture.pic) }}>
                                         </div>
@@ -66,7 +66,7 @@ export const Images = (props) => {
                 }
                 {/* ------------------------------------PORTFOLIO-------------------------- */}
                 {bigPicture ? <div style={{ height: '700px' }}></div> :
-                    <div className="row">
+                    <div>
                         <div className="porfolio-col">
                             {picturesArrCol_1.map((Picture) => {
                                 return <BigImg name='LYS furniture' className="portfolio-img"
@@ -90,8 +90,34 @@ export const Images = (props) => {
                             })}
                         </div>
                     </div>
+
                 }
             </div>
+            {/* ------------------FOOTER----------------- */}
+
+            <div id="footer">
+                <a className="footer-icon" href="https://www.google.com/maps?ll=49.758776,24.015178&z=15&t=m&hl=en&gl=IL&mapclient=embed&cid=7705576045394627295" target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-map-marker-alt fa-2x"></i>
+                </a>
+                <a className="footer-icon" href="https://www.instagram.com/lys.furniture.ua/" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-instagram fa-2x"></i>
+                </a>
+                <a className="footer-icon" href="https://www.facebook.com/lys.furniture.ua" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f fa-2x"></i>
+                </a>
+                <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B380934864811" >
+                    <i className="fab fa-viber fa-2x"></i>
+                </a>
+                <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://t.me/LYS_FAMILY_furniture" >
+                    <i className="fab fa-telegram fa-2x"></i>
+                </a>
+                <a className="footer-icon" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=380986007136">
+                    <i className="fab fa-whatsapp-square fa-2x"></i>
+                </a>
+            </div>
+
+            <div style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>This site was designed and created by <a href="https://www.linkedin.com/in/julia-orendovskyi-026a30b6/">Julia Oren</a> & <a href="https://www.linkedin.com/in/iyar-nitzan-576184110/">Iyar Nitzan</a></div>
+            {/* ----------------- */}
         </div>
     )
 }

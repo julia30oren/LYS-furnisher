@@ -1,19 +1,14 @@
-.Contact-content {
-    min-height: 900px;
-    width: 100%;
-    padding: 5%;
-}
-
 .form-div {
+    height: 800px;
     width: 50%;
     padding: 4%;
     float: left;
 }
 
 .contact-div {
+    height: 800px;
     width: 50%;
-    margin-top: 5%;
-    margin-bottom: 7%;
+    padding-top: 5%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 2px;
     word-spacing: 2px;

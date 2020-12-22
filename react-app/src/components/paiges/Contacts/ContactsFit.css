@@ -8,11 +8,13 @@
     .form-div {
         width: 100%;
         margin-bottom: 80px;
+        height: auto;
     }
     .contact-div {
         width: 100%;
         margin-top: 2%;
         margin-bottom: 2%;
+        height: auto;
     }
 }
 
