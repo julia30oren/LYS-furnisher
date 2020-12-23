@@ -99,15 +99,14 @@ function App() {
     return (
         <MyProvider locale={locale}>
             <BrowserRouter>
-                {/* <NavBar></NavBar> */}
                 {
                     window.innerWidth < 1250 ?
                         <div id="phone-navBar">
                             <div className="topnav">
                                 <a href="/" className="active"><img style={{ marginTop: '-10px', marginLeft: "-10px", height: '50px', width: '50px' }} src="https://i.pinimg.com/originals/fc/c7/86/fcc78657ad0c02e0aebc247943503341.png" alt="logo" /></a>
-                                <a href="#ukr" style={{ position: 'absolute', top: '10px', right: '100px', color: 'black' }} onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
-                                <a href="#rus" style={{ position: 'absolute', top: '10px', right: '170px', color: 'black' }} onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
-                                <a href="#eng" style={{ position: 'absolute', top: '10px', right: '240px', color: 'black' }} onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
+                                <a href="#ukr" style={{ position: 'absolute', top: '10px', right: '60px', color: 'black' }} onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
+                                <a href="#rus" style={{ position: 'absolute', top: '10px', right: '120px', color: 'black' }} onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
+                                <a href="#eng" style={{ position: 'absolute', top: '10px', right: '180px', color: 'black' }} onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
                                 <a href="#" className="icon" onClick={() => { setNavbarOpen(!navbar) }}>
                                     {navbar ? <i className="fas fa-times  fa-2x" style={{ color: 'black' }}></i> : <i className="fa fa-bars fa-2x" style={{ color: 'black' }}></i>}
                                 </a>
@@ -151,7 +150,7 @@ function App() {
                     </Switch>
                 </div>
 
-                {window.innerWidth > 1250 ?
+                {window.innerWidth < 1250 ? null :
                     <div className="right-side-bottom">
                         <a href="#ukr" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
                         <a href="#rus" onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
@@ -162,12 +161,6 @@ function App() {
                             </a>
                         }
                     </div>
-                    : null
-                    // <div id="ph-Bar" style={{ position: 'fixed', zIndex: '11', right: '80px', top: '20px' }} onScroll={() => { console.log(111) }}>
-                    //     <a href="#ukr" className="lang-link" onClick={() => { setLocale(LOCALES.UKRAINIAN) }}> Укр. </a>
-                    //     <a href="#rus" className="lang-link" onClick={() => { setLocale(LOCALES.RUSSIAN) }}> Рус. </a>
-                    //     <a href="#eng" className="lang-link" onClick={() => { setLocale(LOCALES.ENGLISH) }}> Eng. </a>
-                    // </div>
                 }
                 {/*  --------------------------------------CONTACT FORM------------------------- */}
                 {(!contactForm) ? null :

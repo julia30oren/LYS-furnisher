@@ -67,18 +67,23 @@
             right: 250px;
         }
         
-        .Footer {
+        .footer {
             width: 100%;
+            margin-top: 50px;
             text-align: center;
-            position: absolute;
+        }
+        
+        .icons {
+            width: 35%;
+            margin: auto;
+            text-align: center;
             bottom: 30px;
         }
         
-        #creators {
+        .creators {
             width: 100%;
             text-align: center;
-            position: absolute;
-            bottom: 10px;
+            margin-top: 20px;
         }
         /*  ------------------------ */
         /* --------------------------------------CONTACT FORM------------------------- */

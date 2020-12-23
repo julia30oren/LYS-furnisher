@@ -29,4 +29,8 @@
     .portfolio-img {
         border: solid white 8px;
     }
+    .porfolio-col {
+        width: 95%;
+        margin: auto;
+    }
 }

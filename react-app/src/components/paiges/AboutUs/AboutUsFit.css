@@ -10,7 +10,7 @@
     }
     .aboutTextDiv {
         font-size: medium;
-        margin: 25px;
+        width: 100%;
     }
 }
 
@@ -19,11 +19,12 @@
 
 @media screen and (max-width: 700px) {
     .parallax {
-        height: 400px;
+        height: 330px;
         width: 100%;
+        background-position: top;
     }
     .par-img {
-        background-size: 500px 400px;
+        background-size: 100% 330px;
     }
     .aboutTextDiv {
         font-size: smaller;
