@@ -4,7 +4,6 @@ import './AppFit.css';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import AppRoutes from './appRouter/AppRoutes';
 import Form from './Form';
-// import NavBar from './Nav/NavBar';
 import { MyProvider, LOCALES } from '../translation';
 import { Link } from "react-router-dom";
 import { routes } from './appRouter/routers.config';
@@ -117,9 +116,11 @@ function App() {
                                 !navbar ? null :
                                     <div className="openNav">
                                         {routes.filter(route => route).map(route =>
-                                            <Link className={route.className} key={route.key} to={route.path} onClick={() => { setNavbarOpen(!navbar) }}>
-                                                {route.title}
-                                            </Link>
+                                            <p style={{ width: '200px', margin: 'auto' }}>
+                                                <Link className={route.className} key={route.key} to={route.path} onClick={() => { setNavbarOpen(!navbar) }}>
+                                                    {route.title}
+                                                </Link>
+                                            </p>
                                         )}
                                     </div>
                             }

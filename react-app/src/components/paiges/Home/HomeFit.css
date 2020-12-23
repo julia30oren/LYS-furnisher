@@ -1,16 +1,3 @@
-/* @media screen and (min-width: 1250px) {
-    #tx-blok-4 {
-        width: 45%;
-        float: right;
-        height: 1100px;
-    }
-    #handle-img {
-        width: 55%;
-        float: left;
-        height: 1100px;
-    }
-} */
-
 @media screen and (min-width: 950px) {
     #family-portret {
         width: 48%;
@@ -25,49 +12,39 @@
     #tx-blok-1 {
         width: 45%;
         float: right;
-        height: 550px;
+        height: 1000px;
     }
-    #table-img {
+    #img-blok-1 {
         width: 55%;
         float: left;
-        height: 550px;
+        height: 1000px;
     }
     #tx-blok-2 {
         width: 45%;
-        float: right;
-        height: 500px;
-    }
-    #elements-img {
-        width: 55%;
         float: left;
-        height: 500px;
+        height: 1000px;
+    }
+    #img-blok-2 {
+        width: 55%;
+        float: right;
+        height: 1000px;
     }
     #tx-blok-3 {
         width: 45%;
-        float: left;
-        height: 900px;
-    }
-    #snake-img {
-        width: 55%;
         float: right;
-        height: 900px;
+        height: 1200px;
+    }
+    #img-blok-3 {
+        width: 55%;
+        float: left;
+        height: 1200px;
     }
     #tx-blok-4 {
         width: 45%;
-        float: right;
-        height: 1050px;
-    }
-    #handle-img {
-        width: 55%;
         float: left;
         height: 1050px;
     }
-    #tx-blok-5 {
-        width: 45%;
-        float: left;
-        height: 1050px;
-    }
-    #cabinets-img {
+    #img-blok-4 {
         width: 55%;
         float: right;
         height: 1050px;
@@ -77,16 +54,160 @@
     }
 }
 
+@media screen and (max-width: 1500px) {
+    #family-portret {
+        height: 800px;
+    }
+    #fenix {
+        height: 800px;
+    }
+    #tx-blok-1 {
+        height: 900px;
+    }
+    #img-blok-1 {
+        height: 900px;
+    }
+    #tx-blok-2 {
+        height: 1000px;
+    }
+    #img-blok-2 {
+        height: 1000px;
+    }
+    #tx-blok-3 {
+        height: 1100px;
+    }
+    #img-blok-3 {
+        height: 1100px;
+    }
+    #tx-blok-4 {
+        height: 1000px;
+    }
+    #img-blok-4 {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #family-portret {
+        height: 750px;
+    }
+    #fenix {
+        height: 750px;
+    }
+    #tx-blok-1 {
+        height: 850px;
+    }
+    #img-blok-1 {
+        height: 850px;
+    }
+    #tx-blok-2 {
+        height: 1000px;
+    }
+    #img-blok-2 {
+        height: 1000px;
+    }
+    #tx-blok-3 {
+        height: 1000px;
+    }
+    #img-blok-3 {
+        height: 1000px;
+    }
+    #tx-blok-4 {
+        height: 900px;
+    }
+    #img-blok-4 {
+        height: 900px;
+    }
+    .text-on-background {
+        font-size: 25px;
+    }
+}
+
 
 /* -------------------------------------------tablet----------- */
+
+@media screen and (max-width: 1250px) {
+    #family-portret {
+        height: 900px;
+    }
+    #fenix {
+        height: 900px;
+    }
+    #tx-blok-1 {
+        height: 1000px;
+    }
+    #img-blok-1 {
+        height: 1000px;
+    }
+    #tx-blok-2 {
+        height: 1000px;
+    }
+    #img-blok-2 {
+        height: 1000px;
+    }
+    #tx-blok-3 {
+        height: 1250px;
+    }
+    #img-blok-3 {
+        height: 1250px;
+    }
+    #tx-blok-4 {
+        height: 1100px;
+    }
+    #img-blok-4 {
+        height: 1100px;
+    }
+    .text-on-background {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #family-portret {
+        height: 750px;
+    }
+    #fenix {
+        height: 750px;
+    }
+    #tx-blok-1 {
+        height: 750px;
+    }
+    #img-blok-1 {
+        height: 750px;
+    }
+    #tx-blok-2 {
+        height: 950px;
+    }
+    #img-blok-2 {
+        height: 950px;
+    }
+    #tx-blok-3 {
+        height: 950px;
+    }
+    #img-blok-3 {
+        height: 950px;
+    }
+    #tx-blok-4 {
+        height: 850px;
+    }
+    #img-blok-4 {
+        height: 850px;
+    }
+    .text-on-background {
+        font-size: 25px;
+    }
+}
 
 @media screen and (max-width: 950px) {
     #family-portret {
         width: 100%;
+        float: none;
+        height: auto;
     }
     #fenix {
         width: 80%;
         float: none;
+        height: auto;
     }
     .img-blok,
     #fenix {
@@ -122,6 +243,17 @@
         margin-top: 50px;
         padding: 3%;
         font-size: 25px;
+    }
+    #tx-blok-1,
+    #img-blok-1,
+    #tx-blok-2,
+    #img-blok-2,
+    #tx-blok-3,
+    #img-blok-3,
+    #tx-blok-4,
+    #img-blok-4 {
+        float: none;
+        height: auto;
     }
 }
 
