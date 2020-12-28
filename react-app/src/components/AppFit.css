@@ -34,7 +34,7 @@
  
  @media screen and (max-width: 1250px) {
      .Main-Component {
-         margin-top: 50px;
+         margin-top: 68px;
          right: 0;
          width: 100%;
      }
@@ -81,7 +81,7 @@
  
  .topnav {
      overflow: hidden;
-     background-color: #333;
+     background-image: url('https://free-paper-texture.com/p/p0337/p0337_m.jpg');
      position: relative;
      -webkit-box-shadow: 0px 0px 23px 4px #000000;
      box-shadow: 0px 0px 23px 4px #000000;
@@ -96,8 +96,7 @@
  }
  
  .topnav a.icon {
-     background: black;
-     background-image: url('https://utemplates.net/wp-content/uploads/2017/07/White-Seamless-Paper-Texture-Background.jpg');
+     background: rgba(0, 0, 0, 0);
      display: block;
      position: absolute;
      right: 0;
@@ -108,29 +107,25 @@
      background-color: #ddd;
      color: black;
  }
- 
- .active {
+ /* .active {
      background-image: url('https://utemplates.net/wp-content/uploads/2017/07/White-Seamless-Paper-Texture-Background.jpg');
-     color: white;
- }
+     background-image: url('https://free-paper-texture.com/p/p0337/p0337_m.jpg');
+     background-color: rgba(0, 128, 128, 0);
+     background-size: cover;
+ } */
  
  .openNav {
-     background-image: url("./vector_wooden_backgrounds_530760\ \(1\).jpg");
-     border-bottom: black solid 2px;
+     height: 300px;
+     width: 100%;
+     background-image: url("https://i.pinimg.com/originals/4c/c7/36/4cc7362876b830bcbe3c632a79ad1bfb.jpg");
+     background-size: cover;
+     border-top: rgba(0, 0, 0, 0.6) solid 1px;
+     border-bottom: rgba(0, 0, 0, 0.6) solid 1px;
      -webkit-box-shadow: 0px 0px 23px 4px #000000;
      box-shadow: 0px 0px 23px 4px #000000;
      width: 100%;
      position: absolute;
      z-index: 10;
- }
- 
- #home-link,
- #about-link,
- #creation-link,
- #coating-link,
- #portfolio-link,
- #contacts-link {
-     color: white;
  }
  /* ---------------------------------- */
  
@@ -146,7 +141,7 @@
          background-image: none;
          margin-top: 10px;
          font-size: 25px;
-         color: white;
+         color: rgb(255, 255, 255);
          text-align: center;
      }
  }

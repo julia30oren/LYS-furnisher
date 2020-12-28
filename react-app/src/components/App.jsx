@@ -115,7 +115,7 @@ function App() {
                                 !navbar ? null :
                                     <div className="openNav">
                                         {routes.filter(route => route).map(route =>
-                                            <p style={{ width: '200px', margin: 'auto' }}>
+                                            <p style={{ width: '100%', margin: 'auto', textAlign: 'center', height: '50px' }}>
                                                 <Link className={route.className} key={route.key} to={route.path} onClick={() => { setNavbarOpen(!navbar) }}>
                                                     {route.title}
                                                 </Link>
