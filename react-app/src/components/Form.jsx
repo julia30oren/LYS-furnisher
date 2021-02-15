@@ -12,7 +12,8 @@ const Form = (props) => {
     const [textInp, setTextInp] = useState(false)
     const [primaryContact, setPrimaryContact] = useState('email')
     const [showModal, setShowModal] = useState(false)
-    const [modalText, setModalText] = useState("")
+    const [modalText, setModalText] = useState("");
+    const [policyOpen, setPolicyOpen] = useState(true)
 
     ////////Functions////////////
     const nameInput = useRef({});
@@ -152,17 +153,47 @@ const Form = (props) => {
 
                     <TranslatedMessageArea element="textarea" className={textInp && !textInput.current.value ? "form-control misField" : "form-control"} style={{ resize: "none" }} rows="3" cols="50" name="message" reference={textInput} onFocus={classReset} />
                 </div>
-                <div className="form-group">
-                    <button id="sendBtn" className="btn" type="button" value="submit" onClick={sendEmail}>{translate('contact-page-button-text')}
-                        <i className="fas fa-external-link-alt" style={{ marginLeft: '15px' }}></i>
-                    </button>
+                <div className="row justify-content-between">
+                    <div className="col-lg-6 col-12">
+                        <button id="sendBtn" className="btn" type="button" value="submit" onClick={sendEmail}>{translate('contact-page-button-text')}
+                            <i className="fas fa-external-link-alt" style={{ marginLeft: '15px' }}></i>
+                        </button>
+                    </div>
+                    <div className="col-lg-6 col-12 policy" onClick={() => { setPolicyOpen(!policyOpen) }}>
+                        {translate("policy-title")}
+                    </div>
                 </div>
+                {policyOpen ? null :
+                    <div className="row justify-content-between">
+                        <div className="col" style={{ textAlign: 'justify' }}>
+                            <small className='policy-txt'>{translate("policy-txt-1")}</small>
+                            <small className='policy-txt'>{translate("policy-txt-2")}</small>
+                            <small className='policy-txt'>{translate("policy-txt-3")}</small>
+                            <small className='policy-txt'>{translate("policy-txt-4")}</small>
+                            {/* <small className='policy-txt'>{translate("policy-txt-5")}</small> */}
+                            <small className='policy-txt'>{translate("policy-txt-6")}</small>
+                            <small className='policy-txt'>{translate("policy-txt-7")}</small>
+                            {/* <small className='policy-txt'>{translate("policy-txt-8")}</small> */}
+                            <small className='policy-txt'>{translate("policy-txt-9")}</small>
+                            <small className='policy-txt'>
+                                <li>{translate("policy-li-1")}</li>
+                                <li>{translate("policy-li-2")}</li>
+                                <li>{translate("policy-li-3")}</li>
+                                <li>{translate("policy-li-4")}</li>
+                                <li>{translate("policy-li-5")}</li>
+                                <li>{translate("policy-li-6")}</li>
+                                <li>{translate("policy-li-7")}</li>
+                            </small>
+                        </div>
+                    </div>
+                }
             </form>
             {!showModal ? null :
                 <Modal show={showModal} hide={hideModal} btn={""} display={"none"}>
                     {modalText}
                     <br />
                     <button type="button" className="btn btn-dark" style={{ marginTop: "15px", marginBottom: "15px" }} onClick={() => { setShowModal(false) }}>Ok</button>
+
                 </Modal >}
         </div>
     )

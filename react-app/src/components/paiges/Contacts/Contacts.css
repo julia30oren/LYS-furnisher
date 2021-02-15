@@ -1,27 +1,16 @@
-.form-div {
-    height: 800px;
-    width: 50%;
-    padding: 4%;
-    float: left;
-}
-
 .contact-div {
-    height: 800px;
-    width: 50%;
-    padding-top: 5%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     word-spacing: 2px;
-    color: #000000;
-    font-weight: normal;
+    font-weight: 600;
     text-decoration: none;
     font-style: italic;
     font-variant: normal;
     text-transform: none;
-    font-size: larger;
-    float: right;
+    font-size: 130%;
 }
 
 .messangers {
     padding: 5px;
+    font-weight: 400;
 }

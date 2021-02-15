@@ -1,3 +1,47 @@
+/* --------------------------------------------------MAIN-------------------------------------------------- */
+
+.texture-txt {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 600;
+}
+
+.texture-txt>h4 {
+    text-align: center;
+}
+
+.texture-txt>h6,
+.texture-txt>li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.texture-txt>p {
+    font-size: 130%;
+    text-align: justify;
+}
+
+small {
+    color: rgb(27, 27, 27);
+    background: rgb(230, 191, 19);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.row {
+    margin-top: 70px;
+}
+
+
 /*----------------------------------------------2 BIG TEXTURE OPEN---------------------------------- */
 
 .black-background {
@@ -32,68 +76,16 @@
 }
 
 
-/* --------------------------------------------------MAIN-------------------------------------------------- */
-
-.left {
-    float: left;
-    margin-top: 20px;
-}
-
-.right {
-    float: right;
-    margin-top: 20px;
-}
-
-.texture-txt {
-    width: 75%;
-    height: 300px;
-    padding: 50px;
-    padding-top: 0;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: italic;
-    font-variant: normal;
-    text-transform: none;
-    text-align: center;
-    font-size: larger;
-}
-
-.texture-txt>p,
-.texture-txt>li {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: uppercase;
-}
-
-.texture-txt>h5 {
-    text-align: center;
-}
-
-.texture-txt>h6 {
-    text-align: left;
-    margin-top: 20px;
-}
-
-
 /* -----------------------------------------------IMAGES--------------------------------- */
 
-.img-1 {
-    height: 300px;
-    width: 25%;
-    background-size: 200px 200px;
+.texture-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.img-1 {
     background-image: url('https://i.pinimg.com/originals/73/ef/94/73ef9427c4d1079538af3cb868937107.jpg');
 }
 
@@ -102,10 +94,6 @@
 }
 
 .img-2 {
-    height: 300px;
-    width: 25%;
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/af/ac/43/afac43761d97d62cb0ff3572f36b8fc7.jpg');
 }
 
@@ -114,10 +102,6 @@
 }
 
 .img-3 {
-    height: 300px;
-    width: 25%;
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/93/0d/f2/930df29396a511381a1f56a520c5a3ea.jpg');
 }
 
@@ -126,10 +110,6 @@
 }
 
 .img-4 {
-    height: 300px;
-    width: 25%;
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/03/e2/d6/03e2d6db4959d9c831b089211410cc0e.jpg');
 }
 
@@ -138,10 +118,6 @@
 }
 
 .img-5 {
-    height: 300px;
-    width: 25%;
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/c2/9e/94/c29e949764a48b945ce4839396509997.jpg');
 }
 
@@ -150,10 +126,6 @@
 }
 
 .img-6 {
-    height: 300px;
-    width: 25%;
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/dd/b4/e2/ddb4e24cc691b2a712f52e9cc2293acf.jpg');
 }
 
@@ -162,10 +134,6 @@
 }
 
 .img-7 {
-    height: 300px;
-    width: 25%;
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/49/a1/e2/49a1e23f89a1f2e22682d90d4107beab.jpg');
 }
 
@@ -174,10 +142,6 @@
 }
 
 .img-8 {
-    height: 300px;
-    width: 25%;
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
     background-image: url('https://i.pinimg.com/originals/39/60/01/3960010461dca1592be6a3f0db67fdcd.jpg');
 }
 

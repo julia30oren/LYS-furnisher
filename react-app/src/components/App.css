@@ -91,10 +91,12 @@
         .contact-form {
             width: 500px;
             position: fixed;
+            max-height: 70%;
             top: 150px;
             right: 50px;
             background-color: white;
             border: solid 1px black;
+            overflow: auto;
         }
         
         .misField {
@@ -317,4 +319,15 @@
                 height: 140px;
                 font-size: large;
             }
+        }
+        
+        .policy {
+            cursor: pointer;
+            text-align: center;
+            color: rgb(27, 27, 27);
+            background: rgb(230, 191, 19);
+        }
+        
+        .policy-txt {
+            background-color: rgba(0, 0, 0, 0);
         }
