@@ -142,7 +142,7 @@ export default {
         "contact-page-message-label": "Сообщение:",
         "contact-page-button-text": "Отправить",
         "contacts-2-text": "Наше местонахождение",
-        "contacts-3-text": "Солонка,",
+        "contacts-3-text": "Солонка,3",
         "contacts-4-text": "Львовская обл.,",
         "contacts-5-text": "Украина",
         "contacts-6-text": "49.757722, 24.011444",

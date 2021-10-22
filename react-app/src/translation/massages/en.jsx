@@ -142,10 +142,10 @@ export default {
         "contact-page-button-text": "Submit",
 
         "contacts-2-text": "Our location",
-        "contacts-3-text": "Solonka,",
+        "contacts-3-text": "Solonka, 3",
         "contacts-4-text": "Lviv region,",
         "contacts-5-text": "Ukraine",
-        "contacts-6-text": "49.757722, 24.011444",
+        "contacts-6-text": "49.747152, 24.013809",
         "contacts-7-text": "You can contact us at any time by phone:",
         "contacts-8-text": "+380 98 600 71 36",
         "contacts-9-text": "Or",
