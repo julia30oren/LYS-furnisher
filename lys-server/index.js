@@ -2,11 +2,11 @@ const express = require("express");
 require("dotenv").config();
 const app = express();
 const port = process.env.PORT;
-// const bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors());
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 // routes import
 const emailRoute = require("./routes/sendEmail");
 
